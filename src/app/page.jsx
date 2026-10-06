@@ -463,8 +463,7 @@ export default function HomePage() {
           {/* Image Strip Controls Header */}
           <div className="vod-strip-header">
             <div className="vod-strip-badge">
-              <span className="vod-pulse-dot"></span>
-              <span>13 Live App &amp; VOD Previews • Click to Enlarge</span>
+              <span>🎬 200,000+ 4K UHD Movies &amp; Box Sets</span>
             </div>
             <div className="vod-strip-nav">
               <button
