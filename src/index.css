@@ -650,7 +650,7 @@ body {
 }
 
 #aii-pricing .wrap {
-  max-width: 1100px;
+  max-width: 1340px;
   margin: 0 auto;
   padding: 0 clamp(16px, 3vw, 28px);
 }
@@ -697,15 +697,153 @@ body {
   background: #22c55e;
 }
 
-#aii-pricing .grid {
-  display: grid;
-  gap: 22px;
-  align-items: stretch;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
+/* ===== DEVICE COUNTER SELECTOR ===== */
+.device-counter-section {
+  max-width: 760px;
+  margin: 10px auto 34px;
+  background: #f8fafc;
+  border: 1.5px solid #dbe7ff;
+  border-radius: 20px;
+  padding: 18px 22px;
+  box-shadow: 0 4px 18px rgba(10, 46, 102, 0.06);
+  text-align: center;
 }
 
-@media(max-width: 960px) {
-  #aii-pricing .grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+.counter-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.counter-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #0A2E66;
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.counter-step-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #0A2E66;
+  background: #ffffff;
+  color: #0A2E66;
+  font-size: 1.25rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  line-height: 1;
+}
+
+.counter-step-btn:hover:not(:disabled) {
+  background: #0A2E66;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.counter-step-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #cbd5e1;
+  color: #cbd5e1;
+}
+
+.counter-buttons-grid {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 999px;
+  border: 1.5px solid #e2e8f0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.device-pill-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: #475569;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.device-pill-btn:hover {
+  color: #0A2E66;
+  background: rgba(29, 122, 242, 0.08);
+}
+
+.device-pill-btn.active {
+  background: linear-gradient(135deg, #0A2E66 0%, #1D7AF2 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(29, 122, 242, 0.35);
+}
+
+.device-pill-btn .device-num {
+  font-weight: 900;
+  font-size: 0.95rem;
+}
+
+.device-counter-hint {
+  margin-top: 12px;
+  font-size: 0.88rem;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+.device-counter-hint strong {
+  color: #0A2E66;
+}
+
+@media(max-width: 640px) {
+  .counter-buttons-grid {
+    flex-wrap: wrap;
+    border-radius: 14px;
+    justify-content: center;
+    gap: 4px;
+  }
+  .counter-step-btn {
+    display: none;
+  }
+  .device-pill-btn {
+    padding: 7px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+#aii-pricing .grid {
+  display: grid;
+  gap: 20px;
+  align-items: stretch;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media(max-width: 1160px) {
+  #aii-pricing .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 640px) {
+  #aii-pricing .grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
 }
 
 #aii-pricing .card {

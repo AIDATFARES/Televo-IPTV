@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import {
   ShieldCheck,
@@ -8,16 +7,10 @@ import {
   Tv,
 } from 'lucide-react';
 import Breadcrumbs from '../../components/Breadcrumbs';
-import {
-  SITE_CONFIG,
-  PRICING_PLANS,
-  MULTI_SCREEN_PLANS,
-  FAQ_DATA,
-} from '../../data/config';
+import PricingSection from '../../components/PricingSection';
+import { FAQ_DATA } from '../../data/config';
 
 export default function SubscriptionPage() {
-  const [tab, setTab] = useState('single');
-
   const breadcrumbsList = [
     { name: 'Subscription & Pricing', path: '/subscription' },
   ];
@@ -34,137 +27,14 @@ export default function SubscriptionPage() {
             </h1>
             <div className="uk-underline"></div>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mt-2">
-              Choose the subscription that matches your viewing habits. All plans include 4K Ultra HD streams, 7-day UK EPG schedule, on-demand movies, and dedicated UK support via WhatsApp.
+              Choose the subscription duration and simultaneous device connections that match your viewing habits. All plans include 4K Ultra HD streams, 7-day UK EPG schedule, on-demand movies, and dedicated UK support via WhatsApp.
             </p>
-
-            {/* Switcher */}
-            <div className="inline-flex p-1.5 rounded-2xl bg-slate-900 border border-slate-800 mt-6 shadow-inner">
-              <button
-                onClick={() => setTab('single')}
-                className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
-                  tab === 'single'
-                    ? 'bg-blue-600 text-white shadow-md'
-                    : 'text-slate-400 hover:text-white'
-                }`}
-              >
-                Single Device (1 Screen)
-              </button>
-              <button
-                onClick={() => setTab('multi')}
-                className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all ${
-                  tab === 'multi'
-                    ? 'bg-blue-600 text-white shadow-md'
-                    : 'text-slate-400 hover:text-white'
-                }`}
-              >
-                Multi-Screen Family Packages
-              </button>
-            </div>
           </div>
         </div>
       </div>
 
-      {/* Pricing Cards Section */}
-      {tab === 'single' ? (
-        <section id="aii-pricing" className="py-12">
-          <div className="wrap">
-            <div className="trust-row">
-              <span className="trust-pill">
-                <span className="dot"></span> Instant Setup Delivery (5-15 mins)
-              </span>
-              <span className="trust-pill">
-                <span className="dot"></span> 7-Day Money-Back Guarantee
-              </span>
-              <span className="trust-pill">
-                <span className="dot"></span> Dedicated UK WhatsApp Support
-              </span>
-            </div>
-
-            <div className="grid">
-              {PRICING_PLANS.map((plan) => (
-                <div
-                  key={plan.id}
-                  className={`card ${plan.isPopular ? 'featured' : ''}`}
-                >
-                  {plan.badge && (
-                    plan.isPopular ? (
-                      <div className="ribbon">{plan.badge}</div>
-                    ) : (
-                      <div className="best-deal">{plan.badge}</div>
-                    )
-                  )}
-
-                  <div className="head">
-                    <span className="term">{plan.name}</span>
-                    <div>
-                      <span className="price">£{plan.price.toFixed(2)}</span>
-                      {plan.originalPrice && (
-                        <span className="price-old">£{plan.originalPrice.toFixed(2)}</span>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="highlight">{plan.description}</div>
-                  <div className="urgency">⚡ Instant UK Delivery — 5-15 Mins</div>
-
-                  <ul>
-                    {plan.features.map((feat, idx) => (
-                      <li key={idx}>{feat}</li>
-                    ))}
-                  </ul>
-
-                  <a
-                    href={`https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%20${encodeURIComponent(plan.name)}%20for%20%C2%A3${plan.price.toFixed(2)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cta"
-                  >
-                    Order via WhatsApp
-                  </a>
-
-                  <div className="pay">🔒 Secure UK Checkout • Instant Delivery</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : (
-        <section id="multi-scherm" className="py-12">
-          <div className="wrap">
-            <div className="grid">
-              {MULTI_SCREEN_PLANS.map((plan) => (
-                <div
-                  key={plan.id}
-                  className={`card ${plan.isPopular ? 'featured' : ''}`}
-                >
-                  <div className="head">
-                    <span className="term">{plan.name}</span>
-                    <span className="price">£{plan.price.toFixed(2)}</span>
-                  </div>
-
-                  <div className="highlight">{plan.description}</div>
-                  <div className="urgency">🔥 Multi-Room Simultaneous Streaming</div>
-
-                  <ul>
-                    {plan.features.map((feat, idx) => (
-                      <li key={idx}>{feat}</li>
-                    ))}
-                  </ul>
-
-                  <a
-                    href={`https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%20${encodeURIComponent(plan.name)}%20for%20%C2%A3${plan.price.toFixed(2)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cta"
-                  >
-                    Order Multi-Screen Plan
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      {/* Unified Pricing Section with Device Counter (1, 3, 6, 12 Months) */}
+      <PricingSection />
 
       {/* Guarantee & Features Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

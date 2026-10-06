@@ -17,6 +17,7 @@ import {
   PRICING_PLANS,
   MULTI_SCREEN_PLANS,
 } from '../data/config';
+import PricingSection from '../components/PricingSection';
 
 export default function HomePage() {
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
@@ -291,217 +292,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 4. SUBSCRIPTION PRICING (#aii-pricing) ─── */}
-      <section id="aii-pricing">
-        <div className="wrap">
-          <h2>Televo IPTV UK Subscription Plans</h2>
-          <div className="uk-underline"></div>
-          <p className="sub">
-            Simple, transparent pricing in British Pounds (GBP). No long-term commitments, no direct debits, and no hidden fees.
-          </p>
+      {/* ─── 4. COMBINED SUBSCRIPTION PRICING WITH DEVICE COUNTER (#aii-pricing) ─── */}
+      <PricingSection />
 
-          <div className="trust-row">
-            <span className="trust-pill">
-              <span className="dot"></span> Instant Setup Delivery (5-15 mins)
-            </span>
-            <span className="trust-pill">
-              <span className="dot"></span> 7-Day Money-Back Guarantee
-            </span>
-            <span className="trust-pill">
-              <span className="dot"></span> Dedicated UK WhatsApp Support
-            </span>
-          </div>
-
-          <div className="grid">
-            {/* Card 1: 3 Months */}
-            <div className="card">
-              <div className="head">
-                <span className="term">3 Months Plan</span>
-                <div>
-                  <span className="price">£27.99</span>
-                  <span className="price-old">£34.99</span>
-                </div>
-              </div>
-              <div className="highlight">Flexible Quarterly Access</div>
-              <div className="urgency">⚡ Active UK Delivery — 5-15 Mins</div>
-              <ul>
-                <li>1 Active connection</li>
-                <li>Full HD &amp; 4K Ultra HD streams</li>
-                <li>Full 7-Day UK EPG guide</li>
-                <li>Comprehensive VOD movies &amp; series</li>
-                <li>Compatible with Smart TVs &amp; Fire Stick</li>
-                <li>7-day money-back guarantee</li>
-                <li>UK WhatsApp customer support</li>
-              </ul>
-              <a
-                href="https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%203%20Months%20Plan%20for%20%C2%A327.99"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta"
-              >
-                Order via WhatsApp
-              </a>
-              <div className="pay">🔒 Secure UK Checkout • Instant Delivery</div>
-            </div>
-
-            {/* Card 2: 12 Months (POPULAR) */}
-            <div className="card featured">
-              <div className="ribbon">MOST POPULAR</div>
-              <div className="head">
-                <span className="term">12 Months Plan</span>
-                <div>
-                  <span className="price">£49.99</span>
-                  <span className="price-old">£79.99</span>
-                </div>
-              </div>
-              <div className="highlight">Best Value — Just £4.16 / Month</div>
-              <div className="urgency">🔥 Most Chosen by UK Households</div>
-              <ul>
-                <li>1 Active connection</li>
-                <li>4K Ultra HD &amp; 60 FPS sports streams</li>
-                <li>Complete UK &amp; International live channels</li>
-                <li>Full 7-Day UK EPG programme guide</li>
-                <li>Massive VOD library updated weekly</li>
-                <li>Free setup walkthrough via WhatsApp</li>
-                <li>7-day money-back guarantee</li>
-                <li>VIP Priority UK customer assistance</li>
-              </ul>
-              <a
-                href="https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%2012%20Months%20Plan%20for%20%C2%A349.99"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta"
-              >
-                Order via WhatsApp
-              </a>
-              <div className="pay">🔒 Secure UK Checkout • Instant Delivery</div>
-            </div>
-
-            {/* Card 3: 24 Months (BEST DEAL) */}
-            <div className="card">
-              <div className="best-deal">BEST DEAL</div>
-              <div className="head">
-                <span className="term">24 Months Plan</span>
-                <div>
-                  <span className="price">£79.99</span>
-                  <span className="price-old">£129.99</span>
-                </div>
-              </div>
-              <div className="highlight">Maximum Long-Term Savings — £3.33 / Mo</div>
-              <div className="urgency">⭐ 2 Full Years of Uninterrupted TV</div>
-              <ul>
-                <li>1 Active connection</li>
-                <li>Complete 4K UHD &amp; Full HD library</li>
-                <li>All Premier League &amp; European sports</li>
-                <li>7-Day UK Electronic Programme Guide</li>
-                <li>Regular automatic channel &amp; VOD updates</li>
-                <li>No annual renewals or price increases</li>
-                <li>7-day money-back guarantee</li>
-                <li>24/7 Priority support via WhatsApp</li>
-              </ul>
-              <a
-                href="https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%2024%20Months%20Plan%20for%20%C2%A379.99"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta"
-              >
-                Order via WhatsApp
-              </a>
-              <div className="pay">🔒 Secure UK Checkout • Instant Delivery</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── 5. MULTI-SCREEN FAMILY SECTION (#multi-scherm) ─── */}
-      <section id="multi-scherm">
-        <div className="wrap">
-          <h2>Multi-Screen Household Plans</h2>
-          <div className="uk-underline"></div>
-          <p className="sub">
-            Stream simultaneously across multiple rooms. Perfect for UK families who want simultaneous sports, movies, and entertainment on different devices.
-          </p>
-
-          <div className="grid">
-            <div className="card">
-              <div className="head">
-                <span className="term">2 Screens (12 Months)</span>
-                <span className="price">£74.99</span>
-              </div>
-              <div className="highlight">Family Duo — 2 Active Streams</div>
-              <div className="urgency">⚡ Watch in Living Room &amp; Bedroom</div>
-              <ul>
-                <li>2 Simultaneous connections</li>
-                <li>Full 4K Ultra HD &amp; Full HD streams</li>
-                <li>Independent playlists for each room</li>
-                <li>Complete sports &amp; cinema catalogue</li>
-                <li>Compatible with Smart TVs &amp; Fire Sticks</li>
-                <li>7-day money-back guarantee</li>
-              </ul>
-              <a
-                href="https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%202%20Screens%2012%20Months%20Plan%20for%20%C2%A374.99"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta"
-              >
-                Order 2 Screens
-              </a>
-            </div>
-
-            <div className="card featured">
-              <div className="head">
-                <span className="term">3 Screens (12 Months)</span>
-                <span className="price">£94.99</span>
-              </div>
-              <div className="highlight">Family Trio — Most Popular Multi-Room</div>
-              <div className="urgency">🔥 Whole-Home Streaming Solution</div>
-              <ul>
-                <li>3 Simultaneous connections</li>
-                <li>4K UHD &amp; 60 FPS sports coverage</li>
-                <li>3 Independent device configurations</li>
-                <li>Full 7-Day UK EPG on all devices</li>
-                <li>Works on Smart TV, Fire Stick, Tablets</li>
-                <li>7-day money-back guarantee</li>
-              </ul>
-              <a
-                href="https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%203%20Screens%2012%20Months%20Plan%20for%20%C2%A394.99"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta"
-              >
-                Order 3 Screens
-              </a>
-            </div>
-
-            <div className="card">
-              <div className="head">
-                <span className="term">4 Screens (12 Months)</span>
-                <span className="price">£114.99</span>
-              </div>
-              <div className="highlight">Ultimate Household — 4 Active Streams</div>
-              <div className="urgency">⭐ Maximum Multi-Device Freedom</div>
-              <ul>
-                <li>4 Simultaneous active connections</li>
-                <li>Full 4K UHD quality across all screens</li>
-                <li>Independent viewing in every room</li>
-                <li>Complete UK &amp; International channels</li>
-                <li>Dedicated VIP priority support</li>
-                <li>7-day money-back guarantee</li>
-              </ul>
-              <a
-                href="https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%204%20Screens%2012%20Months%20Plan%20for%20%C2%A3114.99"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta"
-              >
-                Order 4 Screens
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── 6. 3-STEP ORDER PROCESS (.aii-buy) ─── */}
+      {/* ─── 5. 3-STEP ORDER PROCESS (.aii-buy) ─── */}
       <section className="aii-buy">
         <div className="wrap">
           <h2 className="h2">How to Get Started with Televo IPTV</h2>
@@ -515,7 +309,7 @@ export default function HomePage() {
               <div className="aii-num">1</div>
               <h3 className="text-lg font-black text-[#0A2E66] mb-2">Choose Your Plan</h3>
               <p>
-                Select your preferred subscription duration (3, 12, or 24 months, or a multi-room family package) and place your order securely.
+                Select your preferred subscription duration (1, 3, 6, or 12 months) and simultaneous device connections, then order securely.
               </p>
             </div>
 
