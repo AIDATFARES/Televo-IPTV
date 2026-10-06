@@ -87,11 +87,11 @@ export default async function DeviceGuidePage({ params }) {
           <div className="uk-underline !mx-0"></div>
           <p className="text-slate-600 mt-3 text-base leading-relaxed">
             Follow this clear step-by-step tutorial to configure your{' '}
-            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               Televo IPTV subscription
             </Link>{' '}
             on your {guide.device}. Our setup works with leading applications including {guide.recommendedApp}, supported by our{' '}
-            <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               universal installation hub
             </Link>
             .

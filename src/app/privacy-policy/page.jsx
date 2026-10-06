@@ -49,15 +49,15 @@ export default function PrivacyPolicyPage() {
               <li>Contact details such as email address and WhatsApp telephone number for credential delivery.</li>
               <li>
                 Streaming hardware device preference (e.g.{' '}
-                <Link href="/guide-installation/firestick" className="text-blue-600 font-semibold hover:underline">
+                <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   Firestick
                 </Link>
                 ,{' '}
-                <Link href="/guide-installation/samsung-smart-tv" className="text-blue-600 font-semibold hover:underline">
+                <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   Smart TV
                 </Link>
                 , Android) to send targeted{' '}
-                <Link href="/guide-installation" className="text-blue-600 font-semibold hover:underline">
+                <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   setup guides
                 </Link>
                 .

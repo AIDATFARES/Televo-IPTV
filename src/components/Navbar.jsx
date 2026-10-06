@@ -145,7 +145,7 @@ export default function Navbar() {
                 className="btn-cta w-full justify-center"
               >
                 <Zap className="w-4 h-4 fill-white" />
-                <span>View IPTV Plans (GBP)</span>
+                <span>Get Televo IPTV</span>
               </Link>
 
               <a

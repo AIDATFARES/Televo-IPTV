@@ -46,11 +46,11 @@ export default function ContactPage() {
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-3 text-base">
             Have questions about a{' '}
-            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               Televo IPTV subscription
             </Link>
             , need quick assistance configuring your streaming device via our{' '}
-            <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               setup guides
             </Link>
             , or want to verify connection details? Our UK customer care team is here to assist 7 days a week.
@@ -118,7 +118,7 @@ export default function ContactPage() {
                   <h3 className="text-sm font-bold text-[#0A2E66]">Customer Guarantee</h3>
                   <p className="text-xs text-slate-600">
                     All new subscriptions include a{' '}
-                    <Link href="/refund-policy" className="text-blue-600 font-semibold hover:underline">
+                    <Link href="/refund-policy" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                       7-day money-back guarantee
                     </Link>{' '}
                     for peace of mind.
@@ -138,7 +138,7 @@ export default function ContactPage() {
                 <h2 className="text-2xl font-bold text-[#0A2E66]">Message Received</h2>
                 <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
                   Thank you for reaching out to <strong>Televo IPTV</strong>. A member of our UK support team will respond to your email address ({formData.email}) shortly. In the meantime, explore our{' '}
-                  <Link href="/faq" className="text-blue-600 font-semibold hover:underline">
+                  <Link href="/faq" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                     frequently asked questions
                   </Link>
                   .
@@ -149,7 +149,7 @@ export default function ContactPage() {
                       setSubmitted(false);
                       setFormData({ name: '', email: '', device: 'Amazon Fire Stick', message: '' });
                     }}
-                    className="text-xs text-blue-600 hover:underline font-bold"
+                    className="text-xs text-[#0854c4] underline underline-offset-2 hover:text-[#0A2E66] font-bold"
                   >
                     Send another inquiry
                   </button>
@@ -160,7 +160,7 @@ export default function ContactPage() {
                 <h2 className="text-xl font-bold text-[#0A2E66] mb-2">Send Us a Direct Message</h2>
                 <p className="text-xs text-slate-500 mb-6">
                   Fill in your details below or browse our{' '}
-                  <Link href="/guide-installation" className="text-blue-600 font-semibold hover:underline">
+                  <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                     device setup guides
                   </Link>{' '}
                   for instant troubleshooting steps.

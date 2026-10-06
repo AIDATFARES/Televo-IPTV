@@ -116,7 +116,7 @@ export default function PricingSection({ title, subtitle }) {
           {subtitle || (
             <>
               Prepaid, transparent IPTV pricing in British Pounds (GBP). Enjoy 4K Ultra HD streams, 7-day EPG guides, and contract-free streaming across all your devices, backed by our{' '}
-              <Link href="/refund-policy" className="text-blue-600 font-semibold hover:underline">
+              <Link href="/refund-policy" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                 7-day money-back guarantee
               </Link>
               .
@@ -188,11 +188,11 @@ export default function PricingSection({ title, subtitle }) {
             {deviceCount === 1 ? (
               <span>
                 Standard individual package for <strong>1 primary device</strong> (
-                <Link href="/guide-installation/samsung-smart-tv" className="text-blue-600 font-semibold hover:underline">
+                <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   Smart TV
                 </Link>
                 ,{' '}
-                <Link href="/guide-installation/firestick" className="text-blue-600 font-semibold hover:underline">
+                <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   Fire Stick
                 </Link>
                 , Mobile, or PC).
@@ -200,7 +200,7 @@ export default function PricingSection({ title, subtitle }) {
             ) : (
               <span>
                 Multi-Screen household package: stream simultaneously across <strong>{deviceCount} different screens</strong> in separate rooms with independent channels, fully supported by our{' '}
-                <Link href="/guide-installation" className="text-blue-600 font-semibold hover:underline">
+                <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   device setup guides
                 </Link>
                 .

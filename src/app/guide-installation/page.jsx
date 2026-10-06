@@ -41,19 +41,19 @@ export default function InstallationHubPage() {
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
             Set up your{' '}
-            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               Televo IPTV subscription
             </Link>{' '}
             in under 5 minutes. Browse our step-by-step UK installation tutorials for{' '}
-            <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               Amazon Fire Stick
             </Link>
             ,{' '}
-            <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               Samsung Smart TV
             </Link>
             ,{' '}
-            <Link href="/guide-installation/lg-smart-tv" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/guide-installation/lg-smart-tv" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               LG webOS
             </Link>
             , Android TV, Apple TV, iOS, and PC with instant M3U and Xtream Codes API integration.

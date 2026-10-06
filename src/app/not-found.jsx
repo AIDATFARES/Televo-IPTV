@@ -18,15 +18,15 @@ export default function NotFound() {
         <div className="uk-underline"></div>
         <p className="text-slate-600 text-sm leading-relaxed">
           The streaming guide, channel directory, or resource you are looking for has been moved or is no longer available. Explore our{' '}
-          <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             IPTV subscription plans
           </Link>
           , check our{' '}
-          <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             installation guides
           </Link>
           , or return to the{' '}
-          <Link href="/" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             homepage
           </Link>{' '}
           to continue.

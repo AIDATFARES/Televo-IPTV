@@ -29,7 +29,7 @@ export default function TermsPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">1. Agreement to Terms</h2>
             <p>
               By accessing the website <strong>televoiptv.co.uk</strong> or purchasing a digital subscription from <strong>Televo IPTV</strong> on our{' '}
-              <Link href="/subscription" className="text-blue-600 font-semibold underline">
+              <Link href="/subscription" className="text-[#0854c4] font-semibold underline">
                 subscription plans page
               </Link>
               , you agree to be bound by these Terms of Service. If you disagree with any part of these terms, please refrain from using our service.
@@ -40,7 +40,7 @@ export default function TermsPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">2. Digital Subscription Delivery</h2>
             <p>
               Televo IPTV provides digital streaming access credentials (Server URL, Xtream Codes credentials, and M3U playlists). Connection details are delivered electronically via WhatsApp or email upon successful payment, and configuration steps are detailed in our{' '}
-              <Link href="/guide-installation" className="text-blue-600 font-semibold underline">
+              <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline">
                 installation guides
               </Link>
               .
@@ -51,7 +51,7 @@ export default function TermsPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">3. Permitted Device Connections</h2>
             <p>
               Standard subscription packages permit 1 active concurrent connection. Multi-screen family subscriptions permit the exact number of concurrent streams specified at purchase (2, 3, or 4 screens), detailed on our{' '}
-              <Link href="/pricing" className="text-blue-600 font-semibold underline">
+              <Link href="/pricing" className="text-[#0854c4] font-semibold underline">
                 pricing comparison page
               </Link>
               . Sharing credentials beyond the permitted device allowance may result in automated stream restriction.
@@ -62,7 +62,7 @@ export default function TermsPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">4. Technical Requirements</h2>
             <p>
               Subscribers are responsible for ensuring they possess compatible streaming hardware and an internet connection with adequate download bandwidth (minimum 15-25 Mbps recommended for 4K Ultra HD playback). Customers are protected under our{' '}
-              <Link href="/refund-policy" className="text-blue-600 font-semibold underline">
+              <Link href="/refund-policy" className="text-[#0854c4] font-semibold underline">
                 7-day refund policy
               </Link>
               .
@@ -73,10 +73,10 @@ export default function TermsPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">5. Governing Law</h2>
             <p>
               These terms are governed by the laws applicable in the United Kingdom. Inquiries regarding these terms can be directed via our{' '}
-              <Link href="/contact" className="text-blue-600 underline font-semibold">
+              <Link href="/contact" className="text-[#0854c4] underline font-semibold">
                 contact support page
               </Link>{' '}
-              or by emailing <a href={`mailto:${SITE_CONFIG.supportEmail}`} className="text-blue-600 underline font-semibold">{SITE_CONFIG.supportEmail}</a>.
+              or by emailing <a href={`mailto:${SITE_CONFIG.supportEmail}`} className="text-[#0854c4] underline font-semibold">{SITE_CONFIG.supportEmail}</a>.
             </p>
           </section>
         </div>

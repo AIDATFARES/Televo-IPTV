@@ -62,11 +62,11 @@ export default function FAQPage() {
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-3 text-base">
             Find authoritative answers to all your questions about{' '}
-            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               Televo IPTV subscriptions
             </Link>
             ,{' '}
-            <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               supported streaming applications
             </Link>
             , British broadband optimization, and rapid 5–15 minute activation.
@@ -114,7 +114,7 @@ export default function FAQPage() {
                   setSearchQuery('');
                   setActiveCategory('All');
                 }}
-                className="mt-3 text-xs font-bold text-blue-600 hover:underline"
+                className="mt-3 text-xs font-bold text-[#0854c4] underline underline-offset-2 hover:text-[#0A2E66]"
               >
                 Reset search filters
               </button>
@@ -122,7 +122,7 @@ export default function FAQPage() {
           ) : (
             filteredCategories.map((group, groupIndex) => (
               <div key={group.category} className="space-y-3">
-                <h2 className="font-bold text-blue-600 tracking-wide uppercase text-xs mb-2">
+                <h2 className="font-bold text-[#0854c4] tracking-wide uppercase text-xs mb-2">
                   {group.category}
                 </h2>
                 {group.items.map((item, itemIndex) => {

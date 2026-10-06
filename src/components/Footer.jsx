@@ -17,11 +17,11 @@ export default function Footer() {
             </div>
             <p className="aii-about-text">
               <strong>Televo IPTV</strong> is the UK’s premier IPTV streaming provider, delivering buffer-free 4K live sports, 50,000+ international television channels, and 200,000+ on-demand movies through our{' '}
-              <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+              <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                 IPTV subscription plans
               </Link>{' '}
               with instant digital activation and step-by-step{' '}
-              <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+              <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                 device setup guides
               </Link>
               .
@@ -107,7 +107,7 @@ export default function Footer() {
               </div>
               <p className="text-[11px] text-slate-500 m-0 leading-tight">
                 Accepts major UK Debit &amp; Credit Cards, PayPal, and Bank Transfer with instant order verification, covered by our{' '}
-                <Link href="/refund-policy" className="text-blue-600 font-semibold hover:underline">
+                <Link href="/refund-policy" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   7-day refund guarantee
                 </Link>
                 .

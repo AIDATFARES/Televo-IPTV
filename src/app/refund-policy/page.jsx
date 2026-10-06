@@ -29,7 +29,7 @@ export default function RefundPolicyPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">1. 7-Day Money-Back Guarantee</h2>
             <p>
               We want all UK customers to experience <strong>Televo IPTV</strong> with absolute confidence. If you encounter persistent technical incompatibility, unresolvable buffering, or service issues during your first 7 days following activation on our{' '}
-              <Link href="/subscription" className="text-blue-600 font-semibold underline">
+              <Link href="/subscription" className="text-[#0854c4] font-semibold underline">
                 subscription plans
               </Link>
               , you are entitled to request a full refund.
@@ -40,7 +40,7 @@ export default function RefundPolicyPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">2. Troubleshooting First Step</h2>
             <p>
               Before issuing a refund, our UK technical support team will gladly offer assistance via WhatsApp to ensure your app settings (such as hardware decoder selection or cache clearance) are properly configured according to our{' '}
-              <Link href="/guide-installation" className="text-blue-600 font-semibold underline">
+              <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline">
                 installation guides
               </Link>
               , as most playback hiccups can be resolved in under 3 minutes.
@@ -51,7 +51,7 @@ export default function RefundPolicyPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">3. How to Request a Refund</h2>
             <p>
               To initiate a refund, simply send a message to our <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-bold underline">WhatsApp Support Team</a> or reach out through our{' '}
-              <Link href="/contact" className="text-blue-600 underline font-semibold">
+              <Link href="/contact" className="text-[#0854c4] underline font-semibold">
                 contact page
               </Link>{' '}
               with your account username or order confirmation.
@@ -62,7 +62,7 @@ export default function RefundPolicyPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">4. Processing Timelines</h2>
             <p>
               Refund requests are acknowledged within 24 hours. Once authorized, refunds are processed back to your original payment method (bank card or PayPal) within 2 to 5 business days, depending on your UK banking provider, with no ongoing commitments as outlined in our{' '}
-              <Link href="/terms" className="text-blue-600 underline font-semibold">
+              <Link href="/terms" className="text-[#0854c4] underline font-semibold">
                 terms of service
               </Link>
               .

@@ -331,7 +331,7 @@ export default function HomePage() {
       a: (
         <>
           Televo IPTV is a dedicated British television streaming service that delivers live TV channels, Premier League football, international entertainment, and on-demand movies directly over your home broadband connection. It requires no satellite dish or engineer appointment—simply install a compatible player app on your Smart TV, Fire Stick, or mobile with our{' '}
-          <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             step-by-step setup guides
           </Link>
           , enter your Televo login credentials, and start streaming immediately.
@@ -343,15 +343,15 @@ export default function HomePage() {
       a: (
         <>
           Televo IPTV supports all major streaming hardware used in the UK, including{' '}
-          <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             Amazon Fire TV Stick
           </Link>
           ,{' '}
-          <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             Samsung Smart TV
           </Link>
           ,{' '}
-          <Link href="/guide-installation/lg-smart-tv" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/guide-installation/lg-smart-tv" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             LG Smart TV
           </Link>
           , Android TV, Apple TV, iPhone, iPad, and PCs. Popular compatible apps include IPTV Smarters Pro, TiviMate, IBO Player, and XCIPTV.
@@ -363,7 +363,7 @@ export default function HomePage() {
       a: (
         <>
           Your Televo IPTV digital connection details (including Server URL, Username, Password, and M3U playlist link) are generated and delivered via WhatsApp and email typically within 5 to 15 minutes of payment confirmation on our{' '}
-          <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             IPTV subscription page
           </Link>
           .
@@ -375,7 +375,7 @@ export default function HomePage() {
       a: (
         <>
           Yes. Our high-bandwidth streaming servers are routed through European edge nodes optimized for UK ISPs such as BT, Virgin Media, Sky, TalkTalk, EE, Vodafone, and Plusnet to ensure smooth playback, as explained on our{' '}
-          <Link href="/about" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/about" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             about us page
           </Link>
           .
@@ -387,7 +387,7 @@ export default function HomePage() {
       a: (
         <>
           Our standard subscription plans include 1 active connection. For households requiring simultaneous viewing on multiple screens in different rooms, we provide dedicated{' '}
-          <Link href="/pricing" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/pricing" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             Multi-Screen Family Plans
           </Link>{' '}
           (supporting 2, 3, or 4 simultaneous devices).
@@ -399,7 +399,7 @@ export default function HomePage() {
       a: (
         <>
           We want every UK viewer to try Televo IPTV with absolute confidence. If our service does not meet your technical expectations within your first 7 days of activation, simply review our{' '}
-          <Link href="/refund-policy" className="text-[#0854c4] font-semibold hover:underline">
+          <Link href="/refund-policy" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
             7-day refund policy
           </Link>{' '}
           and message our UK customer support team on WhatsApp for a prompt refund.
@@ -484,11 +484,11 @@ export default function HomePage() {
           <div className="uk-underline"></div>
           <p className="seo">
             Preview live app interfaces from the Televo IPTV network across our{' '}
-            <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               supported streaming apps
             </Link>
             . Explore over 50,000 live channels, cinema-grade 4K VOD blockbusters, complete box sets, and ultra-smooth 60 FPS sports streams with our{' '}
-            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               high-speed IPTV packages
             </Link>{' '}
             designed for zero buffering.
@@ -637,7 +637,7 @@ export default function HomePage() {
           <h2 className="h2">How to Start Streaming with Televo IPTV in 3 Simple Steps</h2>
           <div className="uk-underline"></div>
           <p className="sub">
-            Set up your <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">Televo IPTV subscription</Link> in minutes on any television, media streamer, or mobile device through our <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">step-by-step setup tutorials</Link>—no engineer visits, dishes, or contracts required.
+            Set up your <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">Televo IPTV subscription</Link> in minutes on any television, media streamer, or mobile device through our <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">step-by-step setup tutorials</Link>—no engineer visits, dishes, or contracts required.
           </p>
 
           <div className="aii-steps">
@@ -645,7 +645,7 @@ export default function HomePage() {
               <div className="aii-num">1</div>
               <h3 className="text-lg font-black text-[#0A2E66] mb-2">Select Your IPTV Plan</h3>
               <p>
-                Choose the <Link href="/pricing" className="text-[#0854c4] font-semibold hover:underline">subscription length and screen package</Link> (1, 3, 6, or 12 months) that matches your household. Order securely in GBP with no recurring direct debits or contract lock-ins.
+                Choose the <Link href="/pricing" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">subscription length and screen package</Link> (1, 3, 6, or 12 months) that matches your household. Order securely in GBP with no recurring direct debits or contract lock-ins.
               </p>
             </div>
 
@@ -653,7 +653,7 @@ export default function HomePage() {
               <div className="aii-num">2</div>
               <h3 className="text-lg font-black text-[#0A2E66] mb-2">Receive Instant Login Details</h3>
               <p>
-                Our team generates your unique Televo IPTV credentials—including <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">M3U playlists and Xtream Codes API details</Link>—delivered straight to WhatsApp or email in 5 to 15 minutes.
+                Our team generates your unique Televo IPTV credentials—including <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">M3U playlists and Xtream Codes API details</Link>—delivered straight to WhatsApp or email in 5 to 15 minutes.
               </p>
             </div>
 
@@ -661,7 +661,7 @@ export default function HomePage() {
               <div className="aii-num">3</div>
               <h3 className="text-lg font-black text-[#0A2E66] mb-2">Connect &amp; Stream in 4K Ultra HD</h3>
               <p>
-                Launch your favourite player on your <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold hover:underline">Fire Stick</Link>, <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold hover:underline">Smart TV</Link>, smartphone, or PC, input your credentials, and start enjoying buffer-free live sports and entertainment.
+                Launch your favourite player on your <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">Fire Stick</Link>, <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">Smart TV</Link>, smartphone, or PC, input your credentials, and start enjoying buffer-free live sports and entertainment.
               </p>
             </div>
           </div>
@@ -677,7 +677,7 @@ export default function HomePage() {
           <h2 className="h2">Why UK Viewers Choose Televo IPTV for Everyday Streaming</h2>
           <div className="uk-underline"></div>
           <p className="sub">
-            Built specifically for UK households seeking dependable <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">4K IPTV entertainment</Link> without satellite dishes, long-term contracts, or overpriced cable packages.
+            Built specifically for UK households seeking dependable <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">4K IPTV entertainment</Link> without satellite dishes, long-term contracts, or overpriced cable packages.
           </p>
 
           <div className="trust">
@@ -692,7 +692,7 @@ export default function HomePage() {
                 Crystal-Clear 4K UHD &amp; 60 FPS Sports Streams
               </h3>
               <p>
-                Watch matchday football, championship boxing, and <Link href="#vod-rails" className="text-[#0854c4] font-semibold hover:underline">cinema releases</Link> in fluid 60 FPS with brilliant HDR clarity and zero screen tearing.
+                Watch matchday football, championship boxing, and <Link href="#vod-rails" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">cinema releases</Link> in fluid 60 FPS with brilliant HDR clarity and zero screen tearing.
               </p>
             </div>
 
@@ -702,7 +702,7 @@ export default function HomePage() {
                 Anti-Freeze Network &amp; 99.9% Uptime
               </h3>
               <p>
-                Our multi-cluster European server network with intelligent load balancing prevents buffering, detailed further in our <Link href="/blog/how-to-fix-iptv-buffering" className="text-[#0854c4] font-semibold hover:underline">anti-buffering guide</Link>.
+                Our multi-cluster European server network with intelligent load balancing prevents buffering, detailed further in our <Link href="/blog/how-to-fix-iptv-buffering" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">anti-buffering guide</Link>.
               </p>
             </div>
 
@@ -712,7 +712,7 @@ export default function HomePage() {
                 Flexible M3U &amp; Xtream Codes API
               </h3>
               <p>
-                Standardized login credentials delivered within minutes. Connect easily with any certified player application using our <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">installation instructions</Link>.
+                Standardized login credentials delivered within minutes. Connect easily with any certified player application using our <Link href="/guide-installation" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">installation instructions</Link>.
               </p>
             </div>
 
@@ -722,7 +722,7 @@ export default function HomePage() {
                 Interactive 7-Day UK TV EPG Guide
               </h3>
               <p>
-                Stay ahead with real-time programme schedules across entertainment, news, and sports channels, supported by our comprehensive <Link href="/faq" className="text-[#0854c4] font-semibold hover:underline">EPG &amp; catch-up FAQ</Link>.
+                Stay ahead with real-time programme schedules across entertainment, news, and sports channels, supported by our comprehensive <Link href="/faq" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">EPG &amp; catch-up FAQ</Link>.
               </p>
             </div>
 
@@ -732,7 +732,7 @@ export default function HomePage() {
                 Universal Multi-Device Freedom
               </h3>
               <p>
-                Stream seamlessly across <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold hover:underline">Fire Stick</Link>, <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold hover:underline">Samsung TV</Link>, <Link href="/guide-installation/lg-smart-tv" className="text-[#0854c4] font-semibold hover:underline">LG webOS</Link>, Apple TV, Android, and PC.
+                Stream seamlessly across <Link href="/guide-installation/firestick" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">Fire Stick</Link>, <Link href="/guide-installation/samsung-smart-tv" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">Samsung TV</Link>, <Link href="/guide-installation/lg-smart-tv" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">LG webOS</Link>, Apple TV, Android, and PC.
               </p>
             </div>
 
@@ -742,7 +742,7 @@ export default function HomePage() {
                 7-Day Money-Back Satisfaction Guarantee
               </h3>
               <p>
-                Experience Televo IPTV risk-free under our transparent <Link href="/refund-policy" className="text-[#0854c4] font-semibold hover:underline">7-day refund policy</Link>. If technical specialists cannot resolve an issue, receive a prompt refund.
+                Experience Televo IPTV risk-free under our transparent <Link href="/refund-policy" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">7-day refund policy</Link>. If technical specialists cannot resolve an issue, receive a prompt refund.
               </p>
             </div>
           </div>
@@ -759,7 +759,7 @@ export default function HomePage() {
           <h2>How the Televo IPTV Streaming Infrastructure Works</h2>
           <div className="uk-underline"></div>
           <p className="sub">
-            Modern cloud architecture and dedicated UK server routing deliver high-fidelity television streams straight to your internet-connected devices, detailed on our <Link href="/about" className="text-[#0854c4] font-semibold hover:underline">about us page</Link>.
+            Modern cloud architecture and dedicated UK server routing deliver high-fidelity television streams straight to your internet-connected devices, detailed on our <Link href="/about" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">about us page</Link>.
           </p>
 
           <div className="aii-grid">
@@ -767,7 +767,7 @@ export default function HomePage() {
               <div className="aii-num">1</div>
               <h3>High-Bandwidth Cloud Distribution</h3>
               <p>
-                Streams are distributed through enterprise European edge clusters engineered specifically for British broadband networks (BT, Virgin Media, Sky, and EE) to eliminate latency and bandwidth throttling, as described in our <Link href="/about" className="text-[#0854c4] font-semibold hover:underline">infrastructure summary</Link>.
+                Streams are distributed through enterprise European edge clusters engineered specifically for British broadband networks (BT, Virgin Media, Sky, and EE) to eliminate latency and bandwidth throttling, as described in our <Link href="/about" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">infrastructure summary</Link>.
               </p>
               <ul>
                 <li>Direct fiber backbone connectivity</li>
@@ -780,7 +780,7 @@ export default function HomePage() {
               <div className="aii-num">2</div>
               <h3>Universal Xtream Codes &amp; M3U Architecture</h3>
               <p>
-                Televo IPTV supports industry-standard streaming protocols, granting you total freedom to connect your favourite player app without proprietary hardware restrictions via our <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">universal setup guides</Link>.
+                Televo IPTV supports industry-standard streaming protocols, granting you total freedom to connect your favourite player app without proprietary hardware restrictions via our <Link href="/guide-installation" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">universal setup guides</Link>.
               </p>
               <ul>
                 <li>Compatible with IPTV Smarters &amp; TiviMate</li>
@@ -793,7 +793,7 @@ export default function HomePage() {
               <div className="aii-num">3</div>
               <h3>Dedicated UK Customer &amp; Technical Support</h3>
               <p>
-                From initial player installation to fine-tuning stream buffer settings, our friendly UK support team guides you personally via WhatsApp 7 days a week through our <Link href="/contact" className="text-[#0854c4] font-semibold hover:underline">contact &amp; customer care desk</Link>.
+                From initial player installation to fine-tuning stream buffer settings, our friendly UK support team guides you personally via WhatsApp 7 days a week through our <Link href="/contact" className="text-sky-300 font-semibold underline underline-offset-2 hover:text-white">contact &amp; customer care desk</Link>.
               </p>
               <ul>
                 <li>Instant response times</li>
@@ -805,7 +805,7 @@ export default function HomePage() {
 
           <div className="aii-cta">
             <a href="#aii-pricing" className="aii-btn price">
-              View IPTV Plans (GBP)
+              Compare Pricing Plans (GBP)
             </a>
             <Link href="/guide-installation" className="aii-btn faq">
               Explore Setup Guides
@@ -879,7 +879,7 @@ export default function HomePage() {
               <h3>Ultra-Low Latency &amp; High Speed</h3>
               <p>
                 Optimized British data routing delivers smooth live football with zero buffering, available on all our{' '}
-                <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
+                <Link href="/subscription" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   annual and monthly subscriptions
                 </Link>
                 .
@@ -890,7 +890,7 @@ export default function HomePage() {
               <h3>Clear, Fixed Pricing in British Pounds</h3>
               <p>
                 Prepaid subscriptions in GBP with no direct debits, hidden fees, or contract lock-ins, detailed on our{' '}
-                <Link href="/pricing" className="text-[#0854c4] font-semibold hover:underline">
+                <Link href="/pricing" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   pricing page
                 </Link>
                 .
@@ -901,7 +901,7 @@ export default function HomePage() {
               <h3>Dedicated British Customer Care</h3>
               <p>
                 Real human support specialists available 7 days a week on WhatsApp to assist with setup, apps, and inquiries through our{' '}
-                <Link href="/contact" className="text-[#0854c4] font-semibold hover:underline">
+                <Link href="/contact" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   customer care team
                 </Link>
                 .
@@ -918,7 +918,7 @@ export default function HomePage() {
           <div className="uk-underline"></div>
           <p>
             Televo IPTV integrates effortlessly with all top-tier IPTV player apps. Use your Xtream Codes credentials or M3U playlist URL on your television, tablet, or phone with our{' '}
-            <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+            <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
               device installation guides
             </Link>
             .
@@ -995,11 +995,11 @@ export default function HomePage() {
             <div className="uk-underline"></div>
             <p>
               Everything you need to know about{' '}
-              <Link href="/pricing" className="text-[#0854c4] font-semibold hover:underline">
+              <Link href="/pricing" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                 Televo IPTV plans
               </Link>
               ,{' '}
-              <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
+              <Link href="/guide-installation" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                 compatible streaming apps
               </Link>
               , broadband stability, and quick activation.
