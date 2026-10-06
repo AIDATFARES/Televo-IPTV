@@ -1891,8 +1891,6 @@ body {
   display: flex;
   gap: 18px;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
   padding: 8px 4px 20px;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;

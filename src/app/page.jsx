@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import {
   Zap,
@@ -26,10 +26,25 @@ import PricingSection from '../components/PricingSection';
 export default function HomePage() {
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
   const [activePreview, setActivePreview] = useState(null);
+  const [isPaused, setIsPaused] = useState(false);
   const stripRef = useRef(null);
+  const pauseTimeoutRef = useRef(null);
+
+  const pauseAutoScroll = (duration = 3500) => {
+    setIsPaused(true);
+    if (pauseTimeoutRef.current) clearTimeout(pauseTimeoutRef.current);
+    pauseTimeoutRef.current = setTimeout(() => {
+      setIsPaused(false);
+    }, duration);
+  };
 
   const scrollStrip = (direction) => {
     if (stripRef.current) {
+      pauseAutoScroll(4000);
+      const halfWidth = stripRef.current.scrollWidth / 2;
+      if (direction === 'left' && stripRef.current.scrollLeft <= 10 && halfWidth > 0) {
+        stripRef.current.scrollLeft += halfWidth;
+      }
       const scrollAmount = Math.min(stripRef.current.clientWidth * 0.8, 680);
       stripRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
@@ -37,6 +52,42 @@ export default function HomePage() {
       });
     }
   };
+
+  // Continuous right-to-left auto-scrolling
+  useEffect(() => {
+    const container = stripRef.current;
+    if (!container) return;
+
+    if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    let animationFrameId;
+    let lastTime = performance.now();
+    const speed = 40; // 40 pixels per second (smooth, comfortable reading speed)
+
+    const step = (now) => {
+      const delta = (now - lastTime) / 1000;
+      lastTime = now;
+
+      if (!isPaused && !activePreview && container) {
+        const halfWidth = container.scrollWidth / 2;
+        if (halfWidth > 0) {
+          if (container.scrollLeft >= halfWidth) {
+            container.scrollLeft -= halfWidth;
+          }
+          container.scrollLeft += speed * delta;
+        }
+      }
+      animationFrameId = requestAnimationFrame(step);
+    };
+
+    animationFrameId = requestAnimationFrame(step);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, [isPaused, activePreview]);
 
   // 13 Live TV & VOD WebP Previews
   const vodPreviews = [
@@ -145,6 +196,9 @@ export default function HomePage() {
       alt: 'UFC, Boxing PPV and Worldwide Sports Stadium Feeds',
     },
   ];
+
+  // Duplicated for seamless infinite right-to-left auto-scroll
+  const allVodPreviews = [...vodPreviews, ...vodPreviews];
 
   // 8 Compatible Apps matching the 8 cards in #logosNL
   const appsList = [
@@ -487,11 +541,18 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Horizontal Image Strip */}
-          <div className="vod-strip-container" ref={stripRef}>
-            {vodPreviews.map((item) => (
+          {/* Horizontal Image Strip with Right-to-Left Auto-Scroll */}
+          <div
+            className="vod-strip-container"
+            ref={stripRef}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+            onTouchStart={() => setIsPaused(true)}
+            onTouchEnd={() => pauseAutoScroll(2500)}
+          >
+            {allVodPreviews.map((item, index) => (
               <div
-                key={item.id}
+                key={`${item.id}-${index}`}
                 className="vod-strip-card"
                 onClick={() => setActivePreview(item)}
                 role="button"
