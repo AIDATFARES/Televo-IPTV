@@ -8,19 +8,19 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/subscription/</loc>
+    <loc>https://www.televoiptv.co.uk/subscription</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/pricing/</loc>
+    <loc>https://www.televoiptv.co.uk/pricing</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -28,55 +28,55 @@
 
   <!-- Device Installation Guides -->
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/samsung-smart-tv/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/samsung-smart-tv</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/lg-smart-tv/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/lg-smart-tv</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/firestick/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/firestick</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/android-tv/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/android-tv</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/apple-tv/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/apple-tv</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/iphone/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/iphone</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/android/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/android</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/windows/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/windows</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/guide-installation/mac/</loc>
+    <loc>https://www.televoiptv.co.uk/guide-installation/mac</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -84,19 +84,19 @@
 
   <!-- Support & Informational Pages -->
   <url>
-    <loc>https://www.televoiptv.co.uk/faq/</loc>
+    <loc>https://www.televoiptv.co.uk/faq</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/about/</loc>
+    <loc>https://www.televoiptv.co.uk/about</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/contact/</loc>
+    <loc>https://www.televoiptv.co.uk/contact</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -104,37 +104,37 @@
 
   <!-- Blog Hub & Articles -->
   <url>
-    <loc>https://www.televoiptv.co.uk/blog/</loc>
+    <loc>https://www.televoiptv.co.uk/blog</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/blog/how-to-setup-iptv-on-firestick/</loc>
+    <loc>https://www.televoiptv.co.uk/blog/how-to-setup-iptv-on-firestick</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/blog/how-to-setup-iptv-on-samsung-smart-tv/</loc>
+    <loc>https://www.televoiptv.co.uk/blog/how-to-setup-iptv-on-samsung-smart-tv</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/blog/how-to-fix-iptv-buffering/</loc>
+    <loc>https://www.televoiptv.co.uk/blog/how-to-fix-iptv-buffering</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/blog/best-iptv-players-for-smart-tv/</loc>
+    <loc>https://www.televoiptv.co.uk/blog/best-iptv-players-for-smart-tv</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/blog/complete-uk-iptv-setup-guide/</loc>
+    <loc>https://www.televoiptv.co.uk/blog/complete-uk-iptv-setup-guide</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -142,19 +142,19 @@
 
   <!-- Legal Pages -->
   <url>
-    <loc>https://www.televoiptv.co.uk/privacy-policy/</loc>
+    <loc>https://www.televoiptv.co.uk/privacy-policy</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/terms/</loc>
+    <loc>https://www.televoiptv.co.uk/terms</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.televoiptv.co.uk/refund-policy/</loc>
+    <loc>https://www.televoiptv.co.uk/refund-policy</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

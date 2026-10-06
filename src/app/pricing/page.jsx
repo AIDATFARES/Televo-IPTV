@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import {
   ShieldCheck,
@@ -9,6 +7,15 @@ import {
 import Breadcrumbs from '../../components/Breadcrumbs';
 import PricingSection from '../../components/PricingSection';
 import { FAQ_DATA } from '../../data/config';
+
+export const metadata = {
+  title: 'Televo IPTV Pricing & Plans (GBP) | UK 4K IPTV Subscription',
+  description:
+    'Transparent UK IPTV subscription pricing in British Pounds (GBP). 1, 3, 6, and 12-month packages with instant digital activation and 7-day money-back guarantee.',
+  alternates: {
+    canonical: '/pricing',
+  },
+};
 
 export default function PricingPage() {
   const breadcrumbsList = [

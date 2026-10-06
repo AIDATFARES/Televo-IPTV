@@ -16,7 +16,7 @@ export const metadata = {
   description:
     'Learn more about Televo IPTV. Discover our commitment to stable high-definition streaming, transparent GBP pricing, and friendly UK customer service.',
   alternates: {
-    canonical: '/about/',
+    canonical: '/about',
   },
 };
 

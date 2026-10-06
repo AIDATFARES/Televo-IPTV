@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Refund Policy | 7-Day Guarantee | Televo IPTV UK',
   description: 'Televo IPTV UK 7-day money-back guarantee policy. Clear terms and rapid refund process for British customers.',
   alternates: {
-    canonical: '/refund-policy/',
+    canonical: '/refund-policy',
   },
 };
 

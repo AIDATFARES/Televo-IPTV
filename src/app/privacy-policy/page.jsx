@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Privacy Policy | Televo IPTV UK',
   description: 'Televo IPTV UK privacy policy. Learn how we handle digital credentials, communications, and customer data with 256-bit SSL encryption.',
   alternates: {
-    canonical: '/privacy-policy/',
+    canonical: '/privacy-policy',
   },
 };
 

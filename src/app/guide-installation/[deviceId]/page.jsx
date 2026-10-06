@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
     title: guide.metaTitle,
     description: guide.metaDescription,
     alternates: {
-      canonical: `/guide-installation/${deviceId}/`,
+      canonical: `/guide-installation/${deviceId}`,
     },
   };
 }

@@ -15,7 +15,7 @@ export const metadata = {
   description:
     'Complete setup guides for Televo IPTV in the UK. Step-by-step installation tutorials for Samsung Smart TV, LG TV, Amazon Fire Stick, Android TV, Apple TV, iOS, and PC.',
   alternates: {
-    canonical: '/guide-installation/',
+    canonical: '/guide-installation',
   },
 };
 

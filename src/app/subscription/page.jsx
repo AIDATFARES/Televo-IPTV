@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import {
   ShieldCheck,
@@ -9,6 +7,15 @@ import {
 import Breadcrumbs from '../../components/Breadcrumbs';
 import PricingSection from '../../components/PricingSection';
 import { FAQ_DATA } from '../../data/config';
+
+export const metadata = {
+  title: 'Televo IPTV UK Subscription | Premium 4K Streaming Plans',
+  description:
+    'Select your Televo IPTV subscription duration in GBP. 50,000+ live UK channels, 200,000+ VOD box sets, 4K UHD sports, and rapid WhatsApp delivery.',
+  alternates: {
+    canonical: '/subscription',
+  },
+};
 
 export default function SubscriptionPage() {
   const breadcrumbsList = [

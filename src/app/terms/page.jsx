@@ -6,7 +6,7 @@ export const metadata = {
   title: 'Terms of Service | Televo IPTV UK',
   description: 'Terms of service and subscription terms for Televo IPTV in the United Kingdom.',
   alternates: {
-    canonical: '/terms/',
+    canonical: '/terms',
   },
 };
 
