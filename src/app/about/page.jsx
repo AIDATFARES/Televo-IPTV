@@ -78,7 +78,7 @@ export default function AboutPage() {
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">Technical Excellence &amp; UK Routing</h2>
             <p className="text-xs text-slate-600 leading-relaxed">
               We continually optimize our server clusters to interface seamlessly with primary UK broadband networks—including BT, Virgin Media, Sky, TalkTalk, and EE. This dedicated routing drastically reduces latency, detailed further in our{' '}
-              <Link href="/blog/how-to-fix-iptv-buffering-troubleshooting-guide" className="text-[#1D7AF2] font-semibold hover:underline">
+              <Link href="/blog/how-to-fix-iptv-buffering" className="text-[#1D7AF2] font-semibold hover:underline">
                 anti-buffering guide
               </Link>
               .

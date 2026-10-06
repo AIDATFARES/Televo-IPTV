@@ -147,7 +147,7 @@ export default async function DeviceGuidePage({ params }) {
           </h3>
           <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">
             For the most reliable 4K playback without buffering, connect your {guide.device} using a 5GHz Wi-Fi band or direct Ethernet cable. Double-check your server address and login credentials to avoid trailing spaces, or check our{' '}
-            <Link href="/blog/how-to-fix-iptv-buffering-troubleshooting-guide" className="text-amber-950 font-bold underline hover:text-black">
+            <Link href="/blog/how-to-fix-iptv-buffering" className="text-amber-950 font-bold underline hover:text-black">
               anti-buffering troubleshooting guide
             </Link>{' '}
             for additional performance optimizations.

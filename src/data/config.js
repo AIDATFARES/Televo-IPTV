@@ -1,3 +1,9 @@
+import { postFirestick } from './posts/firestick.js';
+import { postSamsung } from './posts/samsung.js';
+import { postBuffering } from './posts/buffering.js';
+import { postPlayers } from './posts/players.js';
+import { postSetup } from './posts/setup.js';
+
 export const SITE_CONFIG = {
   brandName: 'Televo IPTV',
   shortBrand: 'Televo',
@@ -740,182 +746,10 @@ export const FAQ_DATA = [
 ];
 
 export const BLOG_POSTS = [
-  {
-    slug: 'televo-iptv-firestick-setup-guide',
-    title: 'How to Set Up Televo IPTV on Amazon Fire Stick: Complete UK Guide',
-    metaTitle: 'Televo IPTV Fire Stick Setup Guide | UK Installation Tutorial',
-    metaDescription: 'Step-by-step tutorial explaining how to configure your Televo IPTV subscription on Amazon Fire Stick and Fire TV in the UK.',
-    category: 'Setup Guides',
-    date: '2026-03-24',
-    readTime: '6 min read',
-    excerpt: 'Amazon Fire TV Stick remains the most popular streaming device in the UK. Discover how to install Televo IPTV via Downloader and IPTV Smarters in less than 5 minutes.',
-    content: `
-      <h2>Why Amazon Fire Stick Is the Best Choice for Televo IPTV</h2>
-      <p>The Amazon Fire TV Stick range (including Fire Stick HD, Fire Stick 4K, 4K Max, and Fire TV Cube) is widely considered the ideal streaming companion for <strong><a href="/about" class="text-blue-600 underline font-semibold">Televo IPTV</a></strong> in the United Kingdom. Powered by Fire OS with support for high-efficiency video decoding, these compact devices deliver smooth, lag-free playback for live sports, movies, and TV series. Explore our <a href="/subscription" class="text-blue-600 underline font-semibold">IPTV subscription plans</a> to get started.</p>
-      
-      <h2>Step 1: Preparing Your Fire Stick for Installation</h2>
-      <p>Because IPTV players are specialised media utilities, we will use the official <strong>Downloader</strong> tool from the Amazon Appstore to retrieve the installation package, as outlined in our dedicated <a href="/guide-installation/firestick" class="text-blue-600 underline font-semibold">Fire Stick installation guide</a>:</p>
-      <ol>
-        <li>Navigate to <strong>Settings</strong> (the gear icon on your Fire Stick home screen).</li>
-        <li>Select <strong>My Fire TV</strong> &gt; <strong>Developer Options</strong>.</li>
-        <li>Enable <strong>Apps from Unknown Sources</strong>. (If Developer Options is hidden on newer Fire OS updates, go to <em>About</em> and click the device name 7 times rapidly).</li>
-      </ol>
-
-      <h2>Step 2: Installing the Downloader Tool</h2>
-      <p>Return to the main home screen, select the search icon, type <strong>Downloader</strong>, and install the verified utility published by AFTVnews. It is completely free and takes seconds to install.</p>
-
-      <h2>Step 3: Downloading Your Televo IPTV Player</h2>
-      <p>Launch Downloader and grant it storage permissions when prompted. In the URL bar, you can input the direct code or URL for <strong>IPTV Smarters Pro</strong> or <strong>TiviMate</strong>. Click Go to download the official APK, followed by <em>Install</em>.</p>
-
-      <h2>Step 4: Connecting Your Televo IPTV Account</h2>
-      <p>Open your newly installed player and choose <strong>Login with Xtream Codes API</strong>. Input your details:</p>
-      <ul>
-        <li><strong>Any Name:</strong> Televo IPTV</li>
-        <li><strong>Username:</strong> (Your assigned username)</li>
-        <li><strong>Password:</strong> (Your assigned password)</li>
-        <li><strong>Server URL:</strong> (The server address received upon ordering)</li>
-      </ul>
-      <p>Select <em>Add User</em>. Your entire channel bouquet, on-demand library, and 7-day Electronic Programme Guide (EPG) will download onto your Fire Stick.</p>
-
-      <h2>Pro Tips for the Best UK Streaming Experience</h2>
-      <p>To ensure flawless streaming during peak UK broadcast hours, connect your Fire Stick to the 5GHz frequency band of your home router. Additionally, within the player settings, set the video decoder to <strong>ExoPlayer</strong> for seamless buffer-free playback. For further troubleshooting steps, read our <a href="/blog/how-to-fix-iptv-buffering-troubleshooting-guide" class="text-blue-600 underline font-semibold">IPTV buffering guide</a>.</p>
-    `,
-  },
-  {
-    slug: 'how-to-set-up-televo-iptv-samsung-smart-tv',
-    title: 'How to Install and Set Up Televo IPTV on Samsung Smart TV',
-    metaTitle: 'Televo IPTV Samsung Smart TV Guide | UK Setup & Apps',
-    metaDescription: 'Learn how to easily set up your Televo IPTV subscription on Samsung Smart TVs with Tizen OS in the UK without external boxes.',
-    category: 'Smart TV Guides',
-    date: '2026-03-20',
-    readTime: '5 min read',
-    excerpt: 'Stream directly on your Samsung Smart TV using IBO Player or Smart IPTV. Follow our step-by-step UK tutorial for fast activation.',
-    content: `
-      <h2>Streaming Televo IPTV Directly on Samsung Smart TVs</h2>
-      <p>Many UK viewers prefer watching television directly through their Samsung Smart TV without adding cables or external dongles. Samsung's Tizen operating system supports several dependable IPTV players that seamlessly interface with your <strong><a href="/subscription" class="text-blue-600 underline font-semibold">Televo IPTV</a></strong> subscription. Learn more in our dedicated <a href="/guide-installation/samsung-smart-tv" class="text-blue-600 underline font-semibold">Samsung Smart TV guide</a>.</p>
-
-      <h2>Recommended Samsung TV Apps for 2026</h2>
-      <p>The top verified players on the Samsung Apps Store include:</p>
-      <ul>
-        <li><strong>IBO Player:</strong> Highly responsive, modern interface with fast channel switching and complete 4K HDR playback support.</li>
-        <li><strong>Smart IPTV:</strong> A classic lightweight player with an online playlist management portal.</li>
-        <li><strong>Smart STB:</strong> Emulates a dedicated set-top box interface on your Samsung panel.</li>
-      </ul>
-
-      <h2>Step-by-Step Samsung TV Setup Instructions</h2>
-      <ol>
-        <li>Press the <strong>Smart Hub</strong> / Home button on your Samsung remote and open <strong>Apps</strong>.</li>
-        <li>Search for <strong>IBO Player</strong> and download the application.</li>
-        <li>Open the application to view your unique <strong>Device MAC Address</strong> and <strong>Device Key</strong> displayed on screen.</li>
-        <li>On your smartphone or computer, visit the official IBO Player management website. Enter your MAC Address and Device Key, then paste the <strong>Televo IPTV M3U URL</strong> or Xtream API credentials provided upon subscribing.</li>
-        <li>Click Save, then return to your Samsung TV and select <strong>Reload</strong>.</li>
-      </ol>
-
-      <h2>Troubleshooting Tips for Samsung Smart TVs</h2>
-      <p>If you experience any momentary buffering on your television, ensure that your TV is connected via a wired Ethernet cable or high-speed 5GHz Wi-Fi. In the app settings, verify that the stream buffer size is set to standard (or 2-3 seconds) to cushion against temporary home network fluctuations, fully protected under our <a href="/refund-policy" class="text-blue-600 underline font-semibold">7-day satisfaction guarantee</a>.</p>
-    `,
-  },
-  {
-    slug: 'how-to-fix-iptv-buffering-troubleshooting-guide',
-    title: 'How to Fix IPTV Buffering: Practical Troubleshooting for UK Viewers',
-    metaTitle: 'How to Fix IPTV Buffering in the UK | Televo IPTV Troubleshooting',
-    metaDescription: 'Discover practical solutions to eliminate IPTV buffering, stuttering, and stream freezing across UK broadband providers.',
-    category: 'Troubleshooting',
-    date: '2026-03-15',
-    readTime: '7 min read',
-    excerpt: 'Tired of buffering during major live events? Learn the root causes of streaming hiccups and how to optimize your UK home network.',
-    content: `
-      <h2>Understanding Why IPTV Buffering Occurs</h2>
-      <p>Buffering happens when your streaming app consumes video data faster than your home network can download it. While many people immediately assume the streaming server is at fault, the reality is that over 85% of buffering issues in the UK stem from home Wi-Fi congestion, device hardware limitations, or broadband routing throttles, as outlined on our <a href="/about" class="text-blue-600 underline font-semibold">about page</a>.</p>
-
-      <h2>1. Switch From 2.4GHz to 5GHz Wi-Fi or Ethernet</h2>
-      <p>The standard 2.4GHz Wi-Fi band is heavily congested in UK homes by microwave ovens, baby monitors, and neighbouring routers. Connecting your Smart TV or Fire Stick to your router's <strong>5GHz band</strong> immediately provides greater throughput and lower latency. For stationary devices, a direct <strong>Ethernet cable</strong> is always the gold standard.</p>
-
-      <h2>2. Adjust the Video Player Engine in Your App</h2>
-      <p>Most IPTV applications (such as IPTV Smarters Pro and TiviMate) allow you to change the underlying video decoding engine. If you experience freezing on the default "Native" player, switch to <strong>ExoPlayer</strong> or <strong>VLC Engine</strong> in the application settings. ExoPlayer is specially tailored for modern streaming formats and handles micro-drops gracefully.</p>
-
-      <h2>3. Clear App Cache and Restart Devices</h2>
-      <p>Streaming devices like Fire Sticks and Smart TVs possess modest memory allowances. Over weeks of continuous viewing, residual cache accumulates. Go to your device application settings, select your IPTV player, and choose <strong>Clear Cache</strong>. Restart your device and your broadband router to refresh your DNS cache.</p>
-
-      <h2>4. Check Your UK Broadband Speed</h2>
-      <p>Run an independent speed test on your streaming device using Fast.com or Speedtest.net. For Full HD streaming, a consistent 15 Mbps is recommended. For 4K UHD content, ensure your device receives at least 25-30 Mbps.</p>
-
-      <h2>5. Reach Out to Televo IPTV Support</h2>
-      <p>If you have implemented these recommendations and still face issues, contact the <strong>Televo IPTV</strong> support team via WhatsApp on our <a href="/contact" class="text-blue-600 underline font-semibold">customer care desk</a>. Our team can test your connection routing and ensure your account is connected to our fastest UK edge node.</p>
-    `,
-  },
-  {
-    slug: 'best-iptv-players-smart-tv-uk',
-    title: 'Best IPTV Players for Smart TVs in the UK (2026 Comparison)',
-    metaTitle: 'Best IPTV Players for Smart TV UK (2026) | Televo IPTV',
-    metaDescription: 'Compare the best IPTV player applications for Smart TVs, Fire Sticks, and Android TV in the UK. Features, speed, and usability reviewed.',
-    category: 'App Reviews',
-    date: '2026-03-10',
-    readTime: '6 min read',
-    excerpt: 'Selecting the right player makes all the difference. Discover the top-rated apps for TiviMate, IPTV Smarters, IBO Player, and more.',
-    content: `
-      <h2>Why Your Choice of Player Matters</h2>
-      <p>Your IPTV subscription is only as pleasant to use as the software interface you interact with daily. The best IPTV players offer swift channel zapping, intuitive Electronic Programme Guides (EPG), customizable favourite lists, and robust playback stability. Explore all compatible platforms in our <a href="/guide-installation" class="text-blue-600 underline font-semibold">device installation centre</a>.</p>
-
-      <h2>1. TiviMate IPTV Player (Best Overall for Android & Fire TV)</h2>
-      <p><strong>TiviMate</strong> sets the benchmark for modern IPTV playback. Designed specifically for TV screens with remote controls, it looks and feels like a luxury premium cable set-top box. Features include multi-screen viewing, automatic EPG updates, catch-up scheduling, and external recording.</p>
-
-      <h2>2. IPTV Smarters Pro (Most Versatile Cross-Platform)</h2>
-      <p><strong>IPTV Smarters Pro</strong> remains the most widely deployed application because it runs smoothly across virtually every platform: Fire Stick, Android TV, Samsung Smart TV, LG webOS, iOS, and Windows PC. It natively supports Xtream Codes API credentials and multi-user profiles.</p>
-
-      <h2>3. IBO Player (Best for Samsung & LG Smart TVs)</h2>
-      <p>For UK viewers using integrated Smart TVs without external sticks, <strong>IBO Player</strong> provides rapid channel loading, clean category tabs, and rock-solid 4K video rendering on both Samsung Tizen and LG webOS systems.</p>
-
-      <h2>4. GSE Smart IPTV (Best for Apple iOS & Mac)</h2>
-      <p>For iPhone, iPad, and Apple TV users, <strong>GSE Smart IPTV</strong> delivers comprehensive playlist compatibility, AirPlay 2 support, and multiple audio track selection.</p>
-
-      <h2>Pairing Your Player with Televo IPTV</h2>
-      <p>All of these leading players are fully supported by <strong><a href="/subscription" class="text-blue-600 underline font-semibold">Televo IPTV</a></strong>. Upon subscribing, you receive full M3U URLs and Xtream Codes API login parameters so you can choose the exact application that matches your living room setup. View our complete range of packages on the <a href="/pricing" class="text-blue-600 underline font-semibold">pricing page</a>.</p>
-    `,
-  },
-  {
-    slug: 'complete-uk-iptv-setup-guide-televo',
-    title: 'The Complete Televo IPTV UK Setup Guide: From Subscription to Streaming',
-    metaTitle: 'Complete Televo IPTV UK Setup Guide | Quick Start Tutorial',
-    metaDescription: 'A beginner-friendly walkthrough explaining how to get started with Televo IPTV in the UK, from ordering to configuring your preferred device.',
-    category: 'Setup Guides',
-    date: '2026-03-05',
-    readTime: '8 min read',
-    excerpt: 'New to Televo IPTV? Here is our comprehensive beginner walkthrough covering everything from plan selection to device configuration.',
-    content: `
-      <h2>Welcome to Televo IPTV in the UK</h2>
-      <p>If you are switching to <strong><a href="/about" class="text-blue-600 underline font-semibold">Televo IPTV</a></strong> from traditional UK television providers, you will be pleased to discover how straightforward and flexible modern internet streaming has become. There are no engineer visits, no unsightly satellite dishes, and no punitive multi-year contracts. Explore our <a href="/subscription" class="text-blue-600 underline font-semibold">subscription tiers</a> to begin.</p>
-
-      <h2>Step 1: Selecting the Right Subscription Plan</h2>
-      <p>Begin by assessing your household's viewing requirements:</p>
-      <ul>
-        <li><strong>Single-Device Plans (1, 3, 6, or 12 Months):</strong> Best if you stream primarily in your main living room or on a single mobile device. Our 12-month tier delivers the greatest value in GBP, detailed on our <a href="/pricing" class="text-blue-600 underline font-semibold">pricing comparison</a>.</li>
-        <li><strong>Multi-Screen Family Plans (2, 3, or 4 Screens):</strong> Essential if multiple family members want to watch different channels simultaneously in separate rooms.</li>
-      </ul>
-
-      <h2>Step 2: Receiving Your Account Credentials</h2>
-      <p>After placing your order, your account is activated by our UK support team. You will receive an automated delivery message via WhatsApp and email containing:</p>
-      <ul>
-        <li>Your Unique Username and Password</li>
-        <li>Your Dedicated Server URL</li>
-        <li>Your Full M3U Playlist Link</li>
-        <li>Your Integrated EPG Schedule URL</li>
-      </ul>
-
-      <h2>Step 3: Choosing and Installing Your App</h2>
-      <p>Depending on your device, download the corresponding certified player by following our specific tutorials in the <a href="/guide-installation" class="text-blue-600 underline font-semibold">device installation hub</a>:</p>
-      <ul>
-        <li><strong>Fire Stick / Fire TV:</strong> IPTV Smarters Pro or TiviMate via Downloader.</li>
-        <li><strong>Samsung / LG Smart TV:</strong> IBO Player from the TV app store.</li>
-        <li><strong>Apple TV / iOS:</strong> Smarters Player Lite or GSE Smart IPTV from the App Store.</li>
-        <li><strong>PC / Mac:</strong> VLC Media Player or IPTV Smarters desktop.</li>
-      </ul>
-
-      <h2>Step 4: Inputting Your Credentials and Streaming</h2>
-      <p>Launch your player, select <strong>Login with Xtream Codes API</strong>, and enter your Televo IPTV server address, username, and password. The application will synchronize the channel catalogue, live sporting schedules, and VOD titles within 60 seconds.</p>
-
-      <h2>Need Personal Assistance?</h2>
-      <p>Our British customer service team is on hand 7 days a week via WhatsApp through our <a href="/contact" class="text-blue-600 underline font-semibold">customer care centre</a> to assist with any questions or guide you through first-time setup.</p>
-    `,
-  },
+  postFirestick,
+  postSamsung,
+  postBuffering,
+  postPlayers,
+  postSetup,
 ];
+

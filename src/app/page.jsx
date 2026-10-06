@@ -702,7 +702,7 @@ export default function HomePage() {
                 Anti-Freeze Network &amp; 99.9% Uptime
               </h3>
               <p>
-                Our multi-cluster European server network with intelligent load balancing prevents buffering, detailed further in our <Link href="/blog/how-to-fix-iptv-buffering-troubleshooting-guide" className="text-[#1D7AF2] font-semibold hover:underline">anti-buffering guide</Link>.
+                Our multi-cluster European server network with intelligent load balancing prevents buffering, detailed further in our <Link href="/blog/how-to-fix-iptv-buffering" className="text-[#1D7AF2] font-semibold hover:underline">anti-buffering guide</Link>.
               </p>
             </div>
 
