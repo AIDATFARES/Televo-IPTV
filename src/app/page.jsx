@@ -309,36 +309,131 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 2. COMPATIBLE APPS SECTION (#logosNL) ─── */}
-      <section id="logosNL">
-        <div className="w">
-          <h2>Universal App &amp; Device Compatibility</h2>
+      {/* ─── 2. VOD & 4K CINEMA (#vod-rails) ─── */}
+      <section id="vod-rails">
+        <div className="wrap">
+          <h2>Massive VOD Library: Movies &amp; Complete TV Series</h2>
           <div className="uk-underline"></div>
-          <p>
-            Televo IPTV connects effortlessly to all leading media players and smart platforms. Receive your Xtream Codes API credentials and M3U playlist instantly.
+          <p className="seo">
+            Explore authentic application previews from our 65,000+ 4K UHD VOD catalog, live UK television channels, and high-framerate Premier League coverage.
           </p>
 
-          <div className="g">
-            {appsList.map((app, i) => (
-              <div key={i} className="t">
-                <MonitorPlay className="w-5 h-5 text-[#1D7AF2] shrink-0" />
-                <div className="text-left">
-                  <div className="text-sm font-black text-[#0A2E66]">{app.name}</div>
-                  <div className="text-[11px] text-slate-500 font-semibold">{app.platform}</div>
+          {/* Image Strip Controls Header */}
+          <div className="vod-strip-header">
+            <div className="vod-strip-badge">
+              <span className="vod-pulse-dot"></span>
+              <span>13 Live App &amp; VOD Previews • Click to Enlarge</span>
+            </div>
+            <div className="vod-strip-nav">
+              <button
+                type="button"
+                onClick={() => scrollStrip('left')}
+                className="vod-nav-btn"
+                aria-label="Scroll left"
+                title="Scroll left"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollStrip('right')}
+                className="vod-nav-btn"
+                aria-label="Scroll right"
+                title="Scroll right"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+
+          {/* Horizontal Image Strip */}
+          <div className="vod-strip-container" ref={stripRef}>
+            {vodPreviews.map((item) => (
+              <div
+                key={item.id}
+                className="vod-strip-card"
+                onClick={() => setActivePreview(item)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setActivePreview(item);
+                  }
+                }}
+              >
+                <div className="vod-strip-thumb">
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    loading="lazy"
+                    width={1280}
+                    height={720}
+                  />
+                  <div className="vod-strip-overlay">
+                    <span className="vod-overlay-zoom">
+                      <Maximize2 className="w-4 h-4" />
+                      <span>Preview</span>
+                    </span>
+                  </div>
+                  <span className="vod-badge-top">{item.badge}</span>
+                </div>
+                <div className="vod-strip-info">
+                  <span className="vod-card-cat">{item.category}</span>
+                  <h3 className="vod-card-title">{item.title}</h3>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 text-center">
-            <Link
-              href="/guide-installation"
-              className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0A2E66] hover:text-[#1D7AF2] transition-colors"
-            >
-              Need setup guidance for your television? Explore our Televo IPTV Installation Centre →
-            </Link>
+          {/* Trust Pills */}
+          <div className="strip">
+            <span className="pill">🎬 65,000+ 4K UHD Movies &amp; Series</span>
+            <span className="pill">🌐 Multi-Language Audio &amp; Subtitles</span>
+            <span className="pill">🔄 Weekly Automatic Content Updates</span>
+            <span className="pill">⏱️ 7-Day Catch-Up TV Features</span>
+            <span className="pill">📺 Compatible with All IPTV Players</span>
           </div>
         </div>
+
+        {/* Modal / Lightbox for Preview */}
+        {activePreview && (
+          <div
+            className="vod-modal-backdrop"
+            onClick={() => setActivePreview(null)}
+            role="dialog"
+            aria-modal="true"
+          >
+            <div
+              className="vod-modal-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                type="button"
+                className="vod-modal-close"
+                onClick={() => setActivePreview(null)}
+                aria-label="Close preview"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <div className="vod-modal-media">
+                <img
+                  src={activePreview.image}
+                  alt={activePreview.alt}
+                  width={1280}
+                  height={720}
+                />
+              </div>
+              <div className="vod-modal-footer">
+                <div>
+                  <span className="vod-modal-cat">{activePreview.category}</span>
+                  <h4 className="vod-modal-title">{activePreview.title}</h4>
+                </div>
+                <span className="vod-modal-badge">{activePreview.badge}</span>
+              </div>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* ─── 3. CORE ADVANTAGES (.aii-sec3) ─── */}
@@ -603,131 +698,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 9. VOD & 4K CINEMA (#vod-rails) ─── */}
-      <section id="vod-rails">
-        <div className="wrap">
-          <h2>Massive VOD Library: Movies &amp; Complete TV Series</h2>
+      {/* ─── 8. COMPATIBLE APPS SECTION (#logosNL) ─── */}
+      <section id="logosNL">
+        <div className="w">
+          <h2>Universal App &amp; Device Compatibility</h2>
           <div className="uk-underline"></div>
-          <p className="seo">
-            Explore authentic application previews from our 65,000+ 4K UHD VOD catalog, live UK television channels, and high-framerate Premier League coverage.
+          <p>
+            Televo IPTV connects effortlessly to all leading media players and smart platforms. Receive your Xtream Codes API credentials and M3U playlist instantly.
           </p>
 
-          {/* Image Strip Controls Header */}
-          <div className="vod-strip-header">
-            <div className="vod-strip-badge">
-              <span className="vod-pulse-dot"></span>
-              <span>13 Live App &amp; VOD Previews • Click to Enlarge</span>
-            </div>
-            <div className="vod-strip-nav">
-              <button
-                type="button"
-                onClick={() => scrollStrip('left')}
-                className="vod-nav-btn"
-                aria-label="Scroll left"
-                title="Scroll left"
-              >
-                <ChevronLeft className="w-5 h-5" />
-              </button>
-              <button
-                type="button"
-                onClick={() => scrollStrip('right')}
-                className="vod-nav-btn"
-                aria-label="Scroll right"
-                title="Scroll right"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-          </div>
-
-          {/* Horizontal Image Strip */}
-          <div className="vod-strip-container" ref={stripRef}>
-            {vodPreviews.map((item) => (
-              <div
-                key={item.id}
-                className="vod-strip-card"
-                onClick={() => setActivePreview(item)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    setActivePreview(item);
-                  }
-                }}
-              >
-                <div className="vod-strip-thumb">
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    loading="lazy"
-                    width={1280}
-                    height={720}
-                  />
-                  <div className="vod-strip-overlay">
-                    <span className="vod-overlay-zoom">
-                      <Maximize2 className="w-4 h-4" />
-                      <span>Preview</span>
-                    </span>
-                  </div>
-                  <span className="vod-badge-top">{item.badge}</span>
-                </div>
-                <div className="vod-strip-info">
-                  <span className="vod-card-cat">{item.category}</span>
-                  <h3 className="vod-card-title">{item.title}</h3>
+          <div className="g">
+            {appsList.map((app, i) => (
+              <div key={i} className="t">
+                <MonitorPlay className="w-5 h-5 text-[#1D7AF2] shrink-0" />
+                <div className="text-left">
+                  <div className="text-sm font-black text-[#0A2E66]">{app.name}</div>
+                  <div className="text-[11px] text-slate-500 font-semibold">{app.platform}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Trust Pills */}
-          <div className="strip">
-            <span className="pill">🎬 65,000+ 4K UHD Movies &amp; Series</span>
-            <span className="pill">🌐 Multi-Language Audio &amp; Subtitles</span>
-            <span className="pill">🔄 Weekly Automatic Content Updates</span>
-            <span className="pill">⏱️ 7-Day Catch-Up TV Features</span>
-            <span className="pill">📺 Compatible with All IPTV Players</span>
+          <div className="mt-8 text-center">
+            <Link
+              href="/guide-installation"
+              className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0A2E66] hover:text-[#1D7AF2] transition-colors"
+            >
+              Need setup guidance for your television? Explore our Televo IPTV Installation Centre →
+            </Link>
           </div>
         </div>
-
-        {/* Modal / Lightbox for Preview */}
-        {activePreview && (
-          <div
-            className="vod-modal-backdrop"
-            onClick={() => setActivePreview(null)}
-            role="dialog"
-            aria-modal="true"
-          >
-            <div
-              className="vod-modal-content"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                type="button"
-                className="vod-modal-close"
-                onClick={() => setActivePreview(null)}
-                aria-label="Close preview"
-              >
-                <X className="w-6 h-6" />
-              </button>
-              <div className="vod-modal-media">
-                <img
-                  src={activePreview.image}
-                  alt={activePreview.alt}
-                  width={1280}
-                  height={720}
-                />
-              </div>
-              <div className="vod-modal-footer">
-                <div>
-                  <span className="vod-modal-cat">{activePreview.category}</span>
-                  <h4 className="vod-modal-title">{activePreview.title}</h4>
-                </div>
-                <span className="vod-modal-badge">{activePreview.badge}</span>
-              </div>
-            </div>
-          </div>
-        )}
       </section>
 
       {/* ─── 11. UK CUSTOMER REVIEWS (.rs-proof-nl) ─── */}
