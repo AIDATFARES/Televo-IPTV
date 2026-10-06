@@ -44,3 +44,4 @@ for url_elem in root.findall('sm:url', ns):
     print(f'[{status_str}] {loc:<62} | Status: {res.status} | Canonical: {canonical}')
 
 print(f'\nAudit completed: {passed}/{total} URLs PASSED with 100% agreement!')
+

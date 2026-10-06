@@ -25,3 +25,4 @@ for u in urls:
         print(f'{u:<55} -> Canonical: {canonical}')
     except Exception as e:
         print(f'{u:<55} -> Error: {e}')
+

@@ -251,7 +251,7 @@ body {
   background-image: 
     radial-gradient(ellipse 90% 70% at 50% 42%, rgba(5, 7, 11, 0.48) 0%, rgba(5, 7, 11, 0.82) 68%, #05070B 100%),
     linear-gradient(180deg, rgba(5, 7, 11, 0.72) 0%, rgba(5, 7, 11, 0.22) 32%, rgba(5, 7, 11, 0.78) 78%, #05070B 100%),
-    url("/hero-bg.jpg");
+    url("/hero-bg.webp");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -317,17 +317,34 @@ body {
 }
 
 .aii-badge i {
+  position: relative;
+  display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #C8102E;
-  box-shadow: 0 0 0 4px rgba(200, 16, 46, 0.25);
-  animation: pdot 1.5s infinite;
+}
+
+.aii-badge i::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: rgba(200, 16, 46, 0.4);
+  animation: pdot 1.5s infinite ease-out;
+  pointer-events: none;
+  will-change: transform, opacity;
 }
 
 @keyframes pdot {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(200, 16, 46, 0.25); }
-  50% { box-shadow: 0 0 0 8px rgba(200, 16, 46, 0.1); }
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.45);
+    opacity: 0.25;
+  }
 }
 
 .aii-title {
@@ -391,6 +408,7 @@ body {
   text-decoration: none;
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
   animation: heroGreenPulse 2.8s infinite ease-in-out;
+  will-change: transform;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
 }
@@ -477,10 +495,10 @@ body {
 
 @keyframes heroGreenPulse {
   0%, 100% {
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+    transform: scale(1);
   }
   50% {
-    box-shadow: 0 10px 32px rgba(37, 211, 102, 0.65), 0 0 18px rgba(37, 211, 102, 0.4);
+    transform: scale(1.025);
   }
 }
 
@@ -537,8 +555,8 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 10px 30px rgba(10, 46, 102, 0.3), 0 0 22px rgba(29, 122, 242, 0.25); }
-  50% { box-shadow: 0 14px 38px rgba(10, 46, 102, 0.45), 0 0 34px rgba(29, 122, 242, 0.4); }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
 }
 
 /* ===== HERO COMPATIBLE DEVICES STRIP ===== */
@@ -821,6 +839,7 @@ body {
   overflow: hidden;
   background: linear-gradient(90deg, #002395 0%, #0A2E66 40%, #1563c7 78%, #C8102E 100%);
   animation: sec3-pulse 1.9s ease-in-out infinite;
+  will-change: transform;
 }
 
 .aii-sec3 .cta:hover {
@@ -829,8 +848,8 @@ body {
 }
 
 @keyframes sec3-pulse {
-  0%, 100% { box-shadow: 0 14px 30px rgba(10, 46, 102, 0.3); }
-  50% { box-shadow: 0 18px 44px rgba(10, 46, 102, 0.45); }
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
 }
 
 /* ===== PRICING SECTION (#aii-pricing) ===== */
@@ -1236,6 +1255,7 @@ body {
   font-weight: 900 !important;
   box-shadow: 0 6px 22px rgba(0, 210, 255, 0.45) !important;
   animation: featuredBtnPulse 2.4s infinite ease-in-out !important;
+  will-change: transform !important;
 }
 
 .plan-cta-btn.featured-btn::after {
@@ -1258,11 +1278,10 @@ body {
 
 @keyframes featuredBtnPulse {
   0%, 100% {
-    box-shadow: 0 6px 22px rgba(0, 210, 255, 0.45), 0 0 0 rgba(0, 210, 255, 0);
+    transform: translateY(0) scale(1);
   }
   50% {
-    box-shadow: 0 10px 32px rgba(0, 210, 255, 0.75), 0 0 20px rgba(0, 210, 255, 0.5);
-    transform: translateY(-1.5px);
+    transform: translateY(-2px) scale(1.02);
   }
 }
 
@@ -1859,18 +1878,28 @@ body {
 }
 
 .vod-pulse-dot {
+  position: relative;
+  display: inline-block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #1D7AF2;
-  box-shadow: 0 0 0 0 rgba(29, 122, 242, 0.7);
-  animation: vodPulse 2s infinite;
+}
+
+.vod-pulse-dot::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: rgba(29, 122, 242, 0.45);
+  animation: vodPulse 2s infinite ease-out;
+  pointer-events: none;
+  will-change: transform, opacity;
 }
 
 @keyframes vodPulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(29, 122, 242, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(29, 122, 242, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(29, 122, 242, 0); }
+  0%, 100% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.5); opacity: 0.2; }
 }
 
 .vod-strip-nav {
