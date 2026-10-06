@@ -528,14 +528,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          {/* Trust Pills */}
-          <div className="strip">
-            <span className="pill">🎬 200,000+ 4K UHD Movies &amp; Box Sets</span>
-            <span className="pill">🌐 Multi-Language Audio &amp; English Subtitles</span>
-            <span className="pill">🔄 Weekly Automatic Content Updates</span>
-            <span className="pill">⏱️ Interactive 7-Day UK Catch-Up EPG</span>
-            <span className="pill">📺 Compatible with Top IPTV Media Players</span>
-          </div>
+
         </div>
 
         {/* Modal / Lightbox for Preview */}
