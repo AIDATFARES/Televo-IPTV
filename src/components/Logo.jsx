@@ -23,15 +23,44 @@ export default function Logo({ size = 'default', showLink = true, variant = 'dar
 
   const content = (
     <div className="flex items-center gap-2.5 group select-none">
-      {/* Televo Custom TV & Streaming Icon (UK Flag Palette: Royal Navy, Bright Blue, British Red) */}
-      <div className={`relative ${iconSizes[size]} rounded-xl bg-gradient-to-br from-[#0A2E66] via-[#113E86] to-[#1D7AF2] border border-blue-400/40 flex items-center justify-center shadow-md shadow-blue-900/30 group-hover:scale-105 transition-transform duration-200`}>
-        {/* Screen inner */}
-        <div className="w-5/6 h-5/6 rounded-lg bg-[#05070B] border border-white/20 flex items-center justify-center relative overflow-hidden">
-          {/* Streaming Play Arrow in British Red */}
-          <div className="w-0 h-0 border-y-[5px] border-y-transparent border-l-[9px] border-l-[#C8102E] ml-0.5"></div>
-          {/* Signal Live Dot */}
-          <div className="absolute top-1 right-1 w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></div>
-        </div>
+      {/* Official United Kingdom (Union Jack) Flag Icon */}
+      <div
+        className={`relative ${iconSizes[size]} rounded-xl overflow-hidden border border-blue-400/40 shadow-md shadow-blue-900/25 group-hover:scale-105 transition-transform duration-200 shrink-0 flex items-center justify-center bg-[#012169]`}
+        title="Televo IPTV - United Kingdom"
+      >
+        <svg
+          viewBox="0 0 60 40"
+          className="w-full h-full object-cover"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {/* Blue background field */}
+          <rect width="60" height="40" fill="#012169" />
+
+          {/* White diagonal saltire (St Andrew) */}
+          <path d="M0,0 L60,40 M60,0 L0,40" stroke="#FFFFFF" strokeWidth="8" />
+
+          {/* Red diagonal saltire (St Patrick) */}
+          <path
+            d="M0,0 L27,18 M33,22 L60,40 M60,0 L33,18 M27,22 L0,40"
+            stroke="#C8102E"
+            strokeWidth="2.7"
+          />
+
+          {/* White central cross (St George wide border) */}
+          <path d="M30,0 V40 M0,20 H60" stroke="#FFFFFF" strokeWidth="13" />
+
+          {/* Red central cross (St George) */}
+          <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" strokeWidth="7.5" />
+
+          {/* Inner subtle border for crisp contrast */}
+          <rect
+            width="60"
+            height="40"
+            fill="none"
+            stroke="rgba(255,255,255,0.25)"
+            strokeWidth="1.5"
+          />
+        </svg>
       </div>
 
       {/* Brand Text */}
@@ -39,7 +68,9 @@ export default function Logo({ size = 'default', showLink = true, variant = 'dar
         <span className={`font-black tracking-tight ${textColor} ${textSizes[size]}`}>
           TELEVO
         </span>
-        <span className={`font-extrabold uppercase rounded-md bg-[#C8102E] text-white shadow-sm ${badgeSizes[size]} tracking-wider`}>
+        <span
+          className={`font-extrabold uppercase rounded-md bg-[#C8102E] text-white shadow-sm ${badgeSizes[size]} tracking-wider`}
+        >
           IPTV
         </span>
       </div>
@@ -56,4 +87,3 @@ export default function Logo({ size = 'default', showLink = true, variant = 'dar
 
   return content;
 }
-
