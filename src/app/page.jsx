@@ -436,7 +436,47 @@ export default function HomePage() {
         )}
       </section>
 
-      {/* ─── 3. CORE ADVANTAGES (.aii-sec3) ─── */}
+      {/* ─── 3. 3-STEP ORDER PROCESS (.aii-buy) ─── */}
+      <section className="aii-buy">
+        <div className="wrap">
+          <h2 className="h2">How to Get Started with Televo IPTV</h2>
+          <div className="uk-underline"></div>
+          <p className="sub">
+            Get connected in 3 easy steps without engineer visits or technical complications.
+          </p>
+
+          <div className="aii-steps">
+            <div className="aii-step">
+              <div className="aii-num">1</div>
+              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Choose Your Plan</h3>
+              <p>
+                Select your preferred subscription duration (1, 3, 6, or 12 months) and simultaneous device connections, then order securely.
+              </p>
+            </div>
+
+            <div className="aii-step">
+              <div className="aii-num">2</div>
+              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Instant Delivery</h3>
+              <p>
+                Receive your Xtream Codes API login, dedicated Server URL, and M3U playlist credentials via WhatsApp and email in 5 to 15 minutes.
+              </p>
+            </div>
+
+            <div className="aii-step">
+              <div className="aii-num">3</div>
+              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Stream in 4K</h3>
+              <p>
+                Open your preferred app on your Smart TV, Fire Stick, tablet, or smartphone, enter your login details, and start enjoying crystal-clear streams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 4. COMBINED SUBSCRIPTION PRICING WITH DEVICE COUNTER (#aii-pricing) ─── */}
+      <PricingSection />
+
+      {/* ─── 5. CORE ADVANTAGES (.aii-sec3) ─── */}
       <section className="aii-sec3">
         <div className="wrap">
           <h2 className="h2">Why Choose Televo IPTV in the United Kingdom?</h2>
@@ -515,46 +555,6 @@ export default function HomePage() {
           <a href="#aii-pricing" className="cta">
             ⚡ Choose Your Televo IPTV Subscription Now
           </a>
-        </div>
-      </section>
-
-      {/* ─── 4. COMBINED SUBSCRIPTION PRICING WITH DEVICE COUNTER (#aii-pricing) ─── */}
-      <PricingSection />
-
-      {/* ─── 5. 3-STEP ORDER PROCESS (.aii-buy) ─── */}
-      <section className="aii-buy">
-        <div className="wrap">
-          <h2 className="h2">How to Get Started with Televo IPTV</h2>
-          <div className="uk-underline"></div>
-          <p className="sub">
-            Get connected in 3 easy steps without engineer visits or technical complications.
-          </p>
-
-          <div className="aii-steps">
-            <div className="aii-step">
-              <div className="aii-num">1</div>
-              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Choose Your Plan</h3>
-              <p>
-                Select your preferred subscription duration (1, 3, 6, or 12 months) and simultaneous device connections, then order securely.
-              </p>
-            </div>
-
-            <div className="aii-step">
-              <div className="aii-num">2</div>
-              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Instant Delivery</h3>
-              <p>
-                Receive your Xtream Codes API login, dedicated Server URL, and M3U playlist credentials via WhatsApp and email in 5 to 15 minutes.
-              </p>
-            </div>
-
-            <div className="aii-step">
-              <div className="aii-num">3</div>
-              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Stream in 4K</h3>
-              <p>
-                Open your preferred app on your Smart TV, Fire Stick, tablet, or smartphone, enter your login details, and start enjoying crystal-clear streams.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
