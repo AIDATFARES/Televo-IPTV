@@ -1593,6 +1593,68 @@ body {
   font-size: 1.05rem;
 }
 
+/* Stats Grid in VOD Section */
+.vod-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto 24px;
+}
+
+.vod-stat-box {
+  background: linear-gradient(180deg, #0a1f3d 0%, #061426 100%);
+  border: 1px solid rgba(0, 229, 255, 0.22);
+  border-radius: 16px;
+  padding: 18px 16px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(7, 23, 51, 0.16);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vod-stat-box:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 229, 255, 0.5);
+  box-shadow: 0 12px 28px rgba(0, 229, 255, 0.15);
+}
+
+.vod-stat-val {
+  display: block;
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 900;
+  color: #00E5FF;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  letter-spacing: -0.01em;
+}
+
+.vod-stat-lbl {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #E2E8F0;
+  line-height: 1.35;
+}
+
+@media (max-width: 860px) {
+  .vod-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vod-stat-box {
+    padding: 14px 10px;
+  }
+  .vod-stat-val {
+    font-size: 1.25rem;
+  }
+  .vod-stat-lbl {
+    font-size: 0.78rem;
+  }
+}
+
 /* Header bar above the strip */
 .vod-strip-header {
   display: flex;

@@ -298,6 +298,26 @@ export default function HomePage() {
             Explore authentic application previews from our 65,000+ 4K UHD VOD catalog, live UK television channels, and high-framerate Premier League coverage.
           </p>
 
+          {/* 4 Stats Cards */}
+          <div className="vod-stats-grid">
+            <div className="vod-stat-box">
+              <span className="vod-stat-val">4K &amp; FHD</span>
+              <span className="vod-stat-lbl">Ultra High Definition Streams</span>
+            </div>
+            <div className="vod-stat-box">
+              <span className="vod-stat-val">50,000+</span>
+              <span className="vod-stat-lbl">Live TV Channels</span>
+            </div>
+            <div className="vod-stat-box">
+              <span className="vod-stat-val">200,000+</span>
+              <span className="vod-stat-lbl">VOD Movies &amp; Series</span>
+            </div>
+            <div className="vod-stat-box">
+              <span className="vod-stat-val">99.9%</span>
+              <span className="vod-stat-lbl">Infrastructure Server Uptime</span>
+            </div>
+          </div>
+
           {/* Image Strip Controls Header */}
           <div className="vod-strip-header">
             <div className="vod-strip-badge">
