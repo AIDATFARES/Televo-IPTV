@@ -238,14 +238,19 @@ export default function PricingSection({ title, subtitle }) {
                 key={`${deviceCount}-${plan.id}`}
                 className={`card ${plan.isPopular ? 'featured' : ''}`}
               >
-                {/* Badge / Ribbon */}
-                {plan.badge && (
-                  plan.isPopular ? (
-                    <div className="ribbon">{plan.badge}</div>
-                  ) : (
-                    <div className="best-deal">{plan.badge}</div>
-                  )
+                {/* Ribbon for Popular Plan */}
+                {plan.isPopular && plan.badge && (
+                  <div className="ribbon">{plan.badge}</div>
                 )}
+
+                {/* Top Badge Slot (in document flow, never covers price or title) */}
+                <div className="badge-row">
+                  {plan.badge && !plan.isPopular ? (
+                    <span className="best-deal">{plan.badge}</span>
+                  ) : (
+                    <span className="badge-placeholder" aria-hidden="true">&nbsp;</span>
+                  )}
+                </div>
 
                 {/* Card Head */}
                 <div className="head">
@@ -255,7 +260,7 @@ export default function PricingSection({ title, subtitle }) {
                       {plan.accessLabel}
                     </span>
                   </div>
-                  <div>
+                  <div className="price-wrap">
                     <span className="price">£{finalPrice}</span>
                     <span className="price-old">£{finalOriginalPrice}</span>
                   </div>
