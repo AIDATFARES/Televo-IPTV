@@ -16,7 +16,7 @@ export default function Footer() {
               <Logo size="default" variant="dark" />
             </div>
             <p className="aii-about-text">
-              <strong>Televo IPTV</strong> is a premier British television streaming provider delivering crystal-clear 4K sports, international entertainment, and on-demand movies directly across the United Kingdom.
+              <strong>Televo IPTV</strong> is the UK’s premier IPTV streaming provider, delivering buffer-free 4K live sports, 50,000+ international television channels, and 200,000+ on-demand movies and series with instant digital activation.
             </p>
             <div className="aii-trust-badges">
               <span className="aii-mini-badge">

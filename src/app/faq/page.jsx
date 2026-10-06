@@ -57,11 +57,11 @@ export default function FAQPage() {
             UK Help &amp; Support Resources
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-[#0A2E66] tracking-tight">
-            Frequently Asked Questions
+            Televo IPTV UK — Frequently Asked Questions
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-3 text-base">
-            Find answers to common questions about Televo IPTV subscriptions, device compatibility, setup instructions, and UK customer assistance.
+            Find authoritative answers to all your questions about Televo IPTV subscriptions, supported streaming applications, British broadband optimization, and rapid activation.
           </p>
         </div>
 
@@ -154,10 +154,10 @@ export default function FAQPage() {
         {/* Support Callout Box */}
         <div className="p-8 rounded-2xl bg-[#0A2E66] text-white text-center">
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
-            Could Not Find the Answer You Were Looking For?
+            Still Have Questions About Televo IPTV?
           </h2>
           <p className="text-sm text-blue-100 max-w-md mx-auto mb-6">
-            Our UK support team is available 7 days a week on WhatsApp to assist with questions or customized inquiries.
+            Our dedicated UK support team is available 7 days a week via WhatsApp to guide you through plan selection, playlist setup, and device troubleshooting.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a

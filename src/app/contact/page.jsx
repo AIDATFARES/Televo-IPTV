@@ -40,11 +40,11 @@ export default function ContactPage() {
             UK Support Desk • 7 Days a Week
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-[#0A2E66] tracking-tight">
-            Contact Televo IPTV
+            Contact Televo IPTV UK Support
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-3 text-base">
-            Have questions about an IPTV plan, need assistance setting up your television, or want to verify your credentials? We are here to help.
+            Have questions about a Televo IPTV subscription, need quick assistance configuring your streaming device, or want to verify connection details? Our UK customer care team is here to assist 7 days a week.
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export default function ContactPage() {
               </div>
               <h2 className="text-xl font-bold text-emerald-950 mb-1">WhatsApp Live Chat</h2>
               <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                The fastest way to reach our UK team. Order subscriptions, get setup tutorials, and receive instant support directly on your mobile.
+                The most direct way to connect with our UK support team. Request subscription plans, receive step-by-step installation guides, and resolve stream settings directly on WhatsApp.
               </p>
               <div className="text-sm font-bold text-emerald-800 mb-4 flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>

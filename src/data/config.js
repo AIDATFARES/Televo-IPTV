@@ -192,7 +192,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'firestick',
     category: 'Streaming Sticks',
     apps: ['IPTV Smarters Pro', 'TiviMate', 'Downloader'],
-    description: 'Simple sideloading with the Downloader app. Provides smooth playback on Fire TV Stick 4K, 4K Max, and Fire TV Cube.',
+    description: 'Fast setup with the Downloader app. Stream Televo IPTV in 4K on Fire TV Stick 4K, 4K Max, and Fire TV Cube.',
     setupTime: '5 mins',
   },
   {
@@ -201,7 +201,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'samsung-smart-tv',
     category: 'Smart TVs',
     apps: ['IBO Player', 'Smart IPTV', 'IPTV Smarters Pro'],
-    description: 'Install directly from the Samsung Apps Store using your television remote with M3U or Xtream API credentials.',
+    description: 'Install directly from the Samsung Apps Store. Connect Televo IPTV easily with M3U or Xtream Codes API credentials.',
     setupTime: '5 mins',
   },
   {
@@ -210,7 +210,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'lg-smart-tv',
     category: 'Smart TVs',
     apps: ['IBO Player', 'Smart IPTV', 'SS IPTV'],
-    description: 'Available on LG Content Store with quick MAC address activation and crystal-clear 4K screen rendering.',
+    description: 'Available on the LG Content Store with fast activation. Enjoy Televo IPTV live streams and VOD in full 4K clarity.',
     setupTime: '5 mins',
   },
   {
@@ -219,7 +219,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'android-tv',
     category: 'TV Boxes & TVs',
     apps: ['TiviMate', 'IPTV Smarters Pro', 'XCIPTV'],
-    description: 'Native Google Play Store access with exceptional player customisation, recording features, and EPG display.',
+    description: 'Direct Google Play Store access with advanced player controls, 7-day EPG schedules, and smooth 4K playback.',
     setupTime: '5 mins',
   },
   {
@@ -228,7 +228,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'apple-tv',
     category: 'Media Players',
     apps: ['IPTV Smarters', 'GSE Smart IPTV', 'iPlayTV'],
-    description: 'Premium streaming performance on Apple TV 4K with smooth interface and AirPlay interoperability.',
+    description: 'High-performance 4K IPTV streaming on Apple TV with responsive navigation and seamless AirPlay integration.',
     setupTime: '5 mins',
   },
   {
@@ -237,7 +237,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'iphone',
     category: 'Mobile & Tablets',
     apps: ['GSE Smart IPTV', 'IPTV Smarters Pro', 'Smarters Player Lite'],
-    description: 'Stream directly on iOS devices anywhere in the UK via Wi-Fi or mobile data without jailbreaking.',
+    description: 'Stream Televo IPTV across iPhone and iPad via Wi-Fi or 4G/5G mobile data with no jailbreak required.',
     setupTime: '3 mins',
   },
   {
@@ -246,7 +246,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'android',
     category: 'Mobile & Tablets',
     apps: ['IPTV Smarters Pro', 'TiviMate', 'Televo Player'],
-    description: 'Portable streaming with intuitive touch controls, background audio playback, and lightweight battery consumption.',
+    description: 'Portable mobile entertainment with responsive touch controls, background audio, and minimal battery usage.',
     setupTime: '3 mins',
   },
   {
@@ -255,7 +255,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'windows',
     category: 'Computers',
     apps: ['VLC Media Player', 'IPTV Smarters Pro Windows'],
-    description: 'Versatile playback through VLC network streaming or dedicated Windows IPTV desktop client.',
+    description: 'Watch live television and on-demand box sets on Windows PCs and laptops via IPTV Smarters or VLC.',
     setupTime: '4 mins',
   },
   {
@@ -264,7 +264,7 @@ export const SUPPORTED_DEVICES = [
     slug: 'mac',
     category: 'Computers',
     apps: ['VLC Media Player', 'IINA', 'IPTV Smarters for Mac'],
-    description: 'Native macOS video players supporting M3U playlists, hardware acceleration, and Retina display output.',
+    description: 'Native macOS streaming supporting M3U playlists, hardware acceleration, and crisp Retina display output.',
     setupTime: '4 mins',
   },
 ];

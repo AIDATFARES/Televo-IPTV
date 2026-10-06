@@ -44,11 +44,11 @@ export default function BlogHubPage() {
             UK Streaming Guides &amp; Tutorials
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-[#0A2E66] tracking-tight">
-            Televo IPTV Blog &amp; Resource Hub
+            Televo IPTV UK Blog &amp; Streaming Guides
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Helpful tutorials, device walkthroughs, player comparisons, and buffering fixes to help you get the most out of your Televo IPTV subscription.
+            Expert tutorials, player comparisons, buffering solutions, and setup tips to elevate your Televo IPTV streaming experience across all your screens.
           </p>
         </div>
 
@@ -166,10 +166,10 @@ export default function BlogHubPage() {
         {/* WhatsApp Help CTA */}
         <div className="p-8 rounded-2xl bg-[#0A2E66] text-white text-center">
           <h2 className="text-2xl font-bold text-white mb-2">
-            Have Questions About UK Setup or Player Configuration?
+            Have Questions About Televo IPTV Setup or Compatibility?
           </h2>
           <p className="text-sm text-blue-100 max-w-md mx-auto mb-6">
-            Our UK support specialists are online 7 days a week on WhatsApp to assist with troubleshooting and setup.
+            Our UK support specialists are available 7 days a week on WhatsApp to assist with device pairing, app recommendations, and instant troubleshooting.
           </p>
           <a
             href={SITE_CONFIG.whatsappUrl}

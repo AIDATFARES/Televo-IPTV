@@ -308,18 +308,18 @@ export default function HomePage() {
               {/* Status Badge with UK pulse dot */}
               <div className="aii-badge">
                 <i></i>
-                <span>Televo IPTV Active Delivery — Rapid Activation in 5-15 Mins 🇬🇧</span>
+                <span>Televo IPTV UK Active Delivery — Instant 5-15 Min Setup 🇬🇧</span>
               </div>
 
               {/* Main Title with t1 and t2 */}
               <h1 className="aii-title">
-                <span className="t1">Televo IPTV — UK's #1 Choice</span>
-                <span className="t2">Premium 4K &amp; Full HD IPTV Streaming Service</span>
+                <span className="t1">Televo IPTV — The UK’s Premier IPTV Service</span>
+                <span className="t2">Ultra HD 4K Live TV, Premier Sports &amp; Massive On-Demand Streaming</span>
               </h1>
 
               {/* Subtitle */}
               <p className="aii-sub">
-                Experience reliable television entertainment with <b>Televo IPTV</b>. Fast delivery of digital connection details, crystal-clear 4K streams, full Electronic Programme Guide (EPG), and genuine UK customer support on WhatsApp. Contract-free streaming tailored for the United Kingdom.
+                Discover a seamless streaming experience with <b>Televo IPTV</b>. Unlock 50,000+ live television channels, non-stop football and motorsport action, complete 7-day UK EPG schedules, and over 200,000 on-demand titles in 4K UHD. Enjoy contract-free viewing tailored for British broadband with zero hardware required.
               </p>
 
               {/* CTA Row (Exact spec: [Get a free trial] [Choose Your IPTV Plan >]) */}
@@ -336,10 +336,10 @@ export default function HomePage() {
                   >
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
                   </svg>
-                  <span>Get a free trial</span>
+                  <span>Start Free Trial</span>
                 </a>
                 <a href="#aii-pricing" className="btn-plan-dark">
-                  <span>Choose Your IPTV Plan</span>
+                  <span>Explore IPTV Plans</span>
                   <ChevronRight className="w-4 h-4 text-[#00E5FF] stroke-[3] ml-1 shrink-0" />
                 </a>
               </div>
@@ -356,11 +356,11 @@ export default function HomePage() {
 
               {/* Trust Indicators */}
               <div className="trust">
-                <span>🔒 Secure UK Checkout</span>
+                <span>🔒 Instant Secure Activation</span>
                 <span>•</span>
-                <span>🇬🇧 BT, Sky &amp; Virgin Ready</span>
+                <span>🇬🇧 Virgin, BT &amp; Sky High-Speed Ready</span>
                 <span>•</span>
-                <span>⚡ Anti-Freeze Optimisation</span>
+                <span>⚡ 99.9% Anti-Freeze Uptime</span>
               </div>
             </div>
           </div>
@@ -370,10 +370,10 @@ export default function HomePage() {
       {/* ─── 2. VOD & 4K CINEMA (#vod-rails) ─── */}
       <section id="vod-rails">
         <div className="wrap">
-          <h2>Massive VOD Library: Movies &amp; Complete TV Series</h2>
+          <h2>Televo IPTV On-Demand: 200,000+ 4K Cinema Movies &amp; TV Box Sets</h2>
           <div className="uk-underline"></div>
           <p className="seo">
-            Explore authentic application previews from our 50,000+ 4K UHD VOD catalog, live UK television channels, and high-framerate Premier League coverage.
+            Preview live app interfaces from the Televo IPTV network. Explore over 50,000 live channels, cinema-grade 4K VOD blockbusters, complete binge-worthy box sets, and ultra-smooth 60 FPS sports streams with zero buffering.
           </p>
 
           {/* 4 Stats Cards */}
@@ -466,11 +466,11 @@ export default function HomePage() {
 
           {/* Trust Pills */}
           <div className="strip">
-            <span className="pill">🎬 50,000+ 4K UHD Movies &amp; Series</span>
-            <span className="pill">🌐 Multi-Language Audio &amp; Subtitles</span>
+            <span className="pill">🎬 200,000+ 4K UHD Movies &amp; Box Sets</span>
+            <span className="pill">🌐 Multi-Language Audio &amp; English Subtitles</span>
             <span className="pill">🔄 Weekly Automatic Content Updates</span>
-            <span className="pill">⏱️ 7-Day Catch-Up TV Features</span>
-            <span className="pill">📺 Compatible with All IPTV Players</span>
+            <span className="pill">⏱️ Interactive 7-Day UK Catch-Up EPG</span>
+            <span className="pill">📺 Compatible with Top IPTV Media Players</span>
           </div>
         </div>
 
@@ -517,34 +517,34 @@ export default function HomePage() {
       {/* ─── 3. 3-STEP ORDER PROCESS (.aii-buy) ─── */}
       <section className="aii-buy">
         <div className="wrap">
-          <h2 className="h2">How to Get Started with Televo IPTV</h2>
+          <h2 className="h2">How to Start Streaming with Televo IPTV in 3 Simple Steps</h2>
           <div className="uk-underline"></div>
           <p className="sub">
-            Get connected in 3 easy steps without engineer visits or technical complications.
+            Set up your Televo IPTV subscription in minutes on any television, media streamer, or mobile device—no engineer visits, dishes, or contracts required.
           </p>
 
           <div className="aii-steps">
             <div className="aii-step">
               <div className="aii-num">1</div>
-              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Choose Your Plan</h3>
+              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Select Your IPTV Plan</h3>
               <p>
-                Select your preferred subscription duration (1, 3, 6, or 12 months) and simultaneous device connections, then order securely.
+                Choose the subscription length (1, 3, 6, or 12 months) and number of simultaneous screens that match your household. Order securely in GBP with no recurring commitments.
               </p>
             </div>
 
             <div className="aii-step">
               <div className="aii-num">2</div>
-              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Instant Delivery</h3>
+              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Receive Instant Login Details</h3>
               <p>
-                Receive your Xtream Codes API login, dedicated Server URL, and M3U playlist credentials via WhatsApp and email in 5 to 15 minutes.
+                Our team generates your unique Televo IPTV credentials—including M3U playlists and Xtream Codes API server details—delivered straight to WhatsApp and email in 5 to 15 minutes.
               </p>
             </div>
 
             <div className="aii-step">
               <div className="aii-num">3</div>
-              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Stream in 4K</h3>
+              <h3 className="text-lg font-black text-[#0A2E66] mb-2">Connect &amp; Stream in 4K Ultra HD</h3>
               <p>
-                Open your preferred app on your Smart TV, Fire Stick, tablet, or smartphone, enter your login details, and start enjoying crystal-clear streams.
+                Launch your favourite media player on your Smart TV, Fire Stick, smartphone, or PC, input your connection details, and start enjoying buffer-free live sports and on-demand entertainment.
               </p>
             </div>
           </div>
@@ -557,10 +557,10 @@ export default function HomePage() {
       {/* ─── 5. CORE ADVANTAGES (.aii-sec3) ─── */}
       <section className="aii-sec3">
         <div className="wrap">
-          <h2 className="h2">Why Choose Televo IPTV in the United Kingdom?</h2>
+          <h2 className="h2">Why UK Viewers Choose Televo IPTV for Everyday Streaming</h2>
           <div className="uk-underline"></div>
           <p className="sub">
-            Designed specifically for British viewers with high-capacity European CDN servers, crystal-clear 4K sports, and instant setup support.
+            Built specifically for UK households seeking dependable 4K entertainment without satellite dishes, long-term contracts, or overpriced cable packages.
           </p>
 
           <div className="trust">
@@ -572,66 +572,66 @@ export default function HomePage() {
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
-                4K Ultra HD &amp; Full HD Streams
+                Crystal-Clear 4K UHD &amp; 60 FPS Sports Streams
               </h3>
               <p>
-                Enjoy football fixtures, cinema blockbusters, and popular series in crystal-clear Full HD and 4K resolution with 60 FPS framerate support.
+                Watch matchday football, championship boxing, and cinema releases in fluid 60 FPS with brilliant HDR clarity and zero screen tearing.
               </p>
             </div>
 
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
-                Anti-Freeze &amp; 99.9% Uptime
+                Anti-Freeze Network &amp; 99.9% Uptime
               </h3>
               <p>
-                Robust server infrastructure built with load balancing to prevent buffering, especially during high-demand Premier League matches.
+                Our multi-cluster European server network with intelligent load balancing prevents buffering, especially during high-demand live sports broadcasts.
               </p>
             </div>
 
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
-                M3U &amp; Xtream Codes API
+                Flexible M3U &amp; Xtream Codes API
               </h3>
               <p>
-                Standardized connection details delivered within minutes. Connect easily with your favourite player app without complicated setup.
+                Standardized login credentials delivered within minutes. Connect easily with any certified player application without complicated technical hurdles.
               </p>
             </div>
 
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
-                Complete 7-Day UK EPG Guide
+                Interactive 7-Day UK TV EPG Guide
               </h3>
               <p>
-                Stay updated with a complete Electronic Programme Guide. Browse schedules, upcoming sports, and episode details with ease.
+                Stay ahead with real-time programme schedules across entertainment, news, and sports channels, featuring full schedule metadata and catch-up integration.
               </p>
             </div>
 
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
-                Broad Device Compatibility
+                Universal Multi-Device Freedom
               </h3>
               <p>
-                Runs smoothly on Samsung Smart TV, LG webOS, Amazon Fire Stick, Android TV, Apple TV, iPad, iPhone, and Windows/Mac PCs.
+                Stream seamlessly across Amazon Fire Stick, Samsung and LG Smart TVs, Apple TV, Android boxes, iPhones, iPads, and Windows or Mac computers.
               </p>
             </div>
 
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
-                7-Day Money-Back Guarantee
+                7-Day Money-Back Satisfaction Guarantee
               </h3>
               <p>
-                Try Televo IPTV with complete peace of mind. If our service does not meet your expectations within 7 days, receive a prompt refund.
+                Experience Televo IPTV risk-free. If our technical specialists cannot resolve an incompatibility issue within your first 7 days, receive a prompt, full refund.
               </p>
             </div>
           </div>
 
           <a href="#aii-pricing" className="cta">
-            ⚡ Choose Your Televo IPTV Subscription Now
+            ⚡ Explore Televo IPTV Subscription Plans
           </a>
         </div>
       </section>
@@ -639,18 +639,18 @@ export default function HomePage() {
       {/* ─── 7. HOW IT WORKS (.aii-how) ─── */}
       <section className="aii-how">
         <div className="wrap">
-          <h2>How Televo IPTV Streaming Works</h2>
+          <h2>How the Televo IPTV Streaming Infrastructure Works</h2>
           <div className="uk-underline"></div>
           <p className="sub">
-            Cutting-edge IPTV infrastructure delivering zero-buffering entertainment right across the UK.
+            Modern cloud architecture and dedicated UK server routing deliver high-fidelity television streams straight to your internet-connected devices.
           </p>
 
           <div className="aii-grid">
             <div className="aii-card">
               <div className="aii-num">1</div>
-              <h3>Cloud Server Distribution</h3>
+              <h3>High-Bandwidth Cloud Distribution</h3>
               <p>
-                Streams are delivered through robust European edge servers optimized for British broadband providers (BT, Virgin Media, Sky, and EE) to guarantee minimal latency.
+                Streams are distributed through enterprise European edge clusters engineered specifically for British broadband networks (BT, Virgin Media, Sky, and EE) to eliminate latency and bandwidth throttling.
               </p>
               <ul>
                 <li>Direct fiber backbone connectivity</li>
@@ -661,9 +661,9 @@ export default function HomePage() {
 
             <div className="aii-card">
               <div className="aii-num">2</div>
-              <h3>Xtream Codes &amp; M3U Protocol</h3>
+              <h3>Universal Xtream Codes &amp; M3U Architecture</h3>
               <p>
-                Televo IPTV utilizes industry-standard streaming protocols, giving you full freedom to use any modern IPTV player application of your choice.
+                Televo IPTV supports industry-standard streaming protocols, granting you total freedom to connect your favourite player app without proprietary hardware restrictions.
               </p>
               <ul>
                 <li>Compatible with IPTV Smarters &amp; TiviMate</li>
@@ -674,9 +674,9 @@ export default function HomePage() {
 
             <div className="aii-card">
               <div className="aii-num">3</div>
-              <h3>24/7 UK Support Assistance</h3>
+              <h3>Dedicated UK Customer &amp; Technical Support</h3>
               <p>
-                Need help installing an application or configuring your player? Our British customer care specialists guide you step by step on WhatsApp.
+                From initial player installation to fine-tuning stream buffer settings, our friendly UK support team guides you personally via WhatsApp 7 days a week.
               </p>
               <ul>
                 <li>Instant response times</li>
@@ -688,10 +688,10 @@ export default function HomePage() {
 
           <div className="aii-cta">
             <a href="#aii-pricing" className="aii-btn price">
-              View IPTV Prices (GBP)
+              View IPTV Plans (GBP)
             </a>
             <Link href="/guide-installation" className="aii-btn faq">
-              Read Installation Guides
+              Explore Setup Guides
             </Link>
           </div>
         </div>
@@ -701,7 +701,7 @@ export default function HomePage() {
       <section className="rs-compare">
         <div className="comparison-section">
           <div className="section-header">
-            <h2>Why Televo IPTV Outperforms Other Providers</h2>
+            <h2>How Televo IPTV Compares to Standard Streaming Services</h2>
             <div className="uk-underline"></div>
           </div>
 
@@ -759,18 +759,18 @@ export default function HomePage() {
           <div className="user-benefits">
             <div className="benefit-card">
               <Zap className="w-8 h-8 text-[#0A2E66] mx-auto mb-2" />
-              <h3>High Speed &amp; Low Latency</h3>
-              <p>Optimized data routing delivers smooth live football with zero buffering on high-speed UK broadband.</p>
+              <h3>Ultra-Low Latency &amp; High Speed</h3>
+              <p>Optimized British data routing delivers smooth live football with zero buffering on high-speed UK broadband.</p>
             </div>
             <div className="benefit-card">
               <ShieldCheck className="w-8 h-8 text-[#0A2E66] mx-auto mb-2" />
-              <h3>Transparent GBP Pricing</h3>
-              <p>Fixed prices in British Pounds with no automatic direct debits, contracts, or unexpected charges.</p>
+              <h3>Clear, Fixed Pricing in British Pounds</h3>
+              <p>Prepaid subscriptions in GBP with no direct debits, hidden fees, or punitive contract lock-ins.</p>
             </div>
             <div className="benefit-card">
               <MessageSquare className="w-8 h-8 text-[#0A2E66] mx-auto mb-2" />
-              <h3>Dedicated UK Support</h3>
-              <p>Real human assistance available 7 days a week on WhatsApp to assist with setup and inquiries.</p>
+              <h3>Dedicated British Customer Care</h3>
+              <p>Real human support specialists available 7 days a week on WhatsApp to assist with setup, apps, and inquiries.</p>
             </div>
           </div>
         </div>
@@ -779,10 +779,10 @@ export default function HomePage() {
       {/* ─── 8. COMPATIBLE APPS SECTION (#logosNL) ─── */}
       <section id="logosNL">
         <div className="w">
-          <h2>Universal App &amp; Device Compatibility</h2>
+          <h2>Connect Televo IPTV on Your Preferred Streaming Apps</h2>
           <div className="uk-underline"></div>
           <p>
-            Televo IPTV connects effortlessly to all leading media players and smart platforms. Receive your Xtream Codes API credentials and M3U playlist instantly.
+            Televo IPTV integrates effortlessly with all top-tier IPTV player apps. Use your Xtream Codes credentials or M3U playlist URL on your television, tablet, or phone without hardware locks.
           </p>
 
           <div className="g">
@@ -802,7 +802,7 @@ export default function HomePage() {
               href="/guide-installation"
               className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0A2E66] hover:text-[#1D7AF2] transition-colors"
             >
-              Need setup guidance for your television? Explore our Televo IPTV Installation Centre →
+              Need step-by-step guidance for your television? Visit the Televo IPTV Setup Guide →
             </Link>
           </div>
         </div>
@@ -811,10 +811,10 @@ export default function HomePage() {
       {/* ─── 11. UK CUSTOMER REVIEWS (.rs-proof-nl) ─── */}
       <section className="rs-proof-nl">
         <div className="rs-proof-inner">
-          <h2 className="rs-proof-title">Trusted by Thousands of Viewers Across the UK</h2>
+          <h2 className="rs-proof-title">What UK Subscribers Say About Televo IPTV</h2>
           <div className="uk-underline"></div>
           <p className="rs-proof-sub">
-            Read genuine experiences from customers in London, Manchester, Birmingham, Glasgow, Leeds, Bristol, Liverpool, and Edinburgh.
+            Discover why thousands of households across London, Manchester, Birmingham, Glasgow, Leeds, and beyond rely on Televo IPTV for their daily entertainment.
           </p>
 
           <a
@@ -848,10 +848,10 @@ export default function HomePage() {
       <section className="faq-nl-iptv">
         <div className="faq-wrap">
           <div className="faq-head">
-            <h2>Televo IPTV — Frequently Asked Questions</h2>
+            <h2>Frequently Asked Questions About Televo IPTV</h2>
             <div className="uk-underline"></div>
             <p>
-              Find straightforward answers about setup, device compatibility, playlists, and UK network performance.
+              Everything you need to know about Televo IPTV plans, compatible apps, broadband stability, and quick activation.
             </p>
           </div>
 
@@ -879,9 +879,9 @@ export default function HomePage() {
             </div>
 
             <div className="cta-box">
-              <h3>Need Instant Setup Assistance?</h3>
+              <h3>Need Personal Help Setting Up Televo IPTV?</h3>
               <p>
-                Our UK technical team is on standby via WhatsApp every day from 08:00 to 23:00 to guide you through installation on any television or device.
+                Our UK technical specialists are on standby via WhatsApp from 08:00 to 23:00 daily to help you configure any television, streaming stick, or media player.
               </p>
               <a
                 href={SITE_CONFIG.whatsappUrl}
@@ -909,13 +909,13 @@ export default function HomePage() {
       <section className="final-cta-nl">
         <div className="final-cta-inner">
           <h2 className="final-cta-title">
-            Start Streaming with <span className="hi">Televo IPTV</span> Today
+            Upgrade Your Entertainment with <span className="hi">Televo IPTV</span> Today
           </h2>
           <p className="final-cta-sub">
-            Instant activation in 5-15 minutes, flexible contract-free plans in GBP, and a 7-day money-back guarantee across the UK.
+            Join thousands of happy UK viewers enjoying 50,000+ live channels, 4K sports, and 200,000+ on-demand titles with instant activation and a 7-day money-back guarantee.
           </p>
           <a href="#aii-pricing" className="final-cta-btn">
-            ⚡ Get Your Televo IPTV Access
+            ⚡ Choose Your Televo IPTV Plan
           </a>
         </div>
       </section>

@@ -13,11 +13,11 @@ export default function NotFound() {
       <div className="max-w-md mx-auto space-y-6">
         <div className="text-7xl font-black text-[#0A2E66]">404</div>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-[#0A2E66]">
-          Page Not Found
+          Page Not Found — Televo IPTV UK
         </h1>
         <div className="uk-underline"></div>
         <p className="text-slate-600 text-sm leading-relaxed">
-          The television page or guide you are looking for may have been moved or updated.
+          The streaming guide, channel directory, or resource you are looking for has been moved or is no longer available. Explore our IPTV subscription plans or return to the homepage to continue.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">

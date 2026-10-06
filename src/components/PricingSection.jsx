@@ -19,17 +19,17 @@ export default function PricingSection({ title, subtitle }) {
       ctaLabel: 'GET 1 MONTH PLAN',
       accessLabel: '1 Month Access',
       badge: 'TRIAL PASS',
-      highlight: 'Flexible Monthly Streaming',
+      highlight: 'Flexible Monthly IPTV Pass — No Contract',
       urgency: '⚡ Active UK Delivery — 5-15 Mins',
       isPopular: false,
       features: [
-        'Full HD & 4K Ultra HD streams',
-        'Full 7-Day UK EPG guide',
-        'Comprehensive VOD movies & series',
-        'Compatible with Smart TVs & Fire Stick',
-        'Anti-Freeze UK-optimised routing',
-        '7-day money-back guarantee',
-        'UK WhatsApp customer support',
+        'Crystal-Clear 4K UHD & Full HD live streams',
+        'Complete 7-day UK electronic programme guide (EPG)',
+        'Over 200,000 VOD movies & complete box sets',
+        'Compatible with Fire Stick, Smart TVs, Android & iOS',
+        'Anti-Freeze streaming servers with 99.9% uptime',
+        '7-day money-back satisfaction guarantee',
+        'Prompt UK customer assistance via WhatsApp',
       ],
     },
     {
@@ -41,17 +41,17 @@ export default function PricingSection({ title, subtitle }) {
       ctaLabel: 'GET 3 MONTHS PLAN',
       accessLabel: '3 Months Access',
       badge: 'SAVE 22%',
-      highlight: 'Flexible Quarterly Access — Just £8.33 / Mo',
+      highlight: 'Popular Quarterly IPTV Pass — Just £8.33 / Mo',
       urgency: '⚡ Active UK Delivery — 5-15 Mins',
       isPopular: false,
       features: [
-        'Full HD & 4K Ultra HD streams',
-        'Full 7-Day UK EPG guide',
-        'Comprehensive VOD movies & series',
-        'Compatible with Smart TVs & Fire Stick',
-        'Anti-Freeze UK-optimised routing',
-        '7-day money-back guarantee',
-        'UK WhatsApp customer support',
+        'Crystal-Clear 4K UHD & Full HD live streams',
+        'Complete 7-day UK electronic programme guide (EPG)',
+        'Over 200,000 VOD movies & complete box sets',
+        'Compatible with Fire Stick, Smart TVs, Android & iOS',
+        'Anti-Freeze streaming servers with 99.9% uptime',
+        '7-day money-back satisfaction guarantee',
+        'Prompt UK customer assistance via WhatsApp',
       ],
     },
     {
@@ -63,17 +63,17 @@ export default function PricingSection({ title, subtitle }) {
       ctaLabel: 'GET 6 MONTHS PLAN',
       accessLabel: '6 Months Access',
       badge: 'SAVE 44%',
-      highlight: 'Half-Year Pass — Just £6.66 / Mo',
+      highlight: 'Half-Year IPTV Pass — Just £6.66 / Mo',
       urgency: '⚡ Active UK Delivery — 5-15 Mins',
       isPopular: false,
       features: [
-        'Full HD & 4K Ultra HD streams',
-        'Full 7-Day UK EPG guide',
-        'Comprehensive VOD movies & series',
-        'Compatible with Smart TVs & Fire Stick',
-        'Anti-Freeze UK-optimised routing',
-        '7-day money-back guarantee',
-        'UK WhatsApp customer support',
+        'Crystal-Clear 4K UHD & Full HD live streams',
+        'Complete 7-day UK electronic programme guide (EPG)',
+        'Over 200,000 VOD movies & complete box sets',
+        'Compatible with Fire Stick, Smart TVs, Android & iOS',
+        'Anti-Freeze streaming servers with 99.9% uptime',
+        '7-day money-back satisfaction guarantee',
+        'Prompt UK customer assistance via WhatsApp',
       ],
     },
     {
@@ -85,16 +85,16 @@ export default function PricingSection({ title, subtitle }) {
       ctaLabel: 'GET 1 YEAR PLAN',
       accessLabel: '1 Year Access',
       badge: 'MOST POPULAR',
-      highlight: 'Best Value — Just £5.00 / Mo',
+      highlight: 'Ultimate Annual IPTV Pass — Just £5.00 / Mo',
       urgency: '🔥 Most Chosen by UK Households',
       isPopular: true,
       features: [
         '4K Ultra HD & 60 FPS sports streams',
         'Complete UK & International live channels',
-        'Full 7-Day UK EPG programme guide',
-        'Massive VOD library updated weekly',
+        'Full 7-day UK EPG programme guide',
+        'Over 200,000 VOD movies & series updated weekly',
         'Free setup walkthrough via WhatsApp',
-        '7-day money-back guarantee',
+        '7-day money-back satisfaction guarantee',
         'VIP Priority UK customer assistance',
       ],
     },
@@ -113,19 +113,19 @@ export default function PricingSection({ title, subtitle }) {
         <div className="uk-underline"></div>
         <p className="sub">
           {subtitle ||
-            'Simple, transparent pricing in British Pounds (GBP). No long-term commitments, no direct debits, and no hidden fees.'}
+            'Prepaid, transparent IPTV pricing in British Pounds (GBP). Enjoy 4K Ultra HD streams, 7-day EPG guides, and contract-free streaming across all your devices.'}
         </p>
 
         {/* Trust Badges Row */}
         <div className="trust-row">
           <span className="trust-pill">
-            <span className="dot"></span> Instant Setup Delivery (5-15 mins)
+            <span className="dot"></span> Instant Digital Activation (5-15 Mins)
           </span>
           <span className="trust-pill">
-            <span className="dot"></span> 7-Day Money-Back Guarantee
+            <span className="dot"></span> Risk-Free 7-Day Money-Back Guarantee
           </span>
           <span className="trust-pill">
-            <span className="dot"></span> Dedicated UK WhatsApp Support
+            <span className="dot"></span> Dedicated British WhatsApp Support
           </span>
         </div>
 
@@ -134,7 +134,7 @@ export default function PricingSection({ title, subtitle }) {
           <div className="counter-header">
             <Tv className="w-4 h-4 text-blue-600 inline-block mr-1" />
             <span className="counter-title">
-              SELECT NUMBER OF SIMULTANEOUS DEVICE CONNECTIONS:
+              SELECT SIMULTANEOUS SCREEN CONNECTIONS:
             </span>
           </div>
 

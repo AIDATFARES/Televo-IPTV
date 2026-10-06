@@ -94,7 +94,7 @@ export default async function DeviceGuidePage({ params }) {
         <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 mb-10">
           <h2 className="text-base font-bold text-[#0A2E66] mb-3 flex items-center gap-2">
             <Zap className="w-4 h-4 text-blue-600" />
-            What You Need Before Starting
+            What You Need to Set Up Televo IPTV
           </h2>
           <ul className="space-y-2 text-sm text-slate-700">
             {guide.prerequisites.map((req, i) => (
@@ -109,7 +109,7 @@ export default async function DeviceGuidePage({ params }) {
         {/* Step-by-Step Instructions */}
         <div className="space-y-6 mb-12">
           <h2 className="text-2xl font-black text-[#0A2E66] mb-6">
-            Step-by-Step Installation Instructions
+            Step-by-Step Televo IPTV Setup Guide
           </h2>
 
           {guide.steps.map((item) => (
@@ -135,20 +135,20 @@ export default async function DeviceGuidePage({ params }) {
         {/* Troubleshooting Tip Box */}
         <div className="p-6 rounded-2xl bg-amber-50 border border-amber-200 mb-12">
           <h3 className="text-base font-bold text-amber-900 mb-2">
-            💡 Useful Configuration Tip for {guide.device}
+            💡 Pro Tip for Smooth Televo IPTV Streaming on {guide.device}
           </h3>
           <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">
-            Ensure your device is connected via 5GHz Wi-Fi or Ethernet cable for maximum stability. When entering your Server URL, ensure you do not add an accidental space at the end.
+            For the most reliable 4K playback without buffering, connect your {guide.device} using a 5GHz Wi-Fi band or direct Ethernet cable. Double-check your server address and login credentials to avoid trailing spaces.
           </p>
         </div>
 
         {/* WhatsApp Setup Assistance Callout */}
         <div className="p-8 rounded-2xl bg-[#0A2E66] text-white text-center mb-16">
           <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
-            Need Help Installing on Your {guide.device}?
+            Need Assistance Setting Up Televo IPTV on Your {guide.device}?
           </h3>
           <p className="text-sm text-blue-100 max-w-lg mx-auto mb-6">
-            Our UK technical support team is available on WhatsApp to walk you through setup step by step.
+            Our dedicated UK support team is available 7 days a week on WhatsApp to assist with app selection, login validation, and channel configuration.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a

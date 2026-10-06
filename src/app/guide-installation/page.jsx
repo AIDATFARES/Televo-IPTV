@@ -36,11 +36,11 @@ export default function InstallationHubPage() {
             Updated for 2026 • Beginner-Friendly Setup 🇬🇧
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-[#0A2E66] tracking-tight">
-            Televo IPTV Installation Centre
+            Televo IPTV Device Setup &amp; Installation Guides
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Select your streaming device below for clear, step-by-step configuration instructions. Our credentials work seamlessly across all major media players and television operating systems.
+            Set up your Televo IPTV subscription in under 5 minutes. Browse our step-by-step UK installation tutorials for Amazon Fire Stick, Smart TVs, Android TV, Apple TV, iOS, and PC with instant M3U and Xtream Codes API integration.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function InstallationHubPage() {
               Understanding Your Televo IPTV Connection Details
             </h2>
             <p className="text-blue-100 text-sm mt-2">
-              When your subscription is activated, you will receive two standardized connection formats. Both provide identical access to our full 4K and Full HD channel library.
+              Once your Televo IPTV subscription is activated, you will receive two flexible connection options. Both grant full, unrestricted access to 50,000+ live TV channels and 200,000+ VOD movies and series.
             </p>
           </div>
 
