@@ -62,11 +62,11 @@ export default function FAQPage() {
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-3 text-base">
             Find authoritative answers to all your questions about{' '}
-            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
               Televo IPTV subscriptions
             </Link>
             ,{' '}
-            <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
               supported streaming applications
             </Link>
             , British broadband optimization, and rapid 5–15 minute activation.

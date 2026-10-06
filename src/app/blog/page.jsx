@@ -49,11 +49,11 @@ export default function BlogHubPage() {
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
             Expert tutorials, player comparisons, buffering solutions, and setup tips to elevate your{' '}
-            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
               Televo IPTV streaming experience
             </Link>{' '}
             across all your screens, with step-by-step guidance in our{' '}
-            <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
               installation centre
             </Link>
             .

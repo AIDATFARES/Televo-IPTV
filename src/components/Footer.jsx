@@ -17,11 +17,11 @@ export default function Footer() {
             </div>
             <p className="aii-about-text">
               <strong>Televo IPTV</strong> is the UK’s premier IPTV streaming provider, delivering buffer-free 4K live sports, 50,000+ international television channels, and 200,000+ on-demand movies through our{' '}
-              <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+              <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
                 IPTV subscription plans
               </Link>{' '}
               with instant digital activation and step-by-step{' '}
-              <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+              <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
                 device setup guides
               </Link>
               .

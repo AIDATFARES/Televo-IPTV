@@ -46,11 +46,11 @@ export default function ContactPage() {
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-3 text-base">
             Have questions about a{' '}
-            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
               Televo IPTV subscription
             </Link>
             , need quick assistance configuring your streaming device via our{' '}
-            <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/guide-installation" className="text-[#0854c4] font-semibold hover:underline">
               setup guides
             </Link>
             , or want to verify connection details? Our UK customer care team is here to assist 7 days a week.

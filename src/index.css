@@ -147,8 +147,8 @@ body {
 }
 
 .nav-links li a:hover, .nav-links li a.active {
-  color: #1D7AF2;
-  background: rgba(29, 122, 242, 0.08);
+  color: #0854c4;
+  background: rgba(8, 84, 196, 0.08);
 }
 
 .btn-cta {
@@ -1108,7 +1108,7 @@ body {
   top: 14px;
   right: -86px;
   transform: rotate(35deg);
-  background: #1D7AF2;
+  background: #0854c4;
   color: #fff;
   font-weight: 900;
   padding: 6px 74px;
@@ -2076,7 +2076,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #1D7AF2;
+  color: #0854c4;
   margin-bottom: 4px;
 }
 
@@ -2447,11 +2447,11 @@ body {
 
 #aii-footer .aii-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 0.92rem; }
 #aii-footer .aii-links a { color: #0b0f14; text-decoration: none; font-weight: 600; transition: color 0.15s; }
-#aii-footer .aii-links a:hover { color: #1D7AF2; }
+#aii-footer .aii-links a:hover { color: #0854c4; }
 
 #aii-footer .aii-contact { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 0.92rem; color: #475569; }
 #aii-footer .aii-contact a { color: #0b0f14; text-decoration: none; font-weight: 700; }
-#aii-footer .aii-contact a:hover { color: #1D7AF2; }
+#aii-footer .aii-contact a:hover { color: #0854c4; }
 
 #aii-footer .aii-paybox {
   border: 1.5px solid #dbe7ff;

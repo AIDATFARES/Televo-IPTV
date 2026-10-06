@@ -117,7 +117,7 @@ export default function SubscriptionPage() {
               >
                 <summary className="font-bold text-sm sm:text-base text-[#0A2E66] cursor-pointer list-none flex items-center justify-between gap-4">
                   <span>{item.question}</span>
-                  <span className="text-[#1D7AF2] font-black group-open:rotate-45 transition-transform text-lg">
+                  <span className="text-[#0854c4] font-black group-open:rotate-45 transition-transform text-lg">
                     +
                   </span>
                 </summary>
@@ -131,7 +131,7 @@ export default function SubscriptionPage() {
           <div className="text-center mt-8">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-1.5 text-sm text-[#0A2E66] hover:text-[#1D7AF2] font-bold"
+              className="inline-flex items-center gap-1.5 text-sm text-[#0A2E66] hover:text-[#0854c4] font-bold"
             >
               Have a custom request or need multi-room consultation? Contact us →
             </Link>

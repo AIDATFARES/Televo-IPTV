@@ -41,19 +41,19 @@ export default function InstallationHubPage() {
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
             Set up your{' '}
-            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/subscription" className="text-[#0854c4] font-semibold hover:underline">
               Televo IPTV subscription
             </Link>{' '}
             in under 5 minutes. Browse our step-by-step UK installation tutorials for{' '}
-            <Link href="/guide-installation/firestick" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/guide-installation/firestick" className="text-[#0854c4] font-semibold hover:underline">
               Amazon Fire Stick
             </Link>
             ,{' '}
-            <Link href="/guide-installation/samsung-smart-tv" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/guide-installation/samsung-smart-tv" className="text-[#0854c4] font-semibold hover:underline">
               Samsung Smart TV
             </Link>
             ,{' '}
-            <Link href="/guide-installation/lg-smart-tv" className="text-[#1D7AF2] font-semibold hover:underline">
+            <Link href="/guide-installation/lg-smart-tv" className="text-[#0854c4] font-semibold hover:underline">
               LG webOS
             </Link>
             , Android TV, Apple TV, iOS, and PC with instant M3U and Xtream Codes API integration.
@@ -66,7 +66,7 @@ export default function InstallationHubPage() {
             <Link
               key={device.slug}
               href={`/guide-installation/${device.slug}`}
-              className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-[#1D7AF2] hover:shadow-md transition-all flex flex-col justify-between group hover:-translate-y-1"
+              className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm hover:border-[#0854c4] hover:shadow-md transition-all flex flex-col justify-between group hover:-translate-y-1"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -75,7 +75,7 @@ export default function InstallationHubPage() {
                   </span>
                   <span className="text-xs text-slate-500">Avg setup: {device.setupTime}</span>
                 </div>
-                <h2 className="text-xl font-black text-[#0A2E66] group-hover:text-[#1D7AF2] transition-colors">
+                <h2 className="text-xl font-black text-[#0A2E66] group-hover:text-[#0854c4] transition-colors">
                   {device.name}
                 </h2>
                 <p className="text-xs text-slate-600 mt-2 leading-relaxed">
@@ -100,7 +100,7 @@ export default function InstallationHubPage() {
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0A2E66] group-hover:text-[#1D7AF2]">
+              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#0A2E66] group-hover:text-[#0854c4]">
                 <span>Open {device.name} Guide</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </div>
