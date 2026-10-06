@@ -10,8 +10,8 @@ export default function SEO({
   schema = null,
 }) {
   const fullTitle = title
-    ? `${title} | ${SITE_CONFIG.brandName}`
-    : `${SITE_CONFIG.brandName} UK | Premium IPTV Subscription & Streaming Service`;
+    ? `${title} | ${SITE_CONFIG.serviceName}`
+    : `${SITE_CONFIG.serviceName} UK | Premium IPTV Subscription & Streaming Service`;
 
   const metaDesc =
     description ||
@@ -44,7 +44,7 @@ export default function SEO({
     updateMeta('og:description', metaDesc, true);
     updateMeta('og:type', ogType, true);
     updateMeta('og:url', canonical, true);
-    updateMeta('og:site_name', SITE_CONFIG.brandName, true);
+    updateMeta('og:site_name', `${SITE_CONFIG.brandName} - ${SITE_CONFIG.serviceName}`, true);
     updateMeta('og:image', ogImage, true);
     updateMeta('og:locale', 'en_GB', true);
 

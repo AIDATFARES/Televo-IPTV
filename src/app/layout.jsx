@@ -27,7 +27,7 @@ export const metadata = {
     type: 'website',
     locale: 'en_GB',
     url: SITE_CONFIG.domain,
-    siteName: SITE_CONFIG.brandName,
+    siteName: `${SITE_CONFIG.brandName} - ${SITE_CONFIG.serviceName}`,
     title: 'Televo IPTV UK | Premium IPTV Subscription & Streaming Service',
     description:
       'Discover Televo IPTV in the UK. Explore reliable IPTV subscriptions in GBP, compatible devices, and dedicated UK customer support on WhatsApp.',
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
         '@type': 'Organization',
         '@id': `${SITE_CONFIG.domain}/#organization`,
         name: SITE_CONFIG.brandName,
-        alternateName: SITE_CONFIG.shortBrand,
+        alternateName: SITE_CONFIG.serviceName,
         url: SITE_CONFIG.domain,
         logo: {
           '@type': 'ImageObject',
@@ -80,7 +80,7 @@ export default function RootLayout({ children }) {
         '@type': 'WebSite',
         '@id': `${SITE_CONFIG.domain}/#website`,
         url: SITE_CONFIG.domain,
-        name: SITE_CONFIG.brandName,
+        name: `${SITE_CONFIG.brandName} | ${SITE_CONFIG.serviceName}`,
         description:
           'Televo IPTV UK - Premium IPTV subscription and streaming service in the United Kingdom.',
         publisher: {

@@ -50,7 +50,7 @@ export default function AboutPage() {
         {/* Brand Mission Section */}
         <div className="max-w-none text-slate-700 space-y-6 text-sm sm:text-base leading-relaxed mb-14">
           <p>
-            <strong>Televo IPTV</strong> (commonly referenced simply as <strong>Televo</strong>) is a specialized digital IPTV service built to deliver premium television streaming across the United Kingdom. We supply live TV channels and high-definition streams directly over your existing home broadband network, empowering British viewers to bypass expensive satellite dishes, rooftop aerials, and rigid multi-year cable contracts by exploring our{' '}
+            <strong>Televo</strong> is a specialized British entertainment brand, and <strong>Televo IPTV</strong> is our premier digital IPTV service built to deliver reliable television streaming across the United Kingdom. We supply live TV channels and high-definition streams directly over your existing home broadband network, empowering British viewers to bypass expensive satellite dishes, rooftop aerials, and rigid multi-year cable contracts by exploring our{' '}
             <Link href="/pricing" className="text-[#1D7AF2] font-semibold hover:underline">
               transparent IPTV pricing
             </Link>

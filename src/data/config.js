@@ -5,9 +5,10 @@ import { postPlayers } from './posts/players.js';
 import { postSetup } from './posts/setup.js';
 
 export const SITE_CONFIG = {
-  brandName: 'Televo IPTV',
+  brandName: 'Televo',
+  serviceName: 'Televo IPTV',
   shortBrand: 'Televo',
-  legalEntity: 'Televo IPTV UK',
+  legalEntity: 'Televo UK',
   domain: 'https://www.televoiptv.co.uk',
   supportEmail: 'support@televoiptv.co.uk',
   whatsappNumber: '+447882781998',
@@ -675,8 +676,8 @@ export const FAQ_DATA = [
     category: 'General & Brand',
     items: [
       {
-        question: 'What is Televo IPTV?',
-        answer: 'Televo IPTV (often simply called Televo) is a dedicated streaming service designed for customers across the United Kingdom. We provide flexible IPTV subscriptions, compatible device setup guidance, and British customer support to ensure seamless access to live television, sports, and on-demand entertainment.',
+        question: 'What is Televo and what is Televo IPTV?',
+        answer: 'Televo is a premier British television streaming brand, and Televo IPTV is our specialized IPTV service designed for customers across the United Kingdom. We provide flexible IPTV subscriptions, compatible device setup guidance, and dedicated British customer support to ensure seamless access to live television, sports, and on-demand entertainment.',
       },
       {
         question: 'How does Televo IPTV work?',
