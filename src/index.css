@@ -12,7 +12,7 @@
   --radius-xl: 22px;
   --shadow-sm: 0 6px 18px rgba(0, 0, 0, 0.12);
   --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.16);
-  --uk-underline: linear-gradient(90deg, #002395 0 33%, #FFFFFF 33% 66%, #C8102E 66% 100%);
+  --uk-underline: url("/uk-flag-badge.svg");
 }
 
 html {
@@ -31,14 +31,59 @@ body {
   line-height: 1.6;
 }
 
-/* ===== UK FLAG ACCENT BAR ===== */
+/* ===== GENUINE UNITED KINGDOM (UNION JACK) FLAG ACCENT DIVIDER ===== */
 .uk-underline, .u, .underline-bar {
-  width: 120px;
-  height: 5px;
-  margin: 12px auto 18px;
-  border-radius: 999px;
-  background: var(--uk-underline) !important;
-  box-shadow: 0 3px 12px rgba(10, 46, 102, 0.15);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  width: 150px !important;
+  height: 22px !important;
+  margin: 12px auto 20px !important;
+  background-color: transparent !important;
+  background-image: url("/uk-flag-badge.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 38px 19px !important;
+  box-shadow: none !important;
+  position: relative !important;
+}
+
+.uk-underline::before,
+.uk-underline::after {
+  content: "" !important;
+  flex: 1 !important;
+  height: 2.5px !important;
+  border-radius: 999px !important;
+}
+
+.uk-underline::before {
+  background: linear-gradient(90deg, transparent, #012169) !important;
+}
+
+.uk-underline::after {
+  background: linear-gradient(90deg, #C8102E, transparent) !important;
+}
+
+/* Enhancements on dark blue background sections */
+.aii-how .uk-underline::before,
+#footNL .uk-underline::before,
+.rs-proof-nl .uk-underline::before,
+.aii-hero .uk-underline::before {
+  background: linear-gradient(90deg, transparent, #60a5fa) !important;
+}
+
+.aii-how .uk-underline::after,
+#footNL .uk-underline::after,
+.rs-proof-nl .uk-underline::after,
+.aii-hero .uk-underline::after {
+  background: linear-gradient(90deg, #ef4444, transparent) !important;
+}
+
+.uk-underline.\!mx-0 {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  justify-content: flex-start !important;
 }
 
 /* ===== HEADER STYLING (EXACT codeiptvs.fr) ===== */
