@@ -1,6 +1,11 @@
-import Link from 'next/link';
+'use client';
 
-export default function Logo({ size = 'default', showLink = true, variant = 'dark' }) {
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+export default function Logo({ size = 'default', showLink = true, variant = 'dark', onClick }) {
+  const pathname = usePathname();
+
   const iconSizes = {
     small: 'w-7 h-7',
     default: 'w-9 h-9',
@@ -20,6 +25,22 @@ export default function Logo({ size = 'default', showLink = true, variant = 'dar
   };
 
   const textColor = variant === 'light' ? 'text-white' : 'text-[#0A2E66]';
+
+  const handleClick = (e) => {
+    if (onClick) {
+      onClick(e);
+      if (e.defaultPrevented) return;
+    }
+    if (pathname === '/') {
+      e.preventDefault();
+      if (typeof window !== 'undefined') {
+        if (window.location.hash) {
+          window.history.pushState(null, '', '/');
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  };
 
   const content = (
     <div className="flex items-center gap-2.5 group select-none">
@@ -79,7 +100,13 @@ export default function Logo({ size = 'default', showLink = true, variant = 'dar
 
   if (showLink) {
     return (
-      <Link href="/" className="inline-block" aria-label="Televo IPTV - Home">
+      <Link
+        href="/"
+        scroll={true}
+        onClick={handleClick}
+        className="inline-block cursor-pointer"
+        aria-label="Televo IPTV - Home"
+      >
         {content}
       </Link>
     );

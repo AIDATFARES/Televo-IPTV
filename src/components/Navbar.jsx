@@ -9,7 +9,18 @@ import { NAV_LINKS, SITE_CONFIG } from '../data/config';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+
+  // Dynamic scroll detection for sticky navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Close mobile drawer on route change
   useEffect(() => {
@@ -26,6 +37,18 @@ export default function Navbar() {
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
     document.body.style.overflow = '';
+  };
+
+  const handleNavClick = (path, e) => {
+    if (path === '/' && pathname === '/') {
+      e.preventDefault();
+      if (typeof window !== 'undefined') {
+        if (window.location.hash) {
+          window.history.pushState(null, '', '/');
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
   };
 
   return (
@@ -58,7 +81,7 @@ export default function Navbar() {
       </div>
 
       {/* Main Header (Exact codeiptvs.fr Layout & Classes) */}
-      <header className="site-header-iptv">
+      <header className={`site-header-iptv ${isScrolled ? 'is-scrolled' : ''}`}>
         <div className="header-wrapper">
           {/* Logo */}
           <Logo size="default" variant="dark" />
@@ -73,6 +96,7 @@ export default function Navbar() {
                     <Link
                       href={link.path}
                       className={isActive ? 'active' : ''}
+                      onClick={(e) => handleNavClick(link.path, e)}
                     >
                       {link.name}
                     </Link>
@@ -105,7 +129,7 @@ export default function Navbar() {
         {/* Mobile Navigation Drawer */}
         <div className={`mobile-nav ${mobileMenuOpen ? 'active' : ''}`}>
           <div className="p-5 flex items-center justify-between border-b border-slate-100">
-            <Logo size="small" variant="dark" />
+            <Logo size="small" variant="dark" onClick={closeMobileMenu} />
             <button
               onClick={closeMobileMenu}
               className="p-2 text-slate-500 hover:text-slate-800 font-black text-xl"
@@ -123,7 +147,10 @@ export default function Navbar() {
                   <li key={link.path}>
                     <Link
                       href={link.path}
-                      onClick={closeMobileMenu}
+                      onClick={(e) => {
+                        closeMobileMenu();
+                        handleNavClick(link.path, e);
+                      }}
                       className={`flex items-center justify-between p-3.5 rounded-xl font-bold text-base transition-colors ${
                         isActive
                           ? 'bg-blue-50 text-blue-600'
@@ -164,4 +191,3 @@ export default function Navbar() {
     </>
   );
 }
-

@@ -18,7 +18,7 @@
 html {
   scroll-behavior: smooth;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
   color: #2b3340;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: clip;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -89,11 +89,20 @@ body {
 /* ===== HEADER STYLING (EXACT codeiptvs.fr) ===== */
 .site-header-iptv {
   background: #ffffff;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 12px rgba(10, 46, 102, 0.06);
   position: sticky;
   top: 0;
   z-index: 9999;
   width: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-header-iptv.is-scrolled {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(10, 46, 102, 0.12);
+  border-bottom: 1px solid rgba(219, 231, 255, 0.7);
 }
 
 .header-wrapper {
@@ -105,6 +114,11 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-header-iptv.is-scrolled .header-wrapper {
+  height: 68px;
 }
 
 .desktop-nav {
@@ -211,6 +225,7 @@ body {
   .desktop-nav { display: none; }
   .mobile-menu-toggle { display: flex; }
   .header-wrapper { padding: 0 20px; height: 72px; }
+  .site-header-iptv.is-scrolled .header-wrapper { height: 62px; }
 }
 
 /* ===== HERO SECTION (.aii-hero) ===== */
