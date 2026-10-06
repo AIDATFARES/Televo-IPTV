@@ -276,26 +276,6 @@ export default function HomePage() {
                 </a>
               </div>
 
-              {/* Stats Bar */}
-              <div className="aii-stats">
-                <div className="stat">
-                  <b>4K / UHD</b>
-                  <small>High Bitrate Streams</small>
-                </div>
-                <div className="stat">
-                  <b>99.9%</b>
-                  <small>UK Server Uptime</small>
-                </div>
-                <div className="stat">
-                  <b>5 - 15 Mins</b>
-                  <small>Instant Setup Delivery</small>
-                </div>
-                <div className="stat">
-                  <b>7 Days</b>
-                  <small>Money-Back Guarantee</small>
-                </div>
-              </div>
-
               {/* Trust Indicators */}
               <div className="trust">
                 <span>🔒 Secure UK Checkout</span>
