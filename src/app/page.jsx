@@ -823,7 +823,7 @@ export default function HomePage() {
             rel="noopener noreferrer"
             className="rs-wa-cta"
           >
-            💬 Order or Ask a Question on WhatsApp ({SITE_CONFIG.whatsappNumber})
+            💬 Order or Ask a Question on WhatsApp
           </a>
 
           <div className="rs-t-grid">
@@ -889,7 +889,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="cta-btn email-btn"
               >
-                💬 Chat on WhatsApp (+447882781998)
+                💬 Chat on WhatsApp
               </a>
               <Link href="/guide-installation" className="cta-btn-secondary">
                 📖 View All Installation Guides

@@ -51,7 +51,7 @@ export default function Navbar() {
               className="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1 transition-colors"
             >
               <MessageSquare className="w-3.5 h-3.5" />
-              WhatsApp: {SITE_CONFIG.whatsappNumber}
+              WhatsApp Support
             </a>
           </div>
         </div>
@@ -155,7 +155,7 @@ export default function Navbar() {
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl font-bold text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 transition-colors"
               >
                 <MessageSquare className="w-4 h-4" />
-                WhatsApp: {SITE_CONFIG.whatsappNumber}
+                WhatsApp Support
               </a>
             </div>
           </div>

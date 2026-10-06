@@ -687,7 +687,7 @@ export const FAQ_DATA = [
     items: [
       {
         question: 'How do I subscribe to Televo IPTV?',
-        answer: 'Simply choose your preferred subscription tier (1, 3, 6, or 12 months, or a multi-screen family plan) on our Pricing page, and contact our team via WhatsApp (+447882781998) or checkout. Your account credentials and setup instructions are delivered directly to your WhatsApp and email typically within 5 to 15 minutes.',
+        answer: 'Simply choose your preferred subscription tier (1, 3, 6, or 12 months, or a multi-screen family plan) on our Pricing page, and contact our team via WhatsApp or checkout. Your account credentials and setup instructions are delivered directly to your WhatsApp and email typically within 5 to 15 minutes.',
       },
       {
         question: 'Are there any long-term contracts or direct debits?',
@@ -733,7 +733,7 @@ export const FAQ_DATA = [
       },
       {
         question: 'How can I contact Televo IPTV customer support?',
-        answer: 'You can contact our UK customer support team directly via WhatsApp at +447882781998, by emailing support@televoiptv.co.uk, or by submitting a message on our Contact page. We are available 7 days a week.',
+        answer: 'You can contact our UK customer support team directly via WhatsApp, by emailing support@televoiptv.co.uk, or by submitting a message on our Contact page. We are available 7 days a week.',
       },
     ],
   },
@@ -841,7 +841,7 @@ export const BLOG_POSTS = [
       <p>Run an independent speed test on your streaming device using Fast.com or Speedtest.net. For Full HD streaming, a consistent 15 Mbps is recommended. For 4K UHD content, ensure your device receives at least 25-30 Mbps.</p>
 
       <h2>5. Reach Out to Televo IPTV Support</h2>
-      <p>If you have implemented these recommendations and still face issues, contact the <strong>Televo IPTV</strong> support team via WhatsApp (+447882781998). Our team can test your connection routing and ensure your account is connected to our fastest UK edge node.</p>
+      <p>If you have implemented these recommendations and still face issues, contact the <strong>Televo IPTV</strong> support team via WhatsApp. Our team can test your connection routing and ensure your account is connected to our fastest UK edge node.</p>
     `,
   },
   {
@@ -915,7 +915,7 @@ export const BLOG_POSTS = [
       <p>Launch your player, select <strong>Login with Xtream Codes API</strong>, and enter your Televo IPTV server address, username, and password. The application will synchronize the channel catalogue, live sporting schedules, and VOD titles within 60 seconds.</p>
 
       <h2>Need Personal Assistance?</h2>
-      <p>Our British customer service team is on hand 7 days a week via WhatsApp (+447882781998) to assist with any questions or guide you through first-time setup.</p>
+      <p>Our British customer service team is on hand 7 days a week via WhatsApp to assist with any questions or guide you through first-time setup.</p>
     `,
   },
 ];

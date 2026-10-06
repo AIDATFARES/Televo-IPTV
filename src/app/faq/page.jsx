@@ -167,7 +167,7 @@ export default function FAQPage() {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-600/30 transition-all"
             >
               <MessageSquare className="w-4 h-4" />
-              Chat on WhatsApp ({SITE_CONFIG.whatsappNumber})
+              Chat on WhatsApp
             </a>
             <Link
               href="/contact"

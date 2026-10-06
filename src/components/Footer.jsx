@@ -70,14 +70,14 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MessageSquare className="w-4 h-4 text-emerald-600 shrink-0 mt-1" />
                 <div>
-                  <span className="text-xs text-slate-500 block">WhatsApp:</span>
+                  <span className="text-xs text-slate-500 block">WhatsApp Support:</span>
                   <a
                     href={SITE_CONFIG.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-emerald-700 font-bold"
+                    className="text-emerald-700 font-bold hover:underline"
                   >
-                    {SITE_CONFIG.whatsappNumber}
+                    Chat on WhatsApp
                   </a>
                 </div>
               </li>

@@ -158,7 +158,7 @@ export default async function DeviceGuidePage({ params }) {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-600/30 transition-all"
             >
               <MessageSquare className="w-4 h-4" />
-              WhatsApp Help ({SITE_CONFIG.whatsappNumber})
+              WhatsApp Support
             </a>
             <Link
               href="/subscription"

@@ -41,7 +41,7 @@ export default function RefundPolicyPage() {
           <section>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">3. How to Request a Refund</h2>
             <p>
-              To initiate a refund, simply send a message to our WhatsApp support line (<a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-bold underline">{SITE_CONFIG.whatsappNumber}</a>) or email <a href={`mailto:${SITE_CONFIG.supportEmail}`} className="text-blue-600 underline font-semibold">{SITE_CONFIG.supportEmail}</a> with your account username or order confirmation.
+              To initiate a refund, simply send a message to our <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-bold underline">WhatsApp Support Team</a> or email <a href={`mailto:${SITE_CONFIG.supportEmail}`} className="text-blue-600 underline font-semibold">{SITE_CONFIG.supportEmail}</a> with your account username or order confirmation.
             </p>
           </section>
 

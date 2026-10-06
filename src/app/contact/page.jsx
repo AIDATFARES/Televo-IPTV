@@ -60,8 +60,9 @@ export default function ContactPage() {
               <p className="text-xs text-slate-600 leading-relaxed mb-4">
                 The fastest way to reach our UK team. Order subscriptions, get setup tutorials, and receive instant support directly on your mobile.
               </p>
-              <div className="text-lg font-black text-emerald-700 font-mono mb-4">
-                {SITE_CONFIG.whatsappNumber}
+              <div className="text-sm font-bold text-emerald-800 mb-4 flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Online Now • Instant Reply</span>
               </div>
               <a
                 href={SITE_CONFIG.whatsappUrl}

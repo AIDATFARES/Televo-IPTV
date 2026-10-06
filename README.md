@@ -9,7 +9,7 @@ Production-ready, brand-first IPTV website built from scratch for the United Kin
 - **Currency:** GBP (£)
 - **Primary Language:** English (British English)
 - **Official Domain:** https://www.televoiptv.co.uk/
-- **WhatsApp Support:** [+447882781998](https://wa.me/447882781998)
+- **WhatsApp Support:** [WhatsApp Live Chat](https://wa.me/447882781998)
 - **Support Email:** support@televoiptv.co.uk
 
 ## Technology Stack

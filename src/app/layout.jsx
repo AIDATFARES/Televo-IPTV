@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
         contactPoint: [
           {
             '@type': 'ContactPoint',
-            telephone: SITE_CONFIG.whatsappNumber,
+            url: SITE_CONFIG.whatsappUrl,
             contactType: 'customer support',
             availableLanguage: 'English',
             areaServed: 'GB',
