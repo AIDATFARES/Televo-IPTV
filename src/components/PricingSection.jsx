@@ -1,10 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Tv, Zap, Check, MessageSquare, ShieldCheck, Flame, Sparkles } from 'lucide-react';
-import { SITE_CONFIG } from '../data/config';
+import { Tv, ChevronRight } from 'lucide-react';
 
-export default function PricingSection({ title, subtitle, showBreadcrumbs = false }) {
+export default function PricingSection({ title, subtitle }) {
   // Device counter: 1, 2, 3, or 4 simultaneous connections
   const [deviceCount, setDeviceCount] = useState(1);
 
@@ -13,9 +12,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
     1: [
       {
         duration: '1 Month',
+        ctaLabel: 'GET 1 MONTH PLAN',
         accessLabel: '1 Month Access',
         badge: 'TRIAL PASS',
-        badgeType: 'trial',
         price: 11.99,
         originalPrice: 14.99,
         monthlyEq: '£11.99/mo eq.',
@@ -35,9 +34,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '3 Months',
+        ctaLabel: 'GET 3 MONTHS PLAN',
         accessLabel: '3 Months Access',
         badge: 'SAVE 22%',
-        badgeType: 'discount',
         price: 27.99,
         originalPrice: 34.99,
         monthlyEq: '£9.33/mo eq.',
@@ -57,9 +56,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '6 Months',
+        ctaLabel: 'GET 6 MONTHS PLAN',
         accessLabel: '6 Months Access',
         badge: 'SAVE 44%',
-        badgeType: 'discount',
         price: 39.99,
         originalPrice: 54.99,
         monthlyEq: '£6.66/mo eq.',
@@ -79,9 +78,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '12 Months',
+        ctaLabel: 'GET 1 YEAR PLAN',
         accessLabel: '1 Year Access',
         badge: 'MOST POPULAR',
-        badgeType: 'popular',
         price: 49.99,
         originalPrice: 79.99,
         monthlyEq: '£4.16/mo eq.',
@@ -103,9 +102,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
     2: [
       {
         duration: '1 Month',
+        ctaLabel: 'GET 1 MONTH PLAN',
         accessLabel: '1 Month Access',
         badge: 'DUO TRIAL',
-        badgeType: 'trial',
         price: 18.99,
         originalPrice: 24.99,
         monthlyEq: '£9.50/mo per screen',
@@ -125,9 +124,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '3 Months',
+        ctaLabel: 'GET 3 MONTHS PLAN',
         accessLabel: '3 Months Access',
         badge: 'SAVE 25%',
-        badgeType: 'discount',
         price: 39.99,
         originalPrice: 49.99,
         monthlyEq: '£6.66/mo per screen',
@@ -147,9 +146,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '6 Months',
+        ctaLabel: 'GET 6 MONTHS PLAN',
         accessLabel: '6 Months Access',
         badge: 'SAVE 45%',
-        badgeType: 'discount',
         price: 54.99,
         originalPrice: 69.99,
         monthlyEq: '£4.58/mo per screen',
@@ -169,9 +168,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '12 Months',
+        ctaLabel: 'GET 1 YEAR PLAN',
         accessLabel: '1 Year Access',
         badge: 'MOST POPULAR',
-        badgeType: 'popular',
         price: 74.99,
         originalPrice: 99.99,
         monthlyEq: '£3.12/mo per screen',
@@ -193,9 +192,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
     3: [
       {
         duration: '1 Month',
+        ctaLabel: 'GET 1 MONTH PLAN',
         accessLabel: '1 Month Access',
         badge: 'TRIO TRIAL',
-        badgeType: 'trial',
         price: 24.99,
         originalPrice: 32.99,
         monthlyEq: '£8.33/mo per screen',
@@ -215,9 +214,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '3 Months',
+        ctaLabel: 'GET 3 MONTHS PLAN',
         accessLabel: '3 Months Access',
         badge: 'SAVE 28%',
-        badgeType: 'discount',
         price: 49.99,
         originalPrice: 64.99,
         monthlyEq: '£5.55/mo per screen',
@@ -237,9 +236,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '6 Months',
+        ctaLabel: 'GET 6 MONTHS PLAN',
         accessLabel: '6 Months Access',
         badge: 'SAVE 48%',
-        badgeType: 'discount',
         price: 69.99,
         originalPrice: 89.99,
         monthlyEq: '£3.88/mo per screen',
@@ -259,9 +258,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '12 Months',
+        ctaLabel: 'GET 1 YEAR PLAN',
         accessLabel: '1 Year Access',
         badge: 'MOST POPULAR',
-        badgeType: 'popular',
         price: 94.99,
         originalPrice: 129.99,
         monthlyEq: '£2.63/mo per screen',
@@ -283,9 +282,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
     4: [
       {
         duration: '1 Month',
+        ctaLabel: 'GET 1 MONTH PLAN',
         accessLabel: '1 Month Access',
         badge: 'MAX TRIAL',
-        badgeType: 'trial',
         price: 29.99,
         originalPrice: 39.99,
         monthlyEq: '£7.50/mo per screen',
@@ -305,9 +304,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '3 Months',
+        ctaLabel: 'GET 3 MONTHS PLAN',
         accessLabel: '3 Months Access',
         badge: 'SAVE 30%',
-        badgeType: 'discount',
         price: 59.99,
         originalPrice: 79.99,
         monthlyEq: '£5.00/mo per screen',
@@ -327,9 +326,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '6 Months',
+        ctaLabel: 'GET 6 MONTHS PLAN',
         accessLabel: '6 Months Access',
         badge: 'SAVE 50%',
-        badgeType: 'discount',
         price: 84.99,
         originalPrice: 109.99,
         monthlyEq: '£3.54/mo per screen',
@@ -349,9 +348,9 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
       },
       {
         duration: '12 Months',
+        ctaLabel: 'GET 1 YEAR PLAN',
         accessLabel: '1 Year Access',
         badge: 'BEST VALUE',
-        badgeType: 'popular',
         price: 114.99,
         originalPrice: 159.99,
         monthlyEq: '£2.39/mo per screen',
@@ -465,11 +464,12 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
 
         {/* 4 Duration Cards Grid (1 Month, 3 Months, 6 Months, 12 Months) */}
         <div className="grid">
-          {currentPlans.map((plan, index) => {
+          {currentPlans.map((plan) => {
             const encodedPlan = encodeURIComponent(
               `${plan.duration} Plan (${deviceCount} ${deviceCount === 1 ? 'Device' : 'Devices'}) for £${plan.price.toFixed(2)}`
             );
-            const whatsappUrl = `https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%20${encodedPlan}`;
+            const whatsappOrderUrl = `https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%20${encodedPlan}`;
+            const askWhatsappUrl = `https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20have%20a%20question%20about%20the%20${encodeURIComponent(plan.duration)}%20Plan%20(${deviceCount}%20${deviceCount === 1 ? 'Device' : 'Devices'})`;
 
             return (
               <div
@@ -518,18 +518,34 @@ export default function PricingSection({ title, subtitle, showBreadcrumbs = fals
                   ))}
                 </ul>
 
-                {/* Order CTA */}
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="cta"
-                >
-                  Order via WhatsApp
-                </a>
+                {/* Primary Action Button (Matching Exact Image Spec: GET X PLAN ›) */}
+                <div className="mt-auto pt-4">
+                  <a
+                    href={whatsappOrderUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`plan-cta-btn ${plan.isPopular ? 'featured-btn' : ''}`}
+                  >
+                    <span>{plan.ctaLabel}</span>
+                    <ChevronRight className="w-4 h-4 shrink-0 stroke-[2.5]" />
+                  </a>
 
-                {/* Security Badge */}
-                <div className="pay">🔒 Secure UK Checkout • Instant Delivery</div>
+                  {/* Ask on WhatsApp Link */}
+                  <a
+                    href={askWhatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="plan-ask-whatsapp"
+                  >
+                    <svg
+                      className="w-4 h-4 text-[#25D366] shrink-0 fill-current"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                    </svg>
+                    <span>Ask on WhatsApp</span>
+                  </a>
+                </div>
               </div>
             );
           })}

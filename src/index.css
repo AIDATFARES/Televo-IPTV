@@ -969,6 +969,77 @@ body {
   font-weight: 900;
 }
 
+/* ===== PLAN BUTTONS (EXACT TARGET SPEC: GET X PLAN › + Ask on WhatsApp) ===== */
+.plan-cta-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin: 16px 0 0 !important;
+  padding: 12px 14px !important;
+  border-radius: 12px !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.24) !important;
+  color: #ffffff !important;
+  font-size: 0.88rem !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.plan-cta-btn:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25) !important;
+}
+
+.plan-cta-btn.featured-btn {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%) !important;
+  border: none !important;
+  color: #071e3d !important;
+  font-weight: 900 !important;
+  box-shadow: 0 6px 22px rgba(0, 210, 255, 0.4) !important;
+}
+
+.plan-cta-btn.featured-btn:hover {
+  filter: brightness(1.08) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 28px rgba(0, 210, 255, 0.6) !important;
+}
+
+.plan-ask-whatsapp {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 7px !important;
+  width: 100% !important;
+  margin: 10px auto 0 !important;
+  color: #93c5fd !important;
+  font-size: 0.84rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  opacity: 0.95 !important;
+  cursor: pointer !important;
+}
+
+.plan-ask-whatsapp:hover {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  transform: translateY(-1px) !important;
+}
+
+.plan-ask-whatsapp svg {
+  color: #25D366 !important;
+  filter: drop-shadow(0 0 5px rgba(37, 211, 102, 0.45)) !important;
+}
+
 #aii-pricing .cta {
   display: block;
   width: min(85%, 240px);
@@ -988,20 +1059,6 @@ body {
 #aii-pricing .cta:hover {
   transform: translateY(-2px);
   filter: brightness(0.96);
-}
-
-#aii-pricing .pay {
-  margin: 6px auto 0;
-  background: #fff;
-  border-radius: 10px;
-  padding: 6px 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  color: #0A2E66;
-  font-weight: 800;
-  font-size: 0.8rem;
 }
 
 /* ===== MULTI-SCREEN SECTION (#multi-scherm) ===== */
