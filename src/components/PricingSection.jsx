@@ -7,371 +7,98 @@ export default function PricingSection({ title, subtitle }) {
   // Device counter: 1, 2, 3, or 4 simultaneous connections
   const [deviceCount, setDeviceCount] = useState(1);
 
-  // Pricing matrix across 4 durations (1, 3, 6, 12 months) and 4 device counts
-  const pricingData = {
-    1: [
-      {
-        duration: '1 Month',
-        ctaLabel: 'GET 1 MONTH PLAN',
-        accessLabel: '1 Month Access',
-        badge: 'TRIAL PASS',
-        price: 11.99,
-        originalPrice: 14.99,
-        monthlyEq: '£11.99/mo eq.',
-        highlight: 'Flexible Monthly Streaming',
-        urgency: '⚡ Active UK Delivery — 5-15 Mins',
-        isPopular: false,
-        features: [
-          '1 Active connection',
-          'Full HD & 4K Ultra HD streams',
-          'Full 7-Day UK EPG guide',
-          'Comprehensive VOD movies & series',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '3 Months',
-        ctaLabel: 'GET 3 MONTHS PLAN',
-        accessLabel: '3 Months Access',
-        badge: 'SAVE 22%',
-        price: 27.99,
-        originalPrice: 34.99,
-        monthlyEq: '£9.33/mo eq.',
-        highlight: 'Flexible Quarterly Access',
-        urgency: '⚡ Active UK Delivery — 5-15 Mins',
-        isPopular: false,
-        features: [
-          '1 Active connection',
-          'Full HD & 4K Ultra HD streams',
-          'Full 7-Day UK EPG guide',
-          'Comprehensive VOD movies & series',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '6 Months',
-        ctaLabel: 'GET 6 MONTHS PLAN',
-        accessLabel: '6 Months Access',
-        badge: 'SAVE 44%',
-        price: 39.99,
-        originalPrice: 54.99,
-        monthlyEq: '£6.66/mo eq.',
-        highlight: 'Half-Year Entertainment Pass',
-        urgency: '⚡ Active UK Delivery — 5-15 Mins',
-        isPopular: false,
-        features: [
-          '1 Active connection',
-          'Full HD & 4K Ultra HD streams',
-          'Full 7-Day UK EPG guide',
-          'Comprehensive VOD movies & series',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '12 Months',
-        ctaLabel: 'GET 1 YEAR PLAN',
-        accessLabel: '1 Year Access',
-        badge: 'MOST POPULAR',
-        price: 49.99,
-        originalPrice: 79.99,
-        monthlyEq: '£4.16/mo eq.',
-        highlight: 'Best Value — Just £4.16 / Month',
-        urgency: '🔥 Most Chosen by UK Households',
-        isPopular: true,
-        features: [
-          '1 Active connection',
-          '4K Ultra HD & 60 FPS sports streams',
-          'Complete UK & International live channels',
-          'Full 7-Day UK EPG programme guide',
-          'Massive VOD library updated weekly',
-          'Free setup walkthrough via WhatsApp',
-          '7-day money-back guarantee',
-          'VIP Priority UK customer assistance',
-        ],
-      },
-    ],
-    2: [
-      {
-        duration: '1 Month',
-        ctaLabel: 'GET 1 MONTH PLAN',
-        accessLabel: '1 Month Access',
-        badge: 'DUO TRIAL',
-        price: 18.99,
-        originalPrice: 24.99,
-        monthlyEq: '£9.50/mo per screen',
-        highlight: 'Family Duo — 2 Rooms Streaming',
-        urgency: '⚡ Watch in Living Room & Bedroom',
-        isPopular: false,
-        features: [
-          '2 Simultaneous connections',
-          'Full HD & 4K Ultra HD streams',
-          'Independent playlists for each room',
-          'Full 7-Day UK EPG on all devices',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '3 Months',
-        ctaLabel: 'GET 3 MONTHS PLAN',
-        accessLabel: '3 Months Access',
-        badge: 'SAVE 25%',
-        price: 39.99,
-        originalPrice: 49.99,
-        monthlyEq: '£6.66/mo per screen',
-        highlight: 'Quarterly Multi-Room Access',
-        urgency: '⚡ Watch in Living Room & Bedroom',
-        isPopular: false,
-        features: [
-          '2 Simultaneous connections',
-          'Full HD & 4K Ultra HD streams',
-          'Independent playlists for each room',
-          'Full 7-Day UK EPG on all devices',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '6 Months',
-        ctaLabel: 'GET 6 MONTHS PLAN',
-        accessLabel: '6 Months Access',
-        badge: 'SAVE 45%',
-        price: 54.99,
-        originalPrice: 69.99,
-        monthlyEq: '£4.58/mo per screen',
-        highlight: 'Half-Year Family Duo Pass',
-        urgency: '⚡ Watch in Living Room & Bedroom',
-        isPopular: false,
-        features: [
-          '2 Simultaneous connections',
-          'Full HD & 4K Ultra HD streams',
-          'Independent playlists for each room',
-          'Full 7-Day UK EPG on all devices',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '12 Months',
-        ctaLabel: 'GET 1 YEAR PLAN',
-        accessLabel: '1 Year Access',
-        badge: 'MOST POPULAR',
-        price: 74.99,
-        originalPrice: 99.99,
-        monthlyEq: '£3.12/mo per screen',
-        highlight: 'Family Duo — 2 Active Streams',
-        urgency: '🔥 Most Popular Family Choice',
-        isPopular: true,
-        features: [
-          '2 Simultaneous connections',
-          'Full 4K Ultra HD & 60 FPS sports streams',
-          'Independent playlists for each room',
-          'Complete sports & cinema catalogue',
-          'Compatible with Smart TVs & Fire Stick',
-          'Free setup walkthrough via WhatsApp',
-          '7-day money-back guarantee',
-          'VIP Priority UK customer assistance',
-        ],
-      },
-    ],
-    3: [
-      {
-        duration: '1 Month',
-        ctaLabel: 'GET 1 MONTH PLAN',
-        accessLabel: '1 Month Access',
-        badge: 'TRIO TRIAL',
-        price: 24.99,
-        originalPrice: 32.99,
-        monthlyEq: '£8.33/mo per screen',
-        highlight: 'Trio Screens for Household',
-        urgency: '⚡ Whole-Home Streaming Solution',
-        isPopular: false,
-        features: [
-          '3 Simultaneous connections',
-          'Full HD & 4K Ultra HD streams',
-          '3 Independent device configurations',
-          'Full 7-Day UK EPG on all devices',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '3 Months',
-        ctaLabel: 'GET 3 MONTHS PLAN',
-        accessLabel: '3 Months Access',
-        badge: 'SAVE 28%',
-        price: 49.99,
-        originalPrice: 64.99,
-        monthlyEq: '£5.55/mo per screen',
-        highlight: 'Quarterly Whole-Home Access',
-        urgency: '⚡ Whole-Home Streaming Solution',
-        isPopular: false,
-        features: [
-          '3 Simultaneous connections',
-          'Full HD & 4K Ultra HD streams',
-          '3 Independent device configurations',
-          'Full 7-Day UK EPG on all devices',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '6 Months',
-        ctaLabel: 'GET 6 MONTHS PLAN',
-        accessLabel: '6 Months Access',
-        badge: 'SAVE 48%',
-        price: 69.99,
-        originalPrice: 89.99,
-        monthlyEq: '£3.88/mo per screen',
-        highlight: 'Half-Year Whole Home Pass',
-        urgency: '⚡ Whole-Home Streaming Solution',
-        isPopular: false,
-        features: [
-          '3 Simultaneous connections',
-          'Full HD & 4K Ultra HD streams',
-          '3 Independent device configurations',
-          'Full 7-Day UK EPG on all devices',
-          'Compatible with Smart TVs & Fire Stick',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '12 Months',
-        ctaLabel: 'GET 1 YEAR PLAN',
-        accessLabel: '1 Year Access',
-        badge: 'MOST POPULAR',
-        price: 94.99,
-        originalPrice: 129.99,
-        monthlyEq: '£2.63/mo per screen',
-        highlight: 'Family Trio — Most Popular Multi-Room',
-        urgency: '🔥 Whole-Home Streaming Solution',
-        isPopular: true,
-        features: [
-          '3 Simultaneous connections',
-          '4K UHD & 60 FPS sports coverage',
-          '3 Independent device configurations',
-          'Full 7-Day UK EPG on all devices',
-          'Works on Smart TV, Fire Stick, Tablets',
-          'Free setup walkthrough via WhatsApp',
-          '7-day money-back guarantee',
-          'VIP Priority UK customer assistance',
-        ],
-      },
-    ],
-    4: [
-      {
-        duration: '1 Month',
-        ctaLabel: 'GET 1 MONTH PLAN',
-        accessLabel: '1 Month Access',
-        badge: 'MAX TRIAL',
-        price: 29.99,
-        originalPrice: 39.99,
-        monthlyEq: '£7.50/mo per screen',
-        highlight: 'Ultimate 4 Screens Everywhere',
-        urgency: '⭐ Maximum Multi-Device Freedom',
-        isPopular: false,
-        features: [
-          '4 Simultaneous active connections',
-          'Full HD & 4K Ultra HD streams',
-          'Independent viewing in every room',
-          'Full 7-Day UK EPG on all devices',
-          'Works across all compatible apps',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '3 Months',
-        ctaLabel: 'GET 3 MONTHS PLAN',
-        accessLabel: '3 Months Access',
-        badge: 'SAVE 30%',
-        price: 59.99,
-        originalPrice: 79.99,
-        monthlyEq: '£5.00/mo per screen',
-        highlight: 'Quarterly Ultimate Household',
-        urgency: '⭐ Maximum Multi-Device Freedom',
-        isPopular: false,
-        features: [
-          '4 Simultaneous active connections',
-          'Full HD & 4K Ultra HD streams',
-          'Independent viewing in every room',
-          'Full 7-Day UK EPG on all devices',
-          'Works across all compatible apps',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '6 Months',
-        ctaLabel: 'GET 6 MONTHS PLAN',
-        accessLabel: '6 Months Access',
-        badge: 'SAVE 50%',
-        price: 84.99,
-        originalPrice: 109.99,
-        monthlyEq: '£3.54/mo per screen',
-        highlight: 'Half-Year Ultimate Freedom',
-        urgency: '⭐ Maximum Multi-Device Freedom',
-        isPopular: false,
-        features: [
-          '4 Simultaneous active connections',
-          'Full HD & 4K Ultra HD streams',
-          'Independent viewing in every room',
-          'Full 7-Day UK EPG on all devices',
-          'Works across all compatible apps',
-          'Anti-Freeze UK-optimised routing',
-          '7-day money-back guarantee',
-          'UK WhatsApp customer support',
-        ],
-      },
-      {
-        duration: '12 Months',
-        ctaLabel: 'GET 1 YEAR PLAN',
-        accessLabel: '1 Year Access',
-        badge: 'BEST VALUE',
-        price: 114.99,
-        originalPrice: 159.99,
-        monthlyEq: '£2.39/mo per screen',
-        highlight: 'Ultimate Household — 4 Active Streams',
-        urgency: '⭐ Maximum Multi-Device Freedom',
-        isPopular: true,
-        features: [
-          '4 Simultaneous active connections',
-          'Full 4K UHD quality across all screens',
-          'Independent viewing in every room',
-          'Complete UK & International channels',
-          'Dedicated VIP priority support',
-          'Works on Smart TV, Fire Stick, Mobile, PC',
-          '7-day money-back guarantee',
-          'VIP Priority UK customer assistance',
-        ],
-      },
-    ],
-  };
-
-  const currentPlans = pricingData[deviceCount] || pricingData[1];
+  // Base plan specifications (for 1 device)
+  // Multiplied dynamically: 2 devices = x2, 3 devices = x3, 4 devices = x4
+  const basePlans = [
+    {
+      id: '1m',
+      duration: '1 Month',
+      months: 1,
+      basePrice: 14.99,
+      baseOriginalPrice: 19.99,
+      ctaLabel: 'GET 1 MONTH PLAN',
+      accessLabel: '1 Month Access',
+      badge: 'TRIAL PASS',
+      highlight: 'Flexible Monthly Streaming',
+      urgency: '⚡ Active UK Delivery — 5-15 Mins',
+      isPopular: false,
+      features: [
+        'Full HD & 4K Ultra HD streams',
+        'Full 7-Day UK EPG guide',
+        'Comprehensive VOD movies & series',
+        'Compatible with Smart TVs & Fire Stick',
+        'Anti-Freeze UK-optimised routing',
+        '7-day money-back guarantee',
+        'UK WhatsApp customer support',
+      ],
+    },
+    {
+      id: '3m',
+      duration: '3 Months',
+      months: 3,
+      basePrice: 24.99,
+      baseOriginalPrice: 34.99,
+      ctaLabel: 'GET 3 MONTHS PLAN',
+      accessLabel: '3 Months Access',
+      badge: 'SAVE 22%',
+      highlight: 'Flexible Quarterly Access — Just £8.33 / Mo',
+      urgency: '⚡ Active UK Delivery — 5-15 Mins',
+      isPopular: false,
+      features: [
+        'Full HD & 4K Ultra HD streams',
+        'Full 7-Day UK EPG guide',
+        'Comprehensive VOD movies & series',
+        'Compatible with Smart TVs & Fire Stick',
+        'Anti-Freeze UK-optimised routing',
+        '7-day money-back guarantee',
+        'UK WhatsApp customer support',
+      ],
+    },
+    {
+      id: '6m',
+      duration: '6 Months',
+      months: 6,
+      basePrice: 39.99,
+      baseOriginalPrice: 54.99,
+      ctaLabel: 'GET 6 MONTHS PLAN',
+      accessLabel: '6 Months Access',
+      badge: 'SAVE 44%',
+      highlight: 'Half-Year Pass — Just £6.66 / Mo',
+      urgency: '⚡ Active UK Delivery — 5-15 Mins',
+      isPopular: false,
+      features: [
+        'Full HD & 4K Ultra HD streams',
+        'Full 7-Day UK EPG guide',
+        'Comprehensive VOD movies & series',
+        'Compatible with Smart TVs & Fire Stick',
+        'Anti-Freeze UK-optimised routing',
+        '7-day money-back guarantee',
+        'UK WhatsApp customer support',
+      ],
+    },
+    {
+      id: '12m',
+      duration: '12 Months',
+      months: 12,
+      basePrice: 59.99,
+      baseOriginalPrice: 89.99,
+      ctaLabel: 'GET 1 YEAR PLAN',
+      accessLabel: '1 Year Access',
+      badge: 'MOST POPULAR',
+      highlight: 'Best Value — Just £5.00 / Mo',
+      urgency: '🔥 Most Chosen by UK Households',
+      isPopular: true,
+      features: [
+        '4K Ultra HD & 60 FPS sports streams',
+        'Complete UK & International live channels',
+        'Full 7-Day UK EPG programme guide',
+        'Massive VOD library updated weekly',
+        'Free setup walkthrough via WhatsApp',
+        '7-day money-back guarantee',
+        'VIP Priority UK customer assistance',
+      ],
+    },
+  ];
 
   const handleDeviceChange = (num) => {
     if (num >= 1 && num <= 4) {
@@ -464,16 +191,31 @@ export default function PricingSection({ title, subtitle }) {
 
         {/* 4 Duration Cards Grid (1 Month, 3 Months, 6 Months, 12 Months) */}
         <div className="grid">
-          {currentPlans.map((plan) => {
+          {basePlans.map((plan) => {
+            // Price calculation strictly according to user rules:
+            // 1 device = basePrice, 2 devices = x2, 3 devices = x3, 4 devices = x4
+            const finalPrice = (plan.basePrice * deviceCount).toFixed(2);
+            const finalOriginalPrice = (plan.baseOriginalPrice * deviceCount).toFixed(2);
+
+            // Monthly equivalent per screen
+            const monthlyPerScreen = (plan.basePrice / plan.months).toFixed(2);
+            const monthlyEqLabel = deviceCount === 1
+              ? `£${monthlyPerScreen}/mo eq.`
+              : `£${monthlyPerScreen}/mo per screen`;
+
             const encodedPlan = encodeURIComponent(
-              `${plan.duration} Plan (${deviceCount} ${deviceCount === 1 ? 'Device' : 'Devices'}) for £${plan.price.toFixed(2)}`
+              `${plan.duration} Plan (${deviceCount} ${deviceCount === 1 ? 'Device' : 'Devices'}) for £${finalPrice}`
             );
             const whatsappOrderUrl = `https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%20${encodedPlan}`;
             const askWhatsappUrl = `https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20have%20a%20question%20about%20the%20${encodeURIComponent(plan.duration)}%20Plan%20(${deviceCount}%20${deviceCount === 1 ? 'Device' : 'Devices'})`;
 
+            const connectionFeature = deviceCount === 1
+              ? '1 Active connection'
+              : `${deviceCount} Simultaneous connections`;
+
             return (
               <div
-                key={`${deviceCount}-${plan.duration}`}
+                key={`${deviceCount}-${plan.id}`}
                 className={`card ${plan.isPopular ? 'featured' : ''}`}
               >
                 {/* Badge / Ribbon */}
@@ -494,14 +236,14 @@ export default function PricingSection({ title, subtitle }) {
                     </span>
                   </div>
                   <div>
-                    <span className="price">£{plan.price.toFixed(2)}</span>
-                    <span className="price-old">£{plan.originalPrice.toFixed(2)}</span>
+                    <span className="price">£{finalPrice}</span>
+                    <span className="price-old">£{finalOriginalPrice}</span>
                   </div>
                 </div>
 
                 {/* Monthly Equivalent & Device Tag */}
                 <div className="text-xs font-bold text-blue-200/90 py-1 px-2.5 rounded-lg bg-black/20 my-1 flex items-center justify-between">
-                  <span>{plan.monthlyEq}</span>
+                  <span>{monthlyEqLabel}</span>
                   <span>{deviceCount} {deviceCount === 1 ? 'Device Connection' : 'Devices Connection'}</span>
                 </div>
 
@@ -513,12 +255,13 @@ export default function PricingSection({ title, subtitle }) {
 
                 {/* Features List */}
                 <ul>
+                  <li>{connectionFeature}</li>
                   {plan.features.map((feature, fIdx) => (
                     <li key={fIdx}>{feature}</li>
                   ))}
                 </ul>
 
-                {/* Primary Action Button (Matching Exact Image Spec: GET X PLAN ›) */}
+                {/* Primary Action Button (Matching Exact Spec: GET X PLAN ›) */}
                 <div className="mt-auto pt-4">
                   <a
                     href={whatsappOrderUrl}
