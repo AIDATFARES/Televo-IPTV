@@ -373,7 +373,7 @@ export default function HomePage() {
           <h2>Massive VOD Library: Movies &amp; Complete TV Series</h2>
           <div className="uk-underline"></div>
           <p className="seo">
-            Explore authentic application previews from our 65,000+ 4K UHD VOD catalog, live UK television channels, and high-framerate Premier League coverage.
+            Explore authentic application previews from our 50,000+ 4K UHD VOD catalog, live UK television channels, and high-framerate Premier League coverage.
           </p>
 
           {/* 4 Stats Cards */}
@@ -466,7 +466,7 @@ export default function HomePage() {
 
           {/* Trust Pills */}
           <div className="strip">
-            <span className="pill">🎬 65,000+ 4K UHD Movies &amp; Series</span>
+            <span className="pill">🎬 50,000+ 4K UHD Movies &amp; Series</span>
             <span className="pill">🌐 Multi-Language Audio &amp; Subtitles</span>
             <span className="pill">🔄 Weekly Automatic Content Updates</span>
             <span className="pill">⏱️ 7-Day Catch-Up TV Features</span>
