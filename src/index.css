@@ -225,13 +225,45 @@ body {
 .aii-wrap {
   position: relative;
   width: 100%;
-  min-height: 86vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding-top: clamp(60px, 8vh, 90px);
-  padding-bottom: clamp(30px, 6vh, 60px);
-  background: radial-gradient(circle at 50% 30%, rgba(17, 62, 134, 0.35) 0%, rgba(5, 7, 11, 0.95) 75%), #05070B;
+  padding-top: clamp(65px, 9vh, 100px);
+  padding-bottom: clamp(35px, 7vh, 70px);
+  background-color: #05070B;
+  background-image: 
+    radial-gradient(ellipse 90% 70% at 50% 42%, rgba(5, 7, 11, 0.48) 0%, rgba(5, 7, 11, 0.82) 68%, #05070B 100%),
+    linear-gradient(180deg, rgba(5, 7, 11, 0.72) 0%, rgba(5, 7, 11, 0.22) 32%, rgba(5, 7, 11, 0.78) 78%, #05070B 100%),
+    url("/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.aii-wrap::before {
+  content: "";
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(880px, 92vw);
+  height: 480px;
+  background: radial-gradient(circle, rgba(29, 122, 242, 0.18) 0%, rgba(10, 46, 102, 0.08) 50%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.aii-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(180deg, transparent 0%, #05070B 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .aii-inner {
