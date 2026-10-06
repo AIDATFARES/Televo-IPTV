@@ -168,7 +168,7 @@ export default async function DeviceGuidePage({ params }) {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
-              href={`https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20need%20help%20setting%20up%20on%20my%20${encodeURIComponent(guide.device)}`}
+              href={`https://wa.me/213552069874?text=Hello%20Televo%20IPTV%2C%20I%20need%20help%20setting%20up%20on%20my%20${encodeURIComponent(guide.device)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-600/30 transition-all"

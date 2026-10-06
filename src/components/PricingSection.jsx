@@ -226,8 +226,8 @@ export default function PricingSection({ title, subtitle }) {
             const encodedPlan = encodeURIComponent(
               `${plan.duration} Plan (${deviceCount} ${deviceCount === 1 ? 'Device' : 'Devices'}) for £${finalPrice}`
             );
-            const whatsappOrderUrl = `https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%20${encodedPlan}`;
-            const askWhatsappUrl = `https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20have%20a%20question%20about%20the%20${encodeURIComponent(plan.duration)}%20Plan%20(${deviceCount}%20${deviceCount === 1 ? 'Device' : 'Devices'})`;
+            const whatsappOrderUrl = `https://wa.me/213552069874?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20order%20the%20${encodedPlan}`;
+            const askWhatsappUrl = `https://wa.me/213552069874?text=Hello%20Televo%20IPTV%2C%20I%20have%20a%20question%20about%20the%20${encodeURIComponent(plan.duration)}%20Plan%20(${deviceCount}%20${deviceCount === 1 ? 'Device' : 'Devices'})`;
 
             const connectionFeature = deviceCount === 1
               ? '1 Active connection'
