@@ -158,6 +158,74 @@ export default function HomePage() {
     { name: 'VLC Media Player', platform: 'Windows PC • Mac OS • Linux' },
   ];
 
+  // 7 Compatible Devices for Hero section
+  const heroDevices = [
+    {
+      name: 'Smart TV',
+      icon: (
+        <svg className="w-7 h-7 text-white" viewBox="0 0 28 24" fill="none">
+          <rect x="2" y="2" width="24" height="15" rx="3.5" fill="#ffffff" />
+          <path d="M6 17.5v3M22 17.5v3" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
+        </svg>
+      ),
+    },
+    {
+      name: 'Laptop/PC',
+      icon: (
+        <svg className="w-7 h-7 text-white" viewBox="0 0 28 24" fill="none">
+          <rect x="5" y="3" width="18" height="12" rx="3" fill="#ffffff" />
+          <rect x="2" y="16.5" width="24" height="4.5" rx="2.2" fill="#ffffff" />
+        </svg>
+      ),
+    },
+    {
+      name: 'Android',
+      icon: (
+        <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.5 15.3c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m-11 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m11.4-6l2-3.5a.42.42 0 00-.15-.57.42.42 0 00-.57.15l-2 3.5C15.6 8.4 13.8 8 12 8s-3.6.4-5.1.9L4.8 5.4a.42.42 0 00-.57-.15.42.42 0 00-.15.57l2 3.5C2.7 11.3 0 14.9 0 19h24c0-4.1-2.7-7.7-6.1-9.7" />
+        </svg>
+      ),
+    },
+    {
+      name: 'Mac',
+      icon: (
+        <svg className="w-7 h-7 text-white" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 1.01-2.85-.92.04-2.04.62-2.7 1.39-.58.67-1.09 1.74-1.04 2.78 1.03.08 2.11-.57 2.73-1.32z" />
+        </svg>
+      ),
+    },
+    {
+      name: 'Phones',
+      icon: (
+        <svg className="w-6 h-7 text-white" viewBox="0 0 20 28" fill="none">
+          <rect x="2" y="2" width="16" height="24" rx="4.5" fill="#ffffff" />
+          <circle cx="10" cy="22" r="1.3" fill="#0A182F" />
+          <rect x="7" y="4.5" width="6" height="1" rx="0.5" fill="#0A182F" />
+        </svg>
+      ),
+    },
+    {
+      name: 'FireStick',
+      icon: (
+        <svg className="w-12 h-7 text-white" viewBox="0 0 52 24" fill="none">
+          <text x="0" y="14" fill="#ffffff" fontSize="13" fontWeight="900" fontFamily="system-ui, -apple-system, sans-serif" letterSpacing="-0.5px">fire</text>
+          <text x="26" y="14" fill="#ffffff" fontSize="13" fontWeight="400" fontFamily="system-ui, -apple-system, sans-serif">tv</text>
+          <path d="M4 18c9 3.8 26 3.8 35 0" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
+          <path d="M37.5 16.5l2 1.5-2 1.5" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      ),
+    },
+    {
+      name: 'Formuler',
+      icon: (
+        <svg className="w-8 h-7 text-white" viewBox="0 0 32 24" fill="currentColor">
+          <path d="M9 4h20l-1.8 3.6H11L9 4z" />
+          <path d="M7 8.8h16.5l-1.8 3.6H9.3l-3.8 7.6H0L7 8.8z" />
+        </svg>
+      ),
+    },
+  ];
+
   // UK Customer Reviews matching .rs-proof-nl grid
   const reviews = [
     {
@@ -274,6 +342,16 @@ export default function HomePage() {
                   <span>Choose Your IPTV Plan</span>
                   <ChevronRight className="w-4 h-4 text-[#00E5FF] stroke-[3] ml-1 shrink-0" />
                 </a>
+              </div>
+
+              {/* Compatible Devices Strip */}
+              <div className="hero-devices-strip">
+                {heroDevices.map((dev, i) => (
+                  <div key={i} className="hero-device-item">
+                    <div className="hero-device-icon">{dev.icon}</div>
+                    <span className="hero-device-name">{dev.name}</span>
+                  </div>
+                ))}
               </div>
 
               {/* Trust Indicators */}

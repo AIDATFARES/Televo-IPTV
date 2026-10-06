@@ -525,35 +525,58 @@ body {
   50% { box-shadow: 0 14px 38px rgba(10, 46, 102, 0.45), 0 0 34px rgba(29, 122, 242, 0.4); }
 }
 
-.aii-stats {
+/* ===== HERO COMPATIBLE DEVICES STRIP ===== */
+.hero-devices-strip {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-top: 10px;
+  gap: clamp(14px, 3.2vw, 36px);
+  margin: 24px auto 16px;
+  max-width: 740px;
+  flex-wrap: wrap;
+  padding: 0 10px;
 }
 
-.stat {
-  min-width: 156px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 14px;
-  padding: 12px 14px;
+.hero-device-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
   text-align: center;
+  cursor: default;
+  transition: transform 0.25s ease, filter 0.25s ease, opacity 0.25s ease;
+  opacity: 0.92;
 }
 
-.stat b {
-  font-size: 1.25rem;
-  display: block;
-  color: #ffffff;
+.hero-device-item:hover {
+  transform: translateY(-3px);
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.5));
 }
 
-.stat small {
-  display: block;
-  opacity: 0.9;
-  font-size: 0.85rem;
-  color: #93c5fd;
+.hero-device-icon {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-device-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #E2E8F0;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .hero-devices-strip {
+    gap: 14px 18px;
+    margin: 18px auto 12px;
+  }
+  .hero-device-name {
+    font-size: 0.74rem;
+  }
 }
 
 .trust {
