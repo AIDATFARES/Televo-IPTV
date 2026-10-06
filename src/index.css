@@ -359,6 +359,8 @@ body {
 
 /* ===== HERO BUTTONS (TARGET SPEC: [Get a free trial] [Choose Your IPTV Plan >]) ===== */
 .btn-trial-green {
+  position: relative;
+  overflow: hidden;
   height: 52px;
   display: inline-flex;
   align-items: center;
@@ -372,18 +374,51 @@ body {
   font-size: 1.02rem;
   text-decoration: none;
   box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
-  transition: all 0.2s ease;
+  animation: heroGreenPulse 2.8s infinite ease-in-out;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
+}
+
+.btn-trial-green::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -70%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  animation: btnShine 4s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.btn-trial-green svg {
+  transition: transform 0.25s ease;
 }
 
 .btn-trial-green:hover {
   background: #22c55e;
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 34px rgba(37, 211, 102, 0.6), 0 0 20px rgba(37, 211, 102, 0.4);
   color: #000000 !important;
 }
 
+.btn-trial-green:hover svg {
+  transform: scale(1.18) rotate(-8deg);
+}
+
+.btn-trial-green:active {
+  transform: scale(0.97) translateY(0);
+}
+
 .btn-plan-dark {
+  position: relative;
+  overflow: hidden;
   height: 52px;
   display: inline-flex;
   align-items: center;
@@ -398,16 +433,48 @@ body {
   font-size: 1.02rem;
   text-decoration: none;
   backdrop-filter: blur(8px);
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
+}
+
+.btn-plan-dark svg,
+.btn-plan-dark .lucide {
+  transition: transform 0.25s ease;
 }
 
 .btn-plan-dark:hover {
   background: rgba(26, 38, 58, 0.95);
-  border-color: rgba(0, 229, 255, 0.55);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-color: rgba(0, 229, 255, 0.7);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 10px 28px rgba(0, 229, 255, 0.25), 0 4px 14px rgba(0, 0, 0, 0.4);
   color: #ffffff !important;
+}
+
+.btn-plan-dark:hover svg,
+.btn-plan-dark:hover .lucide {
+  transform: translateX(5px);
+}
+
+.btn-plan-dark:active {
+  transform: scale(0.97) translateY(0);
+}
+
+@keyframes heroGreenPulse {
+  0%, 100% {
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+  }
+  50% {
+    box-shadow: 0 10px 32px rgba(37, 211, 102, 0.65), 0 0 18px rgba(37, 211, 102, 0.4);
+  }
+}
+
+@keyframes btnShine {
+  0%, 65% {
+    left: -70%;
+  }
+  100% {
+    left: 170%;
+  }
 }
 
 .btn-blue {
@@ -1056,6 +1123,8 @@ body {
 
 /* ===== PLAN BUTTONS (EXACT TARGET SPEC: GET X PLAN › + Ask on WhatsApp) ===== */
 .plan-cta-btn {
+  position: relative !important;
+  overflow: hidden !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1073,29 +1142,75 @@ body {
   text-transform: uppercase !important;
   text-decoration: none !important;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
   cursor: pointer !important;
+}
+
+.plan-cta-btn svg,
+.plan-cta-btn .lucide {
+  transition: transform 0.25s ease !important;
 }
 
 .plan-cta-btn:hover {
   background: rgba(255, 255, 255, 0.22) !important;
-  border-color: rgba(255, 255, 255, 0.45) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25) !important;
+  border-color: rgba(0, 229, 255, 0.65) !important;
+  transform: translateY(-3px) scale(1.02) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), 0 0 16px rgba(0, 229, 255, 0.25) !important;
 }
 
+.plan-cta-btn:hover svg,
+.plan-cta-btn:hover .lucide {
+  transform: translateX(4px) !important;
+}
+
+.plan-cta-btn:active {
+  transform: scale(0.97) translateY(0) !important;
+}
+
+/* Featured 1 Year Plan Button Animation */
 .plan-cta-btn.featured-btn {
+  position: relative !important;
+  overflow: hidden !important;
   background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%) !important;
   border: none !important;
   color: #071e3d !important;
   font-weight: 900 !important;
-  box-shadow: 0 6px 22px rgba(0, 210, 255, 0.4) !important;
+  box-shadow: 0 6px 22px rgba(0, 210, 255, 0.45) !important;
+  animation: featuredBtnPulse 2.4s infinite ease-in-out !important;
+}
+
+.plan-cta-btn.featured-btn::after {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -70% !important;
+  width: 45% !important;
+  height: 200% !important;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.65) 50%,
+    transparent 100%
+  ) !important;
+  transform: rotate(25deg) !important;
+  animation: btnShine 3.5s infinite ease-in-out !important;
+  pointer-events: none !important;
+}
+
+@keyframes featuredBtnPulse {
+  0%, 100% {
+    box-shadow: 0 6px 22px rgba(0, 210, 255, 0.45), 0 0 0 rgba(0, 210, 255, 0);
+  }
+  50% {
+    box-shadow: 0 10px 32px rgba(0, 210, 255, 0.75), 0 0 20px rgba(0, 210, 255, 0.5);
+    transform: translateY(-1.5px);
+  }
 }
 
 .plan-cta-btn.featured-btn:hover {
-  filter: brightness(1.08) !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 10px 28px rgba(0, 210, 255, 0.6) !important;
+  filter: brightness(1.1) !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 14px 36px rgba(0, 210, 255, 0.85), 0 0 26px rgba(0, 210, 255, 0.6) !important;
 }
 
 .plan-ask-whatsapp {
@@ -1109,20 +1224,25 @@ body {
   font-size: 0.84rem !important;
   font-weight: 600 !important;
   text-decoration: none !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.22s ease !important;
   opacity: 0.95 !important;
   cursor: pointer !important;
-}
-
-.plan-ask-whatsapp:hover {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  transform: translateY(-1px) !important;
 }
 
 .plan-ask-whatsapp svg {
   color: #25D366 !important;
   filter: drop-shadow(0 0 5px rgba(37, 211, 102, 0.45)) !important;
+  transition: transform 0.22s ease !important;
+}
+
+.plan-ask-whatsapp:hover {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  transform: translateY(-1.5px) !important;
+}
+
+.plan-ask-whatsapp:hover svg {
+  transform: scale(1.25) rotate(-8deg) !important;
 }
 
 #aii-pricing .cta {
