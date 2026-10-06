@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import { SITE_CONFIG } from '../../data/config';
 
@@ -27,28 +28,44 @@ export default function RefundPolicyPage() {
           <section>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">1. 7-Day Money-Back Guarantee</h2>
             <p>
-              We want all UK customers to experience <strong>Televo IPTV</strong> with absolute confidence. If you encounter persistent technical incompatibility, unresolvable buffering, or service issues during your first 7 days following activation, you are entitled to request a full refund.
+              We want all UK customers to experience <strong>Televo IPTV</strong> with absolute confidence. If you encounter persistent technical incompatibility, unresolvable buffering, or service issues during your first 7 days following activation on our{' '}
+              <Link href="/subscription" className="text-blue-600 font-semibold underline">
+                subscription plans
+              </Link>
+              , you are entitled to request a full refund.
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">2. Troubleshooting First Step</h2>
             <p>
-              Before issuing a refund, our UK technical support team will gladly offer assistance via WhatsApp to ensure your app settings (such as hardware decoder selection or cache clearance) are properly configured, as most playback hiccups can be resolved in under 3 minutes.
+              Before issuing a refund, our UK technical support team will gladly offer assistance via WhatsApp to ensure your app settings (such as hardware decoder selection or cache clearance) are properly configured according to our{' '}
+              <Link href="/guide-installation" className="text-blue-600 font-semibold underline">
+                installation guides
+              </Link>
+              , as most playback hiccups can be resolved in under 3 minutes.
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">3. How to Request a Refund</h2>
             <p>
-              To initiate a refund, simply send a message to our <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-bold underline">WhatsApp Support Team</a> or email <a href={`mailto:${SITE_CONFIG.supportEmail}`} className="text-blue-600 underline font-semibold">{SITE_CONFIG.supportEmail}</a> with your account username or order confirmation.
+              To initiate a refund, simply send a message to our <a href={SITE_CONFIG.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-emerald-700 font-bold underline">WhatsApp Support Team</a> or reach out through our{' '}
+              <Link href="/contact" className="text-blue-600 underline font-semibold">
+                contact page
+              </Link>{' '}
+              with your account username or order confirmation.
             </p>
           </section>
 
           <section>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">4. Processing Timelines</h2>
             <p>
-              Refund requests are acknowledged within 24 hours. Once authorized, refunds are processed back to your original payment method (bank card or PayPal) within 2 to 5 business days, depending on your UK banking provider.
+              Refund requests are acknowledged within 24 hours. Once authorized, refunds are processed back to your original payment method (bank card or PayPal) within 2 to 5 business days, depending on your UK banking provider, with no ongoing commitments as outlined in our{' '}
+              <Link href="/terms" className="text-blue-600 underline font-semibold">
+                terms of service
+              </Link>
+              .
             </p>
           </section>
         </div>

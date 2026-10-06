@@ -39,17 +39,33 @@ export default function AboutPage() {
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Providing dependable, high-definition television and expansive on-demand entertainment tailored specifically for UK households.
+            Providing dependable, high-definition television and expansive on-demand entertainment tailored specifically for UK households, accessible through our{' '}
+            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+              flexible subscription options
+            </Link>
+            .
           </p>
         </div>
 
         {/* Brand Mission Section */}
         <div className="max-w-none text-slate-700 space-y-6 text-sm sm:text-base leading-relaxed mb-14">
           <p>
-            <strong>Televo IPTV</strong> (commonly referenced simply as <strong>Televo</strong>) is a specialized digital IPTV service built to deliver premium television streaming across the United Kingdom. We supply live TV channels and high-definition streams directly over your existing home broadband network, empowering British viewers to bypass expensive satellite dishes, rooftop aerials, and rigid multi-year cable contracts.
+            <strong>Televo IPTV</strong> (commonly referenced simply as <strong>Televo</strong>) is a specialized digital IPTV service built to deliver premium television streaming across the United Kingdom. We supply live TV channels and high-definition streams directly over your existing home broadband network, empowering British viewers to bypass expensive satellite dishes, rooftop aerials, and rigid multi-year cable contracts by exploring our{' '}
+            <Link href="/pricing" className="text-[#1D7AF2] font-semibold hover:underline">
+              transparent IPTV pricing
+            </Link>
+            .
           </p>
           <p>
-            Our commitment is centered on quality and simplicity: delivering stable streaming credentials, crystal-clear 4K and Full HD feeds, comprehensive multi-device compatibility, and accessible British customer care in an industry where reliability is paramount.
+            Our commitment is centered on quality and simplicity: delivering stable streaming credentials, crystal-clear 4K and Full HD feeds, comprehensive multi-device compatibility via our{' '}
+            <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+              installation tutorials
+            </Link>
+            , and accessible British customer care through our{' '}
+            <Link href="/contact" className="text-[#1D7AF2] font-semibold hover:underline">
+              support team
+            </Link>
+            .
           </p>
         </div>
 
@@ -61,7 +77,11 @@ export default function AboutPage() {
             </div>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">Technical Excellence &amp; UK Routing</h2>
             <p className="text-xs text-slate-600 leading-relaxed">
-              We continually optimize our server clusters to interface seamlessly with primary UK broadband networks—including BT, Virgin Media, Sky, TalkTalk, and EE. This dedicated routing drastically reduces latency, prevents peak-time buffering during Premier League matches, and guarantees smooth video playback.
+              We continually optimize our server clusters to interface seamlessly with primary UK broadband networks—including BT, Virgin Media, Sky, TalkTalk, and EE. This dedicated routing drastically reduces latency, detailed further in our{' '}
+              <Link href="/blog/how-to-fix-iptv-buffering-troubleshooting-guide" className="text-[#1D7AF2] font-semibold hover:underline">
+                anti-buffering guide
+              </Link>
+              .
             </p>
           </div>
 
@@ -71,7 +91,11 @@ export default function AboutPage() {
             </div>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">Prepaid Freedom Without Contracts</h2>
             <p className="text-xs text-slate-600 leading-relaxed">
-              All Televo IPTV plans are 100% prepaid in British Pounds (£). We never enforce automatic bank debits, surprise renewals, or cancellation penalties. You maintain complete control over how long you wish to subscribe.
+              All Televo IPTV plans are 100% prepaid in British Pounds (£). We never enforce automatic bank debits, surprise renewals, or cancellation penalties. Explore our packages on the{' '}
+              <Link href="/pricing" className="text-[#1D7AF2] font-semibold hover:underline">
+                plans comparison page
+              </Link>
+              .
             </p>
           </div>
 
@@ -81,7 +105,15 @@ export default function AboutPage() {
             </div>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">Universal Multi-Device Freedom</h2>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Whether you prefer streaming on an Amazon Fire TV Stick, Samsung Smart TV, LG webOS, Apple TV, iPhone, or PC, Televo IPTV supports standard Xtream Codes API and M3U formats without restrictive hardware locks.
+              Whether you prefer streaming on an{' '}
+              <Link href="/guide-installation/firestick" className="text-[#1D7AF2] font-semibold hover:underline">
+                Amazon Fire TV Stick
+              </Link>
+              ,{' '}
+              <Link href="/guide-installation/samsung-smart-tv" className="text-[#1D7AF2] font-semibold hover:underline">
+                Samsung Smart TV
+              </Link>
+              , LG webOS, Apple TV, iPhone, or PC, Televo IPTV supports standard Xtream Codes API and M3U formats without restrictive hardware locks.
             </p>
           </div>
 
@@ -91,7 +123,11 @@ export default function AboutPage() {
             </div>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">Dedicated British Customer Care</h2>
             <p className="text-xs text-slate-600 leading-relaxed">
-              When you need assistance with player app installation, EPG synchronisation, or stream optimization, you communicate directly with friendly, knowledgeable UK specialists on WhatsApp 7 days a week.
+              When you need assistance with player app installation, EPG synchronisation, or stream optimization, you communicate directly with friendly, knowledgeable UK specialists via our{' '}
+              <Link href="/contact" className="text-[#1D7AF2] font-semibold hover:underline">
+                contact &amp; customer care desk
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -100,7 +136,11 @@ export default function AboutPage() {
         <div className="p-8 rounded-2xl bg-[#0A2E66] text-white text-center mb-14">
           <h2 className="text-2xl font-bold text-white mb-3">Our 7-Day Risk-Free Guarantee</h2>
           <p className="text-sm text-blue-100 max-w-xl mx-auto leading-relaxed mb-6">
-            We want you to experience Televo IPTV with absolute certainty. Every new subscription is backed by our 7-day money-back guarantee if you experience technical issues our support team cannot resolve.
+            We want you to experience Televo IPTV with absolute certainty. Every new subscription is backed by our{' '}
+            <Link href="/refund-policy" className="text-white font-semibold underline hover:text-cyan-200">
+              7-day money-back guarantee
+            </Link>{' '}
+            if you experience technical issues our support team cannot resolve.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link

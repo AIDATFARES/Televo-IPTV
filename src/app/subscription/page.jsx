@@ -27,7 +27,15 @@ export default function SubscriptionPage() {
             </h1>
             <div className="uk-underline"></div>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mt-2">
-              Select the ideal Televo IPTV subscription duration and simultaneous screen connections for your home. Every package includes 4K Ultra HD streams, full 7-day UK EPG schedule, over 200,000 on-demand titles, and responsive UK customer support.
+              Select the ideal Televo IPTV subscription duration and simultaneous screen connections for your home. Every package includes 4K Ultra HD streams, full 7-day UK EPG schedule, over{' '}
+              <Link href="/pricing" className="text-cyan-300 font-semibold underline hover:text-white">
+                200,000 on-demand titles
+              </Link>
+              , and responsive UK customer support via our{' '}
+              <Link href="/guide-installation" className="text-cyan-300 font-semibold underline hover:text-white">
+                device setup guides
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -45,7 +53,11 @@ export default function SubscriptionPage() {
               <div>
                 <h3 className="font-bold text-white text-base">Risk-Free 7-Day Guarantee</h3>
                 <p className="text-xs text-blue-200 mt-1 leading-relaxed">
-                  Try Televo IPTV with complete peace of mind. If our technical team cannot resolve an incompatibility issue within your first 7 days, you will receive a full refund.
+                  Try Televo IPTV with complete peace of mind. If our technical team cannot resolve an incompatibility issue within your first 7 days, you will receive a full refund under our{' '}
+                  <Link href="/refund-policy" className="text-white font-semibold underline hover:text-cyan-200">
+                    7-day refund policy
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -55,7 +67,11 @@ export default function SubscriptionPage() {
               <div>
                 <h3 className="font-bold text-white text-base">Rapid 5-15 Min Activation</h3>
                 <p className="text-xs text-blue-200 mt-1 leading-relaxed">
-                  Your Televo IPTV login credentials, M3U playlist, and Xtream Codes server details are dispatched promptly via WhatsApp and email.
+                  Your Televo IPTV login credentials, M3U playlist, and Xtream Codes server details are dispatched promptly via WhatsApp and email, with direct guidance from our{' '}
+                  <Link href="/contact" className="text-white font-semibold underline hover:text-cyan-200">
+                    customer support desk
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -65,7 +81,15 @@ export default function SubscriptionPage() {
               <div>
                 <h3 className="font-bold text-white text-base">Zero Hardware Rental Costs</h3>
                 <p className="text-xs text-blue-200 mt-1 leading-relaxed">
-                  Stream directly on your existing Smart TV, Amazon Fire Stick, Apple TV, or mobile device—no costly set-top box rentals or satellite dish installations.
+                  Stream directly on your existing Smart TV,{' '}
+                  <Link href="/guide-installation/firestick" className="text-white font-semibold underline hover:text-cyan-200">
+                    Amazon Fire Stick
+                  </Link>
+                  , Apple TV, or mobile device—guided by our{' '}
+                  <Link href="/guide-installation" className="text-white font-semibold underline hover:text-cyan-200">
+                    installation instructions
+                  </Link>
+                  .
                 </p>
               </div>
             </div>

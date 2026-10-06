@@ -40,7 +40,23 @@ export default function InstallationHubPage() {
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Set up your Televo IPTV subscription in under 5 minutes. Browse our step-by-step UK installation tutorials for Amazon Fire Stick, Smart TVs, Android TV, Apple TV, iOS, and PC with instant M3U and Xtream Codes API integration.
+            Set up your{' '}
+            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+              Televo IPTV subscription
+            </Link>{' '}
+            in under 5 minutes. Browse our step-by-step UK installation tutorials for{' '}
+            <Link href="/guide-installation/firestick" className="text-[#1D7AF2] font-semibold hover:underline">
+              Amazon Fire Stick
+            </Link>
+            ,{' '}
+            <Link href="/guide-installation/samsung-smart-tv" className="text-[#1D7AF2] font-semibold hover:underline">
+              Samsung Smart TV
+            </Link>
+            ,{' '}
+            <Link href="/guide-installation/lg-smart-tv" className="text-[#1D7AF2] font-semibold hover:underline">
+              LG webOS
+            </Link>
+            , Android TV, Apple TV, iOS, and PC with instant M3U and Xtream Codes API integration.
           </p>
         </div>
 
@@ -99,7 +115,15 @@ export default function InstallationHubPage() {
               Understanding Your Televo IPTV Connection Details
             </h2>
             <p className="text-blue-100 text-sm mt-2">
-              Once your Televo IPTV subscription is activated, you will receive two flexible connection options. Both grant full, unrestricted access to 50,000+ live TV channels and 200,000+ VOD movies and series.
+              Once your{' '}
+              <Link href="/subscription" className="text-cyan-300 font-semibold underline hover:text-white">
+                Televo IPTV subscription
+              </Link>{' '}
+              is activated, you will receive two flexible connection options. Both grant full, unrestricted access to 50,000+ live TV channels and 200,000+ VOD movies and series, fully backed by our{' '}
+              <Link href="/refund-policy" className="text-cyan-300 font-semibold underline hover:text-white">
+                7-day guarantee
+              </Link>
+              .
             </p>
           </div>
 
@@ -112,7 +136,11 @@ export default function InstallationHubPage() {
                 <h3 className="font-bold text-white text-base">Xtream Codes API (Recommended)</h3>
               </div>
               <p className="text-xs text-blue-100 leading-relaxed mb-4">
-                The most user-friendly format for Smart TVs and player apps like IPTV Smarters Pro and TiviMate. Simply enter three pieces of information:
+                The most user-friendly format for Smart TVs and player apps like IPTV Smarters Pro and TiviMate. If you encounter any difficulties, reach out to our{' '}
+                <Link href="/contact" className="text-cyan-300 font-semibold underline hover:text-white">
+                  UK support team
+                </Link>
+                . Simply enter three pieces of information:
               </p>
               <ul className="space-y-1.5 text-xs text-white">
                 <li className="flex items-center gap-2">
@@ -138,7 +166,11 @@ export default function InstallationHubPage() {
                 <h3 className="font-bold text-white text-base">M3U Playlist URL</h3>
               </div>
               <p className="text-xs text-blue-100 leading-relaxed mb-4">
-                A single web link containing the complete channel catalog and electronic program guide index. Ideal for players that accept direct URL import:
+                A single web link containing the complete channel catalog and electronic program guide index. Check our{' '}
+                <Link href="/faq" className="text-cyan-300 font-semibold underline hover:text-white">
+                  EPG guide FAQ
+                </Link>{' '}
+                for details on player synchronization. Ideal for players that accept direct URL import:
               </p>
               <ul className="space-y-1.5 text-xs text-white">
                 <li className="flex items-center gap-2">

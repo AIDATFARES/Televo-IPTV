@@ -27,7 +27,15 @@ export default function PricingPage() {
             </h1>
             <div className="uk-underline"></div>
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mt-2">
-              Transparent, contract-free IPTV subscription plans in British Pounds (GBP). Choose your streaming duration and simultaneous screen connections to receive instant activation details within 5 to 15 minutes.
+              Transparent, contract-free{' '}
+              <Link href="/subscription" className="text-cyan-300 font-semibold underline hover:text-white">
+                IPTV subscription plans
+              </Link>{' '}
+              in British Pounds (GBP). Choose your streaming duration and simultaneous screen connections to receive instant activation details within 5 to 15 minutes, supported by our{' '}
+              <Link href="/guide-installation" className="text-cyan-300 font-semibold underline hover:text-white">
+                device setup tutorials
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -45,7 +53,11 @@ export default function PricingPage() {
               <div>
                 <h3 className="font-bold text-white text-base">Risk-Free 7-Day Guarantee</h3>
                 <p className="text-xs text-blue-200 mt-1 leading-relaxed">
-                  Try Televo IPTV with absolute confidence. If our technical team cannot resolve an incompatibility issue within your first 7 days, you will receive a full refund.
+                  Try Televo IPTV with absolute confidence. If our technical team cannot resolve an incompatibility issue within your first 7 days, you will receive a full refund under our{' '}
+                  <Link href="/refund-policy" className="text-white font-semibold underline hover:text-cyan-200">
+                    7-day refund policy
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -55,7 +67,11 @@ export default function PricingPage() {
               <div>
                 <h3 className="font-bold text-white text-base">Rapid 5-15 Min Activation</h3>
                 <p className="text-xs text-blue-200 mt-1 leading-relaxed">
-                  Your Televo IPTV login credentials, M3U playlist, and Xtream Codes server details are dispatched promptly via WhatsApp and email.
+                  Your Televo IPTV login credentials, M3U playlist, and Xtream Codes server details are dispatched promptly via WhatsApp and email, with direct help from our{' '}
+                  <Link href="/contact" className="text-white font-semibold underline hover:text-cyan-200">
+                    UK support team
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
@@ -65,7 +81,15 @@ export default function PricingPage() {
               <div>
                 <h3 className="font-bold text-white text-base">Zero Hardware Rental Costs</h3>
                 <p className="text-xs text-blue-200 mt-1 leading-relaxed">
-                  Stream directly on your existing Smart TV, Amazon Fire Stick, Apple TV, or mobile device—no costly set-top box rentals or satellite dish installations.
+                  Stream directly on your existing Smart TV,{' '}
+                  <Link href="/guide-installation/firestick" className="text-white font-semibold underline hover:text-cyan-200">
+                    Amazon Fire Stick
+                  </Link>
+                  , Apple TV, or mobile device—guided by our{' '}
+                  <Link href="/guide-installation" className="text-white font-semibold underline hover:text-cyan-200">
+                    device installation hub
+                  </Link>
+                  .
                 </p>
               </div>
             </div>

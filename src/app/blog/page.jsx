@@ -48,7 +48,15 @@ export default function BlogHubPage() {
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-4 text-base sm:text-lg leading-relaxed">
-            Expert tutorials, player comparisons, buffering solutions, and setup tips to elevate your Televo IPTV streaming experience across all your screens.
+            Expert tutorials, player comparisons, buffering solutions, and setup tips to elevate your{' '}
+            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+              Televo IPTV streaming experience
+            </Link>{' '}
+            across all your screens, with step-by-step guidance in our{' '}
+            <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+              installation centre
+            </Link>
+            .
           </p>
         </div>
 
@@ -169,7 +177,11 @@ export default function BlogHubPage() {
             Have Questions About Televo IPTV Setup or Compatibility?
           </h2>
           <p className="text-sm text-blue-100 max-w-md mx-auto mb-6">
-            Our UK support specialists are available 7 days a week on WhatsApp to assist with device pairing, app recommendations, and instant troubleshooting.
+            Our UK support specialists are available 7 days a week on WhatsApp to assist with device pairing, app recommendations, and instant troubleshooting for your{' '}
+            <Link href="/subscription" className="text-white font-semibold underline hover:text-cyan-200">
+              IPTV subscription
+            </Link>
+            .
           </p>
           <a
             href={SITE_CONFIG.whatsappUrl}

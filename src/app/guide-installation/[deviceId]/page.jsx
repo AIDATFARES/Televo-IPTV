@@ -86,7 +86,15 @@ export default async function DeviceGuidePage({ params }) {
           </h1>
           <div className="uk-underline !mx-0"></div>
           <p className="text-slate-600 mt-3 text-base leading-relaxed">
-            Follow this clear step-by-step tutorial to configure your <strong>Televo IPTV</strong> subscription on your {guide.device}. Our setup works with leading applications including {guide.recommendedApp}.
+            Follow this clear step-by-step tutorial to configure your{' '}
+            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+              Televo IPTV subscription
+            </Link>{' '}
+            on your {guide.device}. Our setup works with leading applications including {guide.recommendedApp}, supported by our{' '}
+            <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+              universal installation hub
+            </Link>
+            .
           </p>
         </div>
 
@@ -138,7 +146,11 @@ export default async function DeviceGuidePage({ params }) {
             💡 Pro Tip for Smooth Televo IPTV Streaming on {guide.device}
           </h3>
           <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">
-            For the most reliable 4K playback without buffering, connect your {guide.device} using a 5GHz Wi-Fi band or direct Ethernet cable. Double-check your server address and login credentials to avoid trailing spaces.
+            For the most reliable 4K playback without buffering, connect your {guide.device} using a 5GHz Wi-Fi band or direct Ethernet cable. Double-check your server address and login credentials to avoid trailing spaces, or check our{' '}
+            <Link href="/blog/how-to-fix-iptv-buffering-troubleshooting-guide" className="text-amber-950 font-bold underline hover:text-black">
+              anti-buffering troubleshooting guide
+            </Link>{' '}
+            for additional performance optimizations.
           </p>
         </div>
 
@@ -148,7 +160,11 @@ export default async function DeviceGuidePage({ params }) {
             Need Assistance Setting Up Televo IPTV on Your {guide.device}?
           </h3>
           <p className="text-sm text-blue-100 max-w-lg mx-auto mb-6">
-            Our dedicated UK support team is available 7 days a week on WhatsApp to assist with app selection, login validation, and channel configuration.
+            Our dedicated UK support team is available 7 days a week on WhatsApp to assist with app selection, login validation, and channel configuration under our{' '}
+            <Link href="/refund-policy" className="text-white font-semibold underline hover:text-cyan-200">
+              7-day guarantee
+            </Link>
+            .
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a

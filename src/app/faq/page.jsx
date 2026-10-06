@@ -61,7 +61,15 @@ export default function FAQPage() {
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-3 text-base">
-            Find authoritative answers to all your questions about Televo IPTV subscriptions, supported streaming applications, British broadband optimization, and rapid activation.
+            Find authoritative answers to all your questions about{' '}
+            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+              Televo IPTV subscriptions
+            </Link>
+            ,{' '}
+            <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+              supported streaming applications
+            </Link>
+            , British broadband optimization, and rapid 5–15 minute activation.
           </p>
         </div>
 
@@ -157,7 +165,15 @@ export default function FAQPage() {
             Still Have Questions About Televo IPTV?
           </h2>
           <p className="text-sm text-blue-100 max-w-md mx-auto mb-6">
-            Our dedicated UK support team is available 7 days a week via WhatsApp to guide you through plan selection, playlist setup, and device troubleshooting.
+            Our dedicated UK support team is available 7 days a week via WhatsApp to guide you through{' '}
+            <Link href="/pricing" className="text-white font-semibold underline hover:text-cyan-200">
+              plan selection
+            </Link>
+            , playlist setup in our{' '}
+            <Link href="/guide-installation" className="text-white font-semibold underline hover:text-cyan-200">
+              installation centre
+            </Link>
+            , and device troubleshooting.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a

@@ -17,7 +17,19 @@ export default function NotFound() {
         </h1>
         <div className="uk-underline"></div>
         <p className="text-slate-600 text-sm leading-relaxed">
-          The streaming guide, channel directory, or resource you are looking for has been moved or is no longer available. Explore our IPTV subscription plans or return to the homepage to continue.
+          The streaming guide, channel directory, or resource you are looking for has been moved or is no longer available. Explore our{' '}
+          <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+            IPTV subscription plans
+          </Link>
+          , check our{' '}
+          <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+            installation guides
+          </Link>
+          , or return to the{' '}
+          <Link href="/" className="text-[#1D7AF2] font-semibold hover:underline">
+            homepage
+          </Link>{' '}
+          to continue.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">

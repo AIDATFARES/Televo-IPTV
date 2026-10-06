@@ -130,7 +130,19 @@ export default async function BlogPostPage({ params }) {
             Ready to Try Televo IPTV in the UK?
           </h3>
           <p className="text-xs sm:text-sm text-blue-100 max-w-lg mb-6 leading-relaxed">
-            Experience reliable 4K streaming with zero contracts, instant digital setup, and our 7-day money-back guarantee.
+            Experience reliable 4K streaming with zero contracts on our{' '}
+            <Link href="/subscription" className="text-cyan-300 font-semibold underline hover:text-white">
+              IPTV subscription plans
+            </Link>
+            , instant digital setup via our{' '}
+            <Link href="/guide-installation" className="text-cyan-300 font-semibold underline hover:text-white">
+              installation centre
+            </Link>
+            , and our risk-free{' '}
+            <Link href="/refund-policy" className="text-cyan-300 font-semibold underline hover:text-white">
+              7-day money-back guarantee
+            </Link>
+            .
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <Link

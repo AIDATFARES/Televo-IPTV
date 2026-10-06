@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import {
   MessageSquare,
   Mail,
@@ -44,7 +45,15 @@ export default function ContactPage() {
           </h1>
           <div className="uk-underline"></div>
           <p className="text-slate-600 mt-3 text-base">
-            Have questions about a Televo IPTV subscription, need quick assistance configuring your streaming device, or want to verify connection details? Our UK customer care team is here to assist 7 days a week.
+            Have questions about a{' '}
+            <Link href="/subscription" className="text-[#1D7AF2] font-semibold hover:underline">
+              Televo IPTV subscription
+            </Link>
+            , need quick assistance configuring your streaming device via our{' '}
+            <Link href="/guide-installation" className="text-[#1D7AF2] font-semibold hover:underline">
+              setup guides
+            </Link>
+            , or want to verify connection details? Our UK customer care team is here to assist 7 days a week.
           </p>
         </div>
 
@@ -58,7 +67,11 @@ export default function ContactPage() {
               </div>
               <h2 className="text-xl font-bold text-emerald-950 mb-1">WhatsApp Live Chat</h2>
               <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                The most direct way to connect with our UK support team. Request subscription plans, receive step-by-step installation guides, and resolve stream settings directly on WhatsApp.
+                The most direct way to connect with our UK support team. Request{' '}
+                <Link href="/pricing" className="text-emerald-700 font-semibold underline hover:text-emerald-900">
+                  subscription plans
+                </Link>
+                , receive step-by-step installation guides, and resolve stream settings directly on WhatsApp.
               </p>
               <div className="text-sm font-bold text-emerald-800 mb-4 flex items-center gap-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -104,7 +117,11 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-sm font-bold text-[#0A2E66]">Customer Guarantee</h3>
                   <p className="text-xs text-slate-600">
-                    All new subscriptions include a 7-day money-back guarantee for peace of mind.
+                    All new subscriptions include a{' '}
+                    <Link href="/refund-policy" className="text-blue-600 font-semibold hover:underline">
+                      7-day money-back guarantee
+                    </Link>{' '}
+                    for peace of mind.
                   </p>
                 </div>
               </div>
@@ -120,7 +137,11 @@ export default function ContactPage() {
                 </div>
                 <h2 className="text-2xl font-bold text-[#0A2E66]">Message Received</h2>
                 <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
-                  Thank you for reaching out to <strong>Televo IPTV</strong>. A member of our UK support team will respond to your email address ({formData.email}) shortly.
+                  Thank you for reaching out to <strong>Televo IPTV</strong>. A member of our UK support team will respond to your email address ({formData.email}) shortly. In the meantime, explore our{' '}
+                  <Link href="/faq" className="text-blue-600 font-semibold hover:underline">
+                    frequently asked questions
+                  </Link>
+                  .
                 </p>
                 <div className="pt-4">
                   <button
@@ -138,7 +159,11 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 <h2 className="text-xl font-bold text-[#0A2E66] mb-2">Send Us a Direct Message</h2>
                 <p className="text-xs text-slate-500 mb-6">
-                  Fill in your details and we will reply as soon as possible.
+                  Fill in your details below or browse our{' '}
+                  <Link href="/guide-installation" className="text-blue-600 font-semibold hover:underline">
+                    device setup guides
+                  </Link>{' '}
+                  for instant troubleshooting steps.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

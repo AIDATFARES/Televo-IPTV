@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { Tv, ChevronRight } from 'lucide-react';
 
 export default function PricingSection({ title, subtitle }) {
@@ -112,8 +113,15 @@ export default function PricingSection({ title, subtitle }) {
         <h2>{title || 'Televo IPTV UK Subscription Plans'}</h2>
         <div className="uk-underline"></div>
         <p className="sub">
-          {subtitle ||
-            'Prepaid, transparent IPTV pricing in British Pounds (GBP). Enjoy 4K Ultra HD streams, 7-day EPG guides, and contract-free streaming across all your devices.'}
+          {subtitle || (
+            <>
+              Prepaid, transparent IPTV pricing in British Pounds (GBP). Enjoy 4K Ultra HD streams, 7-day EPG guides, and contract-free streaming across all your devices, backed by our{' '}
+              <Link href="/refund-policy" className="text-blue-600 font-semibold hover:underline">
+                7-day money-back guarantee
+              </Link>
+              .
+            </>
+          )}
         </p>
 
         {/* Trust Badges Row */}
@@ -179,11 +187,23 @@ export default function PricingSection({ title, subtitle }) {
           <p className="device-counter-hint">
             {deviceCount === 1 ? (
               <span>
-                Standard individual package for <strong>1 primary device</strong> (Smart TV, Fire Stick, Mobile, or PC).
+                Standard individual package for <strong>1 primary device</strong> (
+                <Link href="/guide-installation/samsung-smart-tv" className="text-blue-600 font-semibold hover:underline">
+                  Smart TV
+                </Link>
+                ,{' '}
+                <Link href="/guide-installation/firestick" className="text-blue-600 font-semibold hover:underline">
+                  Fire Stick
+                </Link>
+                , Mobile, or PC).
               </span>
             ) : (
               <span>
-                Multi-Screen household package: stream simultaneously across <strong>{deviceCount} different screens</strong> in separate rooms with independent channels.
+                Multi-Screen household package: stream simultaneously across <strong>{deviceCount} different screens</strong> in separate rooms with independent channels, fully supported by our{' '}
+                <Link href="/guide-installation" className="text-blue-600 font-semibold hover:underline">
+                  device setup guides
+                </Link>
+                .
               </span>
             )}
           </p>
