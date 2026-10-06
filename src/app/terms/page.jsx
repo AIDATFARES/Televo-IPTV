@@ -13,7 +13,7 @@ export default function TermsPage() {
   const breadcrumbsList = [{ name: 'Terms of Service', path: '/terms' }];
 
   return (
-    <div className="py-12 bg-white text-[#2b3340] min-h-screen">
+    <div className="pt-4 pb-12 sm:pt-6 bg-white text-[#2b3340] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbsList} />
 

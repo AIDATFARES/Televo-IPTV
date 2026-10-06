@@ -29,7 +29,7 @@ export default function ContactPage() {
   const breadcrumbsList = [{ name: 'Contact Televo IPTV', path: '/contact' }];
 
   return (
-    <div className="py-12 bg-white text-[#2b3340] min-h-screen">
+    <div className="pt-4 pb-12 sm:pt-6 bg-white text-[#2b3340] min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbsList} />
 

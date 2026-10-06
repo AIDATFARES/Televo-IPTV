@@ -18,7 +18,7 @@ export default function SubscriptionPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Header banner */}
-      <div className="bg-[#05070B] text-white py-12 border-b border-blue-900/30">
+      <div className="bg-[#05070B] text-white pt-4 pb-10 sm:pt-6 sm:pb-12 border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={breadcrumbsList} />
           <div className="text-center max-w-3xl mx-auto mt-4">

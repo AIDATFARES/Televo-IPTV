@@ -25,7 +25,7 @@ export default function InstallationHubPage() {
   ];
 
   return (
-    <div className="py-12 bg-white min-h-screen text-[#2b3340]">
+    <div className="pt-4 pb-12 sm:pt-6 bg-white min-h-screen text-[#2b3340]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbsList} />
 

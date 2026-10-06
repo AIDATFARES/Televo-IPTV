@@ -66,7 +66,7 @@ export default async function DeviceGuidePage({ params }) {
   const relatedDevices = SUPPORTED_DEVICES.filter((d) => d.slug !== deviceId).slice(0, 4);
 
   return (
-    <div className="py-12 bg-white text-[#2b3340] min-h-screen">
+    <div className="pt-4 pb-12 sm:pt-6 bg-white text-[#2b3340] min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
