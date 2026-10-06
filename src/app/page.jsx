@@ -603,21 +603,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ─── 9. LIVE SPORTS & PREMIER LEAGUE (#footNL) ─── */}
-      <section id="footNL">
-        <div className="wrap">
-          <h2 className="title">Watch Live Premier League, Champions League &amp; Global Sports</h2>
-          <div className="uk-underline"></div>
-          <p className="sub">
-            Never miss a match. Televo IPTV delivers uninterrupted coverage of the Premier League, UEFA Champions League, Formula 1, Rugby, Tennis, Boxing, and Cricket with zero buffering and low latency across the UK.
-          </p>
-          <p className="note">
-            ⚽ 50/60 FPS High Framerate • 4K Ultra HD &amp; Full HD Feeds • Full Match Replays &amp; Catch-Up
-          </p>
-        </div>
-      </section>
-
-      {/* ─── 10. VOD & 4K CINEMA (#vod-rails) ─── */}
+      {/* ─── 9. VOD & 4K CINEMA (#vod-rails) ─── */}
       <section id="vod-rails">
         <div className="wrap">
           <h2>Massive VOD Library: Movies &amp; Complete TV Series</h2>
