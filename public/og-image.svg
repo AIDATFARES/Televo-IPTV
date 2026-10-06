@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061224"/>
+      <stop offset="50%" stop-color="#0B2545"/>
+      <stop offset="100%" stop-color="#081A36"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1D7AF2"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8102E"/>
+      <stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle geometric grid pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="630"/>
+    <line x1="300" y1="0" x2="300" y2="630"/>
+    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="700" y1="0" x2="700" y2="630"/>
+    <line x1="900" y1="0" x2="900" y2="630"/>
+    <line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="550" x2="1200" y2="550"/>
+  </g>
+
+  <!-- Glowing background orbs -->
+  <circle cx="1050" cy="180" r="280" fill="#1D7AF2" fill-opacity="0.12" filter="blur(60px)"/>
+  <circle cx="150" cy="500" r="240" fill="#C8102E" fill-opacity="0.08" filter="blur(60px)"/>
+
+  <!-- Brand Badge -->
+  <g transform="translate(100, 100)">
+    <rect width="280" height="42" rx="21" fill="#113264" stroke="#1D7AF2" stroke-width="1.5" stroke-opacity="0.6"/>
+    <circle cx="24" cy="21" r="5" fill="#22C55E"/>
+    <text x="38" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#E2E8F0" letter-spacing="0.5">PREMIUM UK STREAMING</text>
+  </g>
+
+  <!-- Main Title -->
+  <g transform="translate(100, 230)">
+    <!-- Logo Icon -->
+    <rect width="84" height="60" rx="14" fill="#0E2E5C" stroke="#1D7AF2" stroke-width="2.5"/>
+    <polygon points="34,18 56,30 34,42" fill="#C8102E"/>
+    <circle cx="68" cy="16" r="4" fill="#22C55E"/>
+
+    <!-- Wordmark -->
+    <text x="105" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="62" font-weight="900" fill="#FFFFFF" letter-spacing="-1">TELEVO <tspan fill="url(#brandGrad)">IPTV</tspan></text>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="100" y="350" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="600" fill="#CBD5E1">
+    Premium IPTV Subscription &amp; Setup Service in the United Kingdom
+  </text>
+  <text x="100" y="390" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="400" fill="#94A3B8">
+    Smart TV • Amazon Fire Stick • Android TV • Apple TV • iOS • Windows • Mac
+  </text>
+
+  <!-- Features Strip -->
+  <g transform="translate(100, 460)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="220" height="48" rx="12" fill="#132F58" stroke="#1E4785" stroke-width="1"/>
+    <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">⚡ Instant Activation</text>
+
+    <!-- Pill 2 -->
+    <rect x="240" y="0" width="230" height="48" rx="12" fill="#132F58" stroke="#1E4785" stroke-width="1"/>
+    <text x="264" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">🛡️ 7-Day Guarantee</text>
+
+    <!-- Pill 3 -->
+    <rect x="490" y="0" width="240" height="48" rx="12" fill="#132F58" stroke="#1E4785" stroke-width="1"/>
+    <text x="514" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">🇬🇧 UK Customer Support</text>
+  </g>
+
+  <!-- Domain -->
+  <text x="100" y="565" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#60A5FA" letter-spacing="1">
+    WWW.TELEVOIPTV.CO.UK
+  </text>
+</svg>

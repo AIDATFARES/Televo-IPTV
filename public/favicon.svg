@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0B2545"/>
+  <rect x="3" y="3" width="58" height="58" rx="11" stroke="#1D7AF2" stroke-width="2" stroke-opacity="0.4"/>
+  <!-- TV Monitor Frame -->
+  <rect x="12" y="14" width="40" height="28" rx="5" fill="#113264" stroke="#ffffff" stroke-width="2.5"/>
+  <!-- Play / Signal Emblem -->
+  <path d="M28 22L38 28L28 34V22Z" fill="#C8102E"/>
+  <!-- Antenna / Stand -->
+  <path d="M26 42L22 49H42L38 42" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Live indicator dot -->
+  <circle cx="46" cy="20" r="3" fill="#22C55E"/>
+</svg>
