@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ShieldCheck, MessageSquare, Clock, Mail, CheckCircle2 } from 'lucide-react';
+import { ShieldCheck, MessageSquare, Mail, CheckCircle2 } from 'lucide-react';
 import Logo from './Logo';
 import { SITE_CONFIG, NAV_LINKS, SUPPORTED_DEVICES } from '../data/config';
 
@@ -87,13 +87,6 @@ export default function Footer() {
                   >
                     Chat on WhatsApp
                   </a>
-                </div>
-              </li>
-              <li className="flex items-start gap-2">
-                <Clock className="w-4 h-4 text-blue-600 shrink-0 mt-1" />
-                <div>
-                  <span className="text-xs text-slate-500 block">Operating Hours:</span>
-                  <span className="font-semibold text-slate-700">{SITE_CONFIG.openingHours}</span>
                 </div>
               </li>
               <li className="flex items-start gap-2">

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Zap, MessageSquare, ShieldCheck, ChevronRight } from 'lucide-react';
+import { Zap, MessageSquare, ChevronRight } from 'lucide-react';
 import Logo from './Logo';
 import { NAV_LINKS, SITE_CONFIG } from '../data/config';
 
@@ -53,33 +53,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* UK Top Bar */}
-      <div className="bg-[#05070B] text-xs py-2 px-4 text-slate-300 border-b border-blue-900/30">
-        <div className="max-w-[1400px] mx-auto flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2 font-medium">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Televo IPTV — UK Dedicated High-Speed Streaming</span>
-            <span className="hidden sm:inline text-slate-600">•</span>
-            <span className="hidden sm:inline text-blue-400 font-semibold">Activation in 5-15 mins</span>
-          </div>
-          <div className="flex items-center gap-4 text-slate-400">
-            <span className="hidden md:flex items-center gap-1.5">
-              <ShieldCheck className="w-3.5 h-3.5 text-blue-400" />
-              7-Day Money-Back Guarantee
-            </span>
-            <a
-              href={SITE_CONFIG.whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1 transition-colors"
-            >
-              <MessageSquare className="w-3.5 h-3.5" />
-              WhatsApp Support
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main Header (Exact codeiptvs.fr Layout & Classes) */}
       <header className={`site-header-iptv ${isScrolled ? 'is-scrolled' : ''}`}>
         <div className="header-wrapper">
