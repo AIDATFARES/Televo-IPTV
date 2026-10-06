@@ -1578,58 +1578,391 @@ body {
 /* ===== VOD & 4K SECTION (#vod-rails) ===== */
 #vod-rails {
   background: #f0f5ff;
-  padding: clamp(36px, 6vh, 64px) 0;
+  padding: clamp(38px, 6vh, 68px) 0;
   text-align: center;
   border-top: 1px solid rgba(10, 46, 102, 0.08);
+  position: relative;
 }
 
-#vod-rails .wrap { max-width: 1200px; margin: 0 auto; padding: 0 18px; }
-#vod-rails h2 { font-weight: 900; color: #0A2E66; font-size: clamp(1.4rem, 3vw, 2.1rem); margin: 0 0 6px; }
-#vod-rails .seo { max-width: 980px; margin: 0 auto 20px; color: #2b3340; font-weight: 600; font-size: 1.05rem; }
+#vod-rails .wrap {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
 
-#vod-rails .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 16px;
+#vod-rails h2 {
+  font-weight: 900;
+  color: #0A2E66;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  margin: 0 0 6px;
+}
+
+#vod-rails .seo {
+  max-width: 980px;
+  margin: 0 auto 20px;
+  color: #2b3340;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* Header bar above the strip */
+.vod-strip-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 16px;
+  padding: 0 4px;
+  gap: 12px;
+}
+
+.vod-strip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: #ffffff;
-  border-radius: 18px;
-  border: 1.5px solid #dbe7ff;
-  box-shadow: 0 10px 28px rgba(10, 46, 102, 0.08);
-}
-
-@media(max-width: 860px) { #vod-rails .cards { grid-template-columns: 1fr; } }
-
-#vod-rails .card {
-  background: #f8faff;
   border: 1px solid #dbe7ff;
-  border-radius: 14px;
-  padding: 18px;
-  text-align: left;
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0A2E66;
+  box-shadow: 0 2px 8px rgba(10, 46, 102, 0.04);
 }
 
-#vod-rails .card h3 { margin: 0 0 6px; color: #0A2E66; font-weight: 900; font-size: 1.1rem; }
-#vod-rails .card p { margin: 0; color: #475569; font-size: 0.95rem; }
+.vod-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1D7AF2;
+  box-shadow: 0 0 0 0 rgba(29, 122, 242, 0.7);
+  animation: vodPulse 2s infinite;
+}
 
+@keyframes vodPulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(29, 122, 242, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(29, 122, 242, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(29, 122, 242, 0); }
+}
+
+.vod-strip-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vod-nav-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid #dbe7ff;
+  background: #ffffff;
+  color: #0A2E66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(10, 46, 102, 0.08);
+  transition: all 0.2s ease;
+}
+
+.vod-nav-btn:hover {
+  background: #0A2E66;
+  color: #ffffff;
+  border-color: #0A2E66;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(10, 46, 102, 0.16);
+}
+
+.vod-nav-btn:active {
+  transform: translateY(0);
+}
+
+/* Image strip horizontal container */
+.vod-strip-container {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 8px 4px 20px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #1D7AF2 #e2ecfc;
+}
+
+.vod-strip-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.vod-strip-container::-webkit-scrollbar-track {
+  background: #e2ecfc;
+  border-radius: 999px;
+}
+
+.vod-strip-container::-webkit-scrollbar-thumb {
+  background: #1D7AF2;
+  border-radius: 999px;
+}
+
+/* Card */
+.vod-strip-card {
+  flex: 0 0 310px;
+  width: 310px;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1.5px solid #dbe7ff;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(10, 46, 102, 0.06);
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width: 640px) {
+  .vod-strip-card {
+    flex: 0 0 280px;
+    width: 280px;
+  }
+}
+
+.vod-strip-card:hover {
+  transform: translateY(-5px);
+  border-color: #1D7AF2;
+  box-shadow: 0 14px 32px rgba(10, 46, 102, 0.14);
+}
+
+/* Thumbnail wrapper */
+.vod-strip-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #06152d;
+  overflow: hidden;
+}
+
+.vod-strip-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.vod-strip-card:hover .vod-strip-thumb img {
+  transform: scale(1.06);
+}
+
+.vod-badge-top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(10, 46, 102, 0.88);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.vod-strip-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 33, 105, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 3;
+}
+
+.vod-strip-card:hover .vod-strip-overlay {
+  opacity: 1;
+}
+
+.vod-overlay-zoom {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffffff;
+  color: #0A2E66;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transform: translateY(6px);
+  transition: transform 0.25s ease;
+}
+
+.vod-strip-card:hover .vod-overlay-zoom {
+  transform: translateY(0);
+}
+
+/* Info section of card */
+.vod-strip-info {
+  padding: 14px 16px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.vod-card-cat {
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1D7AF2;
+  margin-bottom: 4px;
+}
+
+.vod-card-title {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: #0A2E66;
+  line-height: 1.35;
+}
+
+/* Trust Pills */
 #vod-rails .strip {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 #vod-rails .pill {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 16px;
+  padding: 9px 18px;
   border-radius: 999px;
-  background: #fff;
+  background: #ffffff;
   border: 1.5px solid #dbe7ff;
   font-weight: 800;
   color: #0A2E66;
   font-size: 0.92rem;
+  box-shadow: 0 4px 12px rgba(10, 46, 102, 0.04);
+}
+
+/* Modal Lightbox */
+.vod-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 15, 35, 0.88);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.vod-modal-content {
+  position: relative;
+  background: #0a2044;
+  border: 1px solid rgba(219, 231, 255, 0.25);
+  border-radius: 20px;
+  max-width: 960px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+  animation: scaleUp 0.25s ease-out;
+}
+
+.vod-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.vod-modal-close:hover {
+  background: #C8102E;
+  border-color: #C8102E;
+  transform: scale(1.08);
+}
+
+.vod-modal-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+}
+
+.vod-modal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.vod-modal-footer {
+  padding: 16px 22px;
+  background: #071733;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vod-modal-cat {
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #60a5fa;
+  letter-spacing: 0.05em;
+}
+
+.vod-modal-title {
+  margin: 2px 0 0;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  text-align: left;
+}
+
+.vod-modal-badge {
+  background: rgba(29, 122, 242, 0.2);
+  border: 1px solid #1D7AF2;
+  color: #93c5fd;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
 }
 
 /* ===== REVIEWS / TRUST SECTION (.rs-proof-nl) ===== */

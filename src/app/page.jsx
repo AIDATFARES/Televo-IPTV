@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import {
   Zap,
@@ -12,6 +12,9 @@ import {
   MonitorPlay,
   ChevronDown,
   ChevronRight,
+  ChevronLeft,
+  Maximize2,
+  X,
 } from 'lucide-react';
 import {
   SITE_CONFIG,
@@ -22,6 +25,126 @@ import PricingSection from '../components/PricingSection';
 
 export default function HomePage() {
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
+  const [activePreview, setActivePreview] = useState(null);
+  const stripRef = useRef(null);
+
+  const scrollStrip = (direction) => {
+    if (stripRef.current) {
+      const scrollAmount = Math.min(stripRef.current.clientWidth * 0.8, 680);
+      stripRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+  // 13 Live TV & VOD WebP Previews
+  const vodPreviews = [
+    {
+      id: 1,
+      title: 'Top Series & Box Sets',
+      category: 'VOD Series',
+      badge: '4K Ultra HD',
+      image: '/tv-strip/tv-preview-1.webp',
+      alt: 'Top Rated 4K TV Series and Box Sets on Televo IPTV',
+    },
+    {
+      id: 2,
+      title: 'Cinema Blockbusters',
+      category: 'Latest Movies',
+      badge: 'Cinema 4K',
+      image: '/tv-strip/tv-preview-2.webp',
+      alt: 'Latest Hollywood and UK Cinema Movies in 4K',
+    },
+    {
+      id: 3,
+      title: 'Family & Superhero Hits',
+      category: 'Disney+ & Marvel',
+      badge: 'UHD 60FPS',
+      image: '/tv-strip/tv-preview-3.webp',
+      alt: 'Disney+ Marvel and Animation Series Library',
+    },
+    {
+      id: 4,
+      title: 'Trending Web & Drama Shows',
+      category: 'Prime & HBO Max',
+      badge: 'HDR Multi-Audio',
+      image: '/tv-strip/tv-preview-4.webp',
+      alt: 'Amazon Prime and HBO Max Drama TV Series',
+    },
+    {
+      id: 5,
+      title: 'Electronic Program Guide (EPG)',
+      category: 'Live UK TV',
+      badge: '7-Day Catchup',
+      image: '/tv-strip/tv-preview-5.webp',
+      alt: 'Interactive 7-day TV Guide and EPG interface',
+    },
+    {
+      id: 6,
+      title: 'Intuitive Smarters Dashboard',
+      category: 'App Interface',
+      badge: 'Xtream / M3U',
+      image: '/tv-strip/tv-preview-6.webp',
+      alt: 'Televo IPTV Smarters Dashboard and channel navigation',
+    },
+    {
+      id: 7,
+      title: 'UK BBC & ITV National Channels',
+      category: 'UK Live TV',
+      badge: '1080p FHD',
+      image: '/tv-strip/tv-preview-7.webp',
+      alt: 'BBC One, Two, ITV 1-4 and Channel 4 Live in Full HD',
+    },
+    {
+      id: 8,
+      title: '24/7 Rolling News & Documentaries',
+      category: 'UK & World News',
+      badge: 'Live FHD',
+      image: '/tv-strip/tv-preview-8.webp',
+      alt: 'Sky News, BBC News 24, and International News Feeds',
+    },
+    {
+      id: 9,
+      title: 'Sky Sports Premier League VIP',
+      category: 'UK Live Sports',
+      badge: '4K 60FPS',
+      image: '/tv-strip/tv-preview-9.webp',
+      alt: 'Sky Sports Premier League, Football and Main Event Live',
+    },
+    {
+      id: 10,
+      title: 'Live Matchday & DAZN PPV Feeds',
+      category: 'Premier League',
+      badge: 'Zero Buffering',
+      image: '/tv-strip/tv-preview-10.webp',
+      alt: 'Premier League Match Feeds and Live Stadium Coverage',
+    },
+    {
+      id: 11,
+      title: 'Formula 1 & Motorsport Onboard',
+      category: 'Motorsport Live',
+      badge: 'F1 Pitlane Feeds',
+      image: '/tv-strip/tv-preview-11.webp',
+      alt: 'Formula 1 Live Grand Prix and Driver Onboard Cameras',
+    },
+    {
+      id: 12,
+      title: 'UEFA Champions League Replays',
+      category: 'European Football',
+      badge: 'Match Replays',
+      image: '/tv-strip/tv-preview-12.webp',
+      alt: 'UEFA Champions League and Europa League Match Catch-Up',
+    },
+    {
+      id: 13,
+      title: 'Major International Sports & PPV',
+      category: 'PPV Events',
+      badge: 'Fight Nights',
+      image: '/tv-strip/tv-preview-13.webp',
+      alt: 'UFC, Boxing PPV and Worldwide Sports Stadium Feeds',
+    },
+  ];
 
   // 8 Compatible Apps matching the 8 cards in #logosNL
   const appsList = [
@@ -500,34 +623,125 @@ export default function HomePage() {
           <h2>Massive VOD Library: Movies &amp; Complete TV Series</h2>
           <div className="uk-underline"></div>
           <p className="seo">
-            Updated weekly with the latest UK cinema releases, full box sets, popular drama series, and multi-language subtitles.
+            Explore authentic application previews from our 65,000+ 4K UHD VOD catalog, live UK television channels, and high-framerate Premier League coverage.
           </p>
 
-          <div className="cards">
-            <div className="card">
-              <Film className="w-7 h-7 text-[#0A2E66] mb-2" />
-              <h3>Latest UK &amp; Hollywood Cinema Releases</h3>
-              <p>Stream the latest blockbuster titles in stunning 4K and Full HD resolution with cinematic surround sound.</p>
+          {/* Image Strip Controls Header */}
+          <div className="vod-strip-header">
+            <div className="vod-strip-badge">
+              <span className="vod-pulse-dot"></span>
+              <span>13 Live App &amp; VOD Previews • Click to Enlarge</span>
             </div>
-            <div className="card">
-              <Tv className="w-7 h-7 text-[#0A2E66] mb-2" />
-              <h3>Complete Box Sets &amp; Drama Series</h3>
-              <p>Binge-watch complete seasons of top British and international drama, crime, comedy, and sci-fi series.</p>
-            </div>
-            <div className="card">
-              <Sparkles className="w-7 h-7 text-[#0A2E66] mb-2" />
-              <h3>Family, Documentaries &amp; Kids Entertainment</h3>
-              <p>Extensive library of family films, animated series, nature documentaries, and educational programming.</p>
+            <div className="vod-strip-nav">
+              <button
+                type="button"
+                onClick={() => scrollStrip('left')}
+                className="vod-nav-btn"
+                aria-label="Scroll left"
+                title="Scroll left"
+              >
+                <ChevronLeft className="w-5 h-5" />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollStrip('right')}
+                className="vod-nav-btn"
+                aria-label="Scroll right"
+                title="Scroll right"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
             </div>
           </div>
 
+          {/* Horizontal Image Strip */}
+          <div className="vod-strip-container" ref={stripRef}>
+            {vodPreviews.map((item) => (
+              <div
+                key={item.id}
+                className="vod-strip-card"
+                onClick={() => setActivePreview(item)}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setActivePreview(item);
+                  }
+                }}
+              >
+                <div className="vod-strip-thumb">
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    loading="lazy"
+                    width={1280}
+                    height={720}
+                  />
+                  <div className="vod-strip-overlay">
+                    <span className="vod-overlay-zoom">
+                      <Maximize2 className="w-4 h-4" />
+                      <span>Preview</span>
+                    </span>
+                  </div>
+                  <span className="vod-badge-top">{item.badge}</span>
+                </div>
+                <div className="vod-strip-info">
+                  <span className="vod-card-cat">{item.category}</span>
+                  <h3 className="vod-card-title">{item.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Trust Pills */}
           <div className="strip">
-            <span className="pill">🎬 4K UHD Video On Demand</span>
+            <span className="pill">🎬 65,000+ 4K UHD Movies &amp; Series</span>
             <span className="pill">🌐 Multi-Language Audio &amp; Subtitles</span>
             <span className="pill">🔄 Weekly Automatic Content Updates</span>
-            <span className="pill">⏱️ Catch-Up TV Features</span>
+            <span className="pill">⏱️ 7-Day Catch-Up TV Features</span>
+            <span className="pill">📺 Compatible with All IPTV Players</span>
           </div>
         </div>
+
+        {/* Modal / Lightbox for Preview */}
+        {activePreview && (
+          <div
+            className="vod-modal-backdrop"
+            onClick={() => setActivePreview(null)}
+            role="dialog"
+            aria-modal="true"
+          >
+            <div
+              className="vod-modal-content"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                type="button"
+                className="vod-modal-close"
+                onClick={() => setActivePreview(null)}
+                aria-label="Close preview"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <div className="vod-modal-media">
+                <img
+                  src={activePreview.image}
+                  alt={activePreview.alt}
+                  width={1280}
+                  height={720}
+                />
+              </div>
+              <div className="vod-modal-footer">
+                <div>
+                  <span className="vod-modal-cat">{activePreview.category}</span>
+                  <h4 className="vod-modal-title">{activePreview.title}</h4>
+                </div>
+                <span className="vod-modal-badge">{activePreview.badge}</span>
+              </div>
+            </div>
+          </div>
+        )}
       </section>
 
       {/* ─── 11. UK CUSTOMER REVIEWS (.rs-proof-nl) ─── */}
