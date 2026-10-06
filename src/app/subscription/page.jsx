@@ -1,63 +1,22 @@
+'use client';
+
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import {
-  CheckCircle2,
   ShieldCheck,
-  Zap,
-  MessageSquare,
   Clock,
   Tv,
 } from 'lucide-react';
-import SEO from '../components/SEO';
-import Breadcrumbs from '../components/Breadcrumbs';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import {
   SITE_CONFIG,
   PRICING_PLANS,
   MULTI_SCREEN_PLANS,
   FAQ_DATA,
-} from '../data/config';
+} from '../../data/config';
 
-export default function Pricing() {
+export default function SubscriptionPage() {
   const [tab, setTab] = useState('single');
-
-  // JSON-LD Product & Offer Schema in GBP
-  const pricingSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: 'Televo IPTV Subscription UK',
-    description: 'High-definition Televo IPTV subscription for UK customers. Compatible with Smart TV, Fire Stick, Android, and iOS.',
-    brand: {
-      '@type': 'Brand',
-      name: SITE_CONFIG.brandName,
-    },
-    url: `${SITE_CONFIG.domain}/subscription/`,
-    offers: [
-      {
-        '@type': 'Offer',
-        name: 'Televo IPTV 3 Months Plan',
-        price: '27.99',
-        priceCurrency: 'GBP',
-        availability: 'https://schema.org/InStock',
-        url: `${SITE_CONFIG.domain}/subscription/`,
-      },
-      {
-        '@type': 'Offer',
-        name: 'Televo IPTV 12 Months Plan',
-        price: '49.99',
-        priceCurrency: 'GBP',
-        availability: 'https://schema.org/InStock',
-        url: `${SITE_CONFIG.domain}/subscription/`,
-      },
-      {
-        '@type': 'Offer',
-        name: 'Televo IPTV 12 Months Family Plan (2 Screens)',
-        price: '74.99',
-        priceCurrency: 'GBP',
-        availability: 'https://schema.org/InStock',
-        url: `${SITE_CONFIG.domain}/subscription/`,
-      },
-    ],
-  };
 
   const breadcrumbsList = [
     { name: 'Subscription & Pricing', path: '/subscription' },
@@ -65,13 +24,6 @@ export default function Pricing() {
 
   return (
     <div className="bg-white min-h-screen">
-      <SEO
-        title="Televo IPTV Pricing | UK IPTV Plans &amp; Subscriptions in GBP"
-        description="Explore Televo IPTV subscription plans in GBP (£). 1, 3, 6, 12, and 24-month plans, multi-screen family packages, instant activation, and 7-day money-back guarantee."
-        canonicalUrl="/subscription/"
-        schema={pricingSchema}
-      />
-
       {/* Header banner */}
       <div className="bg-[#05070B] text-white py-12 border-b border-blue-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -277,7 +229,7 @@ export default function Pricing() {
 
           <div className="text-center mt-8">
             <Link
-              to="/contact"
+              href="/contact"
               className="inline-flex items-center gap-1.5 text-sm text-[#0A2E66] hover:text-[#1D7AF2] font-bold"
             >
               Have a custom request or need multi-room consultation? Contact us →

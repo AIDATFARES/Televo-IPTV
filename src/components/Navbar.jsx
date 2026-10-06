@@ -1,18 +1,21 @@
+'use client';
+
 import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Zap, MessageSquare, ShieldCheck, ChevronRight } from 'lucide-react';
 import Logo from './Logo';
 import { NAV_LINKS, SITE_CONFIG } from '../data/config';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   // Close mobile drawer on route change
   useEffect(() => {
     setMobileMenuOpen(false);
     document.body.style.overflow = '';
-  }, [location.pathname]);
+  }, [pathname]);
 
   const toggleMobileMenu = () => {
     const nextState = !mobileMenuOpen;
@@ -64,11 +67,11 @@ export default function Navbar() {
           <nav className="desktop-nav" aria-label="Main Navigation">
             <ul className="nav-links">
               {NAV_LINKS.map((link) => {
-                const isActive = location.pathname === link.path;
+                const isActive = pathname === link.path;
                 return (
                   <li key={link.path}>
                     <Link
-                      to={link.path}
+                      href={link.path}
                       className={isActive ? 'active' : ''}
                     >
                       {link.name}
@@ -78,7 +81,7 @@ export default function Navbar() {
               })}
             </ul>
 
-            <Link to="/subscription" className="btn-cta">
+            <Link href="/subscription" className="btn-cta">
               <Zap className="w-4 h-4 fill-white" />
               <span>Get Televo IPTV</span>
             </Link>
@@ -115,11 +118,11 @@ export default function Navbar() {
           <div className="p-5 flex-1 flex flex-col justify-between">
             <ul className="space-y-1">
               {NAV_LINKS.map((link) => {
-                const isActive = location.pathname === link.path;
+                const isActive = pathname === link.path;
                 return (
                   <li key={link.path}>
                     <Link
-                      to={link.path}
+                      href={link.path}
                       onClick={closeMobileMenu}
                       className={`flex items-center justify-between p-3.5 rounded-xl font-bold text-base transition-colors ${
                         isActive
@@ -137,7 +140,7 @@ export default function Navbar() {
 
             <div className="pt-6 border-t border-slate-100 space-y-3">
               <Link
-                to="/subscription"
+                href="/subscription"
                 onClick={closeMobileMenu}
                 className="btn-cta w-full justify-center"
               >

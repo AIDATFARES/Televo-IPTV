@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import {
   MessageSquare,
@@ -6,13 +8,11 @@ import {
   ShieldCheck,
   Send,
   CheckCircle2,
-  Tv,
 } from 'lucide-react';
-import SEO from '../components/SEO';
-import Breadcrumbs from '../components/Breadcrumbs';
-import { SITE_CONFIG } from '../data/config';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import { SITE_CONFIG } from '../../data/config';
 
-export default function Contact() {
+export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,33 +23,27 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate immediate successful submission
     setSubmitted(true);
   };
 
   const breadcrumbsList = [{ name: 'Contact Televo IPTV', path: '/contact' }];
 
   return (
-    <div className="py-12 bg-slate-950 text-white min-h-screen">
-      <SEO
-        title="Contact Televo IPTV | UK Customer Support &amp; WhatsApp"
-        description="Get in touch with Televo IPTV in the UK. Contact our team via WhatsApp at +447882781998, email, or send us a message for fast setup assistance."
-        canonicalUrl="/contact/"
-      />
-
+    <div className="py-12 bg-white text-[#2b3340] min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbsList} />
 
         {/* Hero Title */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-800/40 text-blue-300 text-xs font-semibold mb-4">
-            <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#0A2E66] text-xs font-semibold mb-4">
+            <MessageSquare className="w-3.5 h-3.5 text-emerald-600" />
             UK Support Desk • 7 Days a Week
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-black text-[#0A2E66] tracking-tight">
             Contact Televo IPTV
           </h1>
-          <p className="text-slate-300 mt-3 text-base">
+          <div className="uk-underline"></div>
+          <p className="text-slate-600 mt-3 text-base">
             Have questions about an IPTV plan, need assistance setting up your television, or want to verify your credentials? We are here to help.
           </p>
         </div>
@@ -58,22 +52,22 @@ export default function Contact() {
           {/* Left Column: Direct Contact Methods */}
           <div className="lg:col-span-5 space-y-6">
             {/* Primary WhatsApp Card */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-950/60 to-slate-900 border border-emerald-800/60 relative overflow-hidden">
-              <div className="w-12 h-12 rounded-xl bg-emerald-600/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 mb-4">
+            <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 relative overflow-hidden">
+              <div className="w-12 h-12 rounded-xl bg-emerald-100 border border-emerald-300 flex items-center justify-center text-emerald-600 mb-4">
                 <MessageSquare className="w-6 h-6" />
               </div>
-              <h2 className="text-xl font-bold text-white mb-1">WhatsApp Live Chat</h2>
-              <p className="text-xs text-slate-300 leading-relaxed mb-4">
+              <h2 className="text-xl font-bold text-emerald-950 mb-1">WhatsApp Live Chat</h2>
+              <p className="text-xs text-slate-600 leading-relaxed mb-4">
                 The fastest way to reach our UK team. Order subscriptions, get setup tutorials, and receive instant support directly on your mobile.
               </p>
-              <div className="text-lg font-black text-emerald-400 font-mono mb-4">
+              <div className="text-lg font-black text-emerald-700 font-mono mb-4">
                 {SITE_CONFIG.whatsappNumber}
               </div>
               <a
                 href={SITE_CONFIG.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 px-4 rounded-xl font-bold text-sm text-center text-white bg-emerald-600 hover:bg-emerald-500 shadow-lg shadow-emerald-600/30 transition-all flex items-center justify-center gap-2"
+                className="w-full py-3 px-4 rounded-xl font-bold text-sm text-center text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-600/30 transition-all flex items-center justify-center gap-2"
               >
                 <MessageSquare className="w-4 h-4" />
                 Open WhatsApp Chat
@@ -81,14 +75,14 @@ export default function Contact() {
             </div>
 
             {/* Email & Operating Info */}
-            <div className="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4">
+            <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-4">
               <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                <Mail className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-sm font-bold text-white">Email Address</h3>
+                  <h3 className="text-sm font-bold text-[#0A2E66]">Email Address</h3>
                   <a
                     href={`mailto:${SITE_CONFIG.supportEmail}`}
-                    className="text-xs text-slate-300 hover:text-blue-400 transition-colors"
+                    className="text-xs text-slate-600 hover:text-blue-600 transition-colors"
                   >
                     {SITE_CONFIG.supportEmail}
                   </a>
@@ -96,19 +90,19 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-3">
-                <Clock className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                <Clock className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-sm font-bold text-white">Operating Hours (UK Time)</h3>
-                  <p className="text-xs text-slate-300">{SITE_CONFIG.openingHours}</p>
+                  <h3 className="text-sm font-bold text-[#0A2E66]">Operating Hours (UK Time)</h3>
+                  <p className="text-xs text-slate-600">{SITE_CONFIG.openingHours}</p>
                   <p className="text-[11px] text-slate-500 mt-0.5">Average reply within 10-20 minutes</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
-                <ShieldCheck className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
+                <ShieldCheck className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="text-sm font-bold text-white">Customer Guarantee</h3>
-                  <p className="text-xs text-slate-300">
+                  <h3 className="text-sm font-bold text-[#0A2E66]">Customer Guarantee</h3>
+                  <p className="text-xs text-slate-600">
                     All new subscriptions include a 7-day money-back guarantee for peace of mind.
                   </p>
                 </div>
@@ -116,15 +110,15 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Right Column: Interactive Contact Form */}
-          <div className="lg:col-span-7 p-6 sm:p-8 rounded-2xl bg-slate-900 border border-slate-800">
+          {/* Right Column: Contact Form */}
+          <div className="lg:col-span-7 p-6 sm:p-8 rounded-2xl bg-white border border-slate-200 shadow-sm">
             {submitted ? (
               <div className="py-12 text-center space-y-4">
-                <div className="w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center mx-auto">
+                <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
-                <h2 className="text-2xl font-bold text-white">Message Received</h2>
-                <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+                <h2 className="text-2xl font-bold text-[#0A2E66]">Message Received</h2>
+                <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
                   Thank you for reaching out to <strong>Televo IPTV</strong>. A member of our UK support team will respond to your email address ({formData.email}) shortly.
                 </p>
                 <div className="pt-4">
@@ -133,7 +127,7 @@ export default function Contact() {
                       setSubmitted(false);
                       setFormData({ name: '', email: '', device: 'Amazon Fire Stick', message: '' });
                     }}
-                    className="text-xs text-blue-400 hover:underline font-semibold"
+                    className="text-xs text-blue-600 hover:underline font-bold"
                   >
                     Send another inquiry
                   </button>
@@ -141,14 +135,14 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
-                <h2 className="text-xl font-bold text-white mb-2">Send Us a Direct Message</h2>
-                <p className="text-xs text-slate-400 mb-6">
+                <h2 className="text-xl font-bold text-[#0A2E66] mb-2">Send Us a Direct Message</h2>
+                <p className="text-xs text-slate-500 mb-6">
                   Fill in your details and we will reply as soon as possible.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                    <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                       Your Name
                     </label>
                     <input
@@ -157,12 +151,12 @@ export default function Contact() {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="e.g. John Smith"
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                    <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                       Email Address
                     </label>
                     <input
@@ -171,19 +165,19 @@ export default function Contact() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="john@example.co.uk"
-                      className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                      className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                  <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                     Your Streaming Device
                   </label>
                   <select
                     value={formData.device}
                     onChange={(e) => setFormData({ ...formData, device: e.target.value })}
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                   >
                     <option value="Amazon Fire Stick">Amazon Fire Stick / Fire TV</option>
                     <option value="Samsung Smart TV">Samsung Smart TV (Tizen)</option>
@@ -197,7 +191,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+                  <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                     How Can We Help You?
                   </label>
                   <textarea
@@ -206,13 +200,13 @@ export default function Contact() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Provide details about your query, compatible application, or subscription question..."
-                    className="w-full px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+                    className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-blue-600 hover:bg-blue-500 shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2"
+                  className="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-[#0A2E66] hover:bg-[#113E86] shadow-md transition-all flex items-center justify-center gap-2"
                 >
                   <Send className="w-4 h-4" />
                   Send Inquiry to Televo Support

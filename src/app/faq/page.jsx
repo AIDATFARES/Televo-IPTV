@@ -1,18 +1,17 @@
+'use client';
+
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import {
   HelpCircle,
   Search,
   MessageSquare,
-  ShieldCheck,
   ChevronDown,
-  ArrowRight,
 } from 'lucide-react';
-import SEO from '../components/SEO';
-import Breadcrumbs from '../components/Breadcrumbs';
-import { FAQ_DATA, SITE_CONFIG } from '../data/config';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import { FAQ_DATA, SITE_CONFIG } from '../../data/config';
 
-export default function FAQ() {
+export default function FAQPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');
   const [openItems, setOpenItems] = useState({ '0-0': true });
@@ -26,25 +25,8 @@ export default function FAQ() {
     }));
   };
 
-  // Flattened for FAQPage Schema
-  const allFaqItems = FAQ_DATA.flatMap((cat) => cat.items);
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: allFaqItems.map((item) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  };
-
   const breadcrumbsList = [{ name: 'Frequently Asked Questions', path: '/faq' }];
 
-  // Filter items based on activeCategory and searchQuery
   const filteredCategories = FAQ_DATA.map((cat) => {
     if (activeCategory !== 'All' && cat.category !== activeCategory) {
       return { ...cat, items: [] };
@@ -64,27 +46,21 @@ export default function FAQ() {
   }).filter((cat) => cat.items.length > 0);
 
   return (
-    <div className="py-12 bg-slate-950 text-white min-h-screen">
-      <SEO
-        title="Televo IPTV FAQ | UK IPTV Questions, Setup &amp; Support"
-        description="Got questions about Televo IPTV? Read our comprehensive FAQ regarding subscriptions in GBP, compatible devices, buffering fixes, and UK WhatsApp customer support."
-        canonicalUrl="/faq/"
-        schema={faqSchema}
-      />
-
+    <div className="py-12 bg-white text-[#2b3340] min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Breadcrumbs items={breadcrumbsList} />
 
         {/* Hero Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-800/40 text-blue-300 text-xs font-semibold mb-4">
-            <HelpCircle className="w-3.5 h-3.5 text-blue-400" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-[#0A2E66] text-xs font-semibold mb-4">
+            <HelpCircle className="w-3.5 h-3.5 text-blue-600" />
             UK Help &amp; Support Resources
           </div>
-          <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+          <h1 className="text-3xl sm:text-5xl font-black text-[#0A2E66] tracking-tight">
             Frequently Asked Questions
           </h1>
-          <p className="text-slate-300 mt-3 text-base">
+          <div className="uk-underline"></div>
+          <p className="text-slate-600 mt-3 text-base">
             Find answers to common questions about Televo IPTV subscriptions, device compatibility, setup instructions, and UK customer assistance.
           </p>
         </div>
@@ -97,7 +73,7 @@ export default function FAQ() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search questions (e.g. Fire Stick, refund, M3U, buffering)..."
-            className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
+            className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
           />
         </div>
 
@@ -109,8 +85,8 @@ export default function FAQ() {
               onClick={() => setActiveCategory(cat)}
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeCategory === cat
-                  ? 'bg-blue-600 text-white shadow-md'
-                  : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-800'
+                  ? 'bg-[#0A2E66] text-white shadow-md'
+                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
               {cat}
@@ -121,8 +97,8 @@ export default function FAQ() {
         {/* Accordions */}
         <div className="space-y-8 mb-16">
           {filteredCategories.length === 0 ? (
-            <div className="text-center py-12 bg-slate-900/60 rounded-2xl border border-slate-800">
-              <p className="text-slate-400 text-sm">
+            <div className="text-center py-12 bg-slate-50 rounded-2xl border border-slate-200">
+              <p className="text-slate-600 text-sm">
                 No matching questions found for "{searchQuery}".
               </p>
               <button
@@ -130,7 +106,7 @@ export default function FAQ() {
                   setSearchQuery('');
                   setActiveCategory('All');
                 }}
-                className="mt-3 text-xs font-bold text-blue-400 hover:underline"
+                className="mt-3 text-xs font-bold text-blue-600 hover:underline"
               >
                 Reset search filters
               </button>
@@ -138,7 +114,7 @@ export default function FAQ() {
           ) : (
             filteredCategories.map((group, groupIndex) => (
               <div key={group.category} className="space-y-3">
-                <h2 className="text-lg font-bold text-blue-400 tracking-wide uppercase text-xs mb-2">
+                <h2 className="font-bold text-blue-600 tracking-wide uppercase text-xs mb-2">
                   {group.category}
                 </h2>
                 {group.items.map((item, itemIndex) => {
@@ -148,22 +124,22 @@ export default function FAQ() {
                   return (
                     <div
                       key={itemIndex}
-                      className="rounded-xl border border-slate-800 bg-slate-900/80 overflow-hidden transition-all"
+                      className="rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden transition-all"
                     >
                       <button
                         onClick={() => toggleItem(itemKey)}
-                        className="w-full text-left p-5 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-slate-200 hover:text-white"
+                        className="w-full text-left p-5 flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-[#0A2E66] hover:text-blue-600"
                         aria-expanded={isOpen}
                       >
                         <span>{item.question}</span>
                         <ChevronDown
-                          className={`w-5 h-5 text-blue-400 transition-transform duration-200 shrink-0 ${
+                          className={`w-5 h-5 text-[#0A2E66] transition-transform duration-200 shrink-0 ${
                             isOpen ? 'rotate-180' : ''
                           }`}
                         />
                       </button>
                       {isOpen && (
-                        <div className="px-5 pb-5 pt-1 text-sm text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        <div className="px-5 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
                           {item.answer}
                         </div>
                       )}
@@ -176,11 +152,11 @@ export default function FAQ() {
         </div>
 
         {/* Support Callout Box */}
-        <div className="p-8 rounded-2xl bg-gradient-to-r from-blue-950/70 via-slate-900 to-blue-950/70 border border-blue-900/50 text-center">
+        <div className="p-8 rounded-2xl bg-[#0A2E66] text-white text-center">
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
             Could Not Find the Answer You Were Looking For?
           </h2>
-          <p className="text-sm text-slate-300 max-w-md mx-auto mb-6">
+          <p className="text-sm text-blue-100 max-w-md mx-auto mb-6">
             Our UK support team is available 7 days a week on WhatsApp to assist with questions or customized inquiries.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
@@ -194,8 +170,8 @@ export default function FAQ() {
               Chat on WhatsApp ({SITE_CONFIG.whatsappNumber})
             </a>
             <Link
-              to="/contact"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-slate-300 bg-slate-800 hover:bg-slate-700 hover:text-white transition-all"
+              href="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm text-[#0A2E66] bg-white hover:bg-slate-100 transition-all"
             >
               Contact Page
             </Link>

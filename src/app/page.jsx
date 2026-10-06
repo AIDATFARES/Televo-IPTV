@@ -1,82 +1,27 @@
+'use client';
+
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import {
   Zap,
   MessageSquare,
   ShieldCheck,
-  CheckCircle2,
   Tv,
   Film,
   Sparkles,
-  ArrowRight,
-  Flame,
   MonitorPlay,
-  Clock,
-  Layers,
   ChevronDown,
 } from 'lucide-react';
-import SEO from '../components/SEO';
 import {
   SITE_CONFIG,
   PRICING_PLANS,
   MULTI_SCREEN_PLANS,
-  SUPPORTED_DEVICES,
-  FAQ_DATA,
 } from '../data/config';
 
-export default function Home() {
+export default function HomePage() {
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
 
-  // Home Organization Schema
-  const homeSchema = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Organization',
-        '@id': `${SITE_CONFIG.domain}/#organization`,
-        name: SITE_CONFIG.brandName,
-        alternateName: SITE_CONFIG.shortBrand,
-        url: SITE_CONFIG.domain,
-        logo: {
-          '@type': 'ImageObject',
-          url: `${SITE_CONFIG.domain}/favicon.svg`,
-        },
-        contactPoint: [
-          {
-            '@type': 'ContactPoint',
-            telephone: SITE_CONFIG.whatsappNumber,
-            contactType: 'customer support',
-            availableLanguage: 'English',
-            areaServed: 'GB',
-          },
-        ],
-      },
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE_CONFIG.domain}/#website`,
-        url: SITE_CONFIG.domain,
-        name: SITE_CONFIG.brandName,
-        description: 'Televo IPTV UK - Premium IPTV subscription and streaming service in the United Kingdom.',
-        publisher: {
-          '@id': `${SITE_CONFIG.domain}/#organization`,
-        },
-      },
-      {
-        '@type': 'WebPage',
-        '@id': `${SITE_CONFIG.domain}/#webpage`,
-        url: `${SITE_CONFIG.domain}/`,
-        name: 'Televo IPTV UK | Premium IPTV Subscription & Streaming Service',
-        isPartOf: {
-          '@id': `${SITE_CONFIG.domain}/#website`,
-        },
-        about: {
-          '@id': `${SITE_CONFIG.domain}/#organization`,
-        },
-      },
-    ],
-  };
-
-  // 8 Compatible Apps exactly matching the 8 cards in #logosNL
+  // 8 Compatible Apps matching the 8 cards in #logosNL
   const appsList = [
     { name: 'IPTV Smarters Pro', platform: 'Fire Stick • Android • iOS' },
     { name: 'TiviMate IPTV Player', platform: 'Android TV • Fire Stick 4K' },
@@ -162,13 +107,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <SEO
-        title="Televo IPTV UK | Premium IPTV Subscription & Streaming Service"
-        description="Discover Televo IPTV in the UK. Experience reliable 4K IPTV subscriptions in GBP, compatible devices, step-by-step installation guides, and dedicated UK customer support."
-        canonicalUrl="/"
-        schema={homeSchema}
-      />
-
       {/* ─── 1. HERO SECTION (.aii-hero) ─── */}
       <section className="aii-hero">
         <div className="aii-wrap">
@@ -262,7 +200,7 @@ export default function Home() {
 
           <div className="mt-8 text-center">
             <Link
-              to="/guide-installation"
+              href="/guide-installation"
               className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0A2E66] hover:text-[#1D7AF2] transition-colors"
             >
               Need setup guidance for your television? Explore our Televo IPTV Installation Centre →
@@ -286,7 +224,6 @@ export default function Home() {
           </div>
 
           <div className="grid">
-            {/* Card 1 */}
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
@@ -297,7 +234,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 2 */}
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
@@ -308,7 +244,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 3 */}
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
@@ -319,7 +254,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 4 */}
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
@@ -330,7 +264,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 5 */}
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
@@ -341,7 +274,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Card 6 */}
             <div className="card">
               <h3>
                 <span className="tick">✓</span>
@@ -445,7 +377,7 @@ export default function Home() {
               <div className="pay">🔒 Secure UK Checkout • Instant Delivery</div>
             </div>
 
-            {/* Card 3: 24 Months / Extended (BEST DEAL) */}
+            {/* Card 3: 24 Months (BEST DEAL) */}
             <div className="card">
               <div className="best-deal">BEST DEAL</div>
               <div className="head">
@@ -491,7 +423,6 @@ export default function Home() {
           </p>
 
           <div className="grid">
-            {/* Multi 2 Screens */}
             <div className="card">
               <div className="head">
                 <span className="term">2 Screens (12 Months)</span>
@@ -517,7 +448,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Multi 3 Screens (Featured) */}
             <div className="card featured">
               <div className="head">
                 <span className="term">3 Screens (12 Months)</span>
@@ -543,7 +473,6 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Multi 4 Screens */}
             <div className="card">
               <div className="head">
                 <span className="term">4 Screens (12 Months)</span>
@@ -663,7 +592,7 @@ export default function Home() {
             <a href="#aii-pricing" className="aii-btn price">
               View IPTV Prices (GBP)
             </a>
-            <Link to="/guide-installation" className="aii-btn faq">
+            <Link href="/guide-installation" className="aii-btn faq">
               Read Installation Guides
             </Link>
           </div>
@@ -847,7 +776,6 @@ export default function Home() {
           </div>
 
           <div className="faq-grid">
-            {/* Left Column: Accordions */}
             <div className="faq-col">
               {homeFaqs.map((faq, idx) => {
                 const isOpen = openFaqIndex === idx;
@@ -870,7 +798,6 @@ export default function Home() {
               })}
             </div>
 
-            {/* Right Column: CTA Box */}
             <div className="cta-box">
               <h3>Need Instant Setup Assistance?</h3>
               <p>
@@ -884,7 +811,7 @@ export default function Home() {
               >
                 💬 Chat on WhatsApp (+447882781998)
               </a>
-              <Link to="/guide-installation" className="cta-btn-secondary">
+              <Link href="/guide-installation" className="cta-btn-secondary">
                 📖 View All Installation Guides
               </Link>
               <ul className="cta-points">

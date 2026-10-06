@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { MessageSquare, X } from 'lucide-react';
 import { SITE_CONFIG } from '../data/config';

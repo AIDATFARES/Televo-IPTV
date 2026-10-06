@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ShieldCheck, MessageSquare, Clock, Mail, CheckCircle2 } from 'lucide-react';
 import Logo from './Logo';
 import { SITE_CONFIG, NAV_LINKS, SUPPORTED_DEVICES } from '../data/config';
@@ -40,11 +40,11 @@ export default function Footer() {
             <ul className="aii-links">
               {NAV_LINKS.map((link) => (
                 <li key={link.path}>
-                  <Link to={link.path}>{link.name}</Link>
+                  <Link href={link.path}>{link.name}</Link>
                 </li>
               ))}
               <li>
-                <Link to="/pricing">Pricing Comparison</Link>
+                <Link href="/pricing">Pricing Comparison</Link>
               </li>
             </ul>
           </div>
@@ -55,7 +55,7 @@ export default function Footer() {
             <ul className="aii-links">
               {SUPPORTED_DEVICES.slice(0, 6).map((device) => (
                 <li key={device.slug}>
-                  <Link to={`/guide-installation/${device.slug}`}>
+                  <Link href={`/guide-installation/${device.slug}`}>
                     {device.name}
                   </Link>
                 </li>
@@ -129,11 +129,11 @@ export default function Footer() {
             © {currentYear} {SITE_CONFIG.brandName}. All rights reserved. Registered service in the United Kingdom.
           </div>
           <div className="aii-legal-inline">
-            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
             <span>•</span>
-            <Link to="/terms">Terms of Service</Link>
+            <Link href="/terms">Terms of Service</Link>
             <span>•</span>
-            <Link to="/refund-policy">Refund Policy</Link>
+            <Link href="/refund-policy">Refund Policy</Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
 
 export default function Breadcrumbs({ items = [] }) {
@@ -18,7 +18,7 @@ export default function Breadcrumbs({ items = [] }) {
           className="flex items-center gap-1.5"
         >
           <Link
-            to="/"
+            href="/"
             itemProp="item"
             className="flex items-center gap-1 hover:text-white transition-colors"
           >
@@ -44,7 +44,7 @@ export default function Breadcrumbs({ items = [] }) {
               {item.path && !isLast ? (
                 <>
                   <Link
-                    to={item.path}
+                    href={item.path}
                     itemProp="item"
                     className="hover:text-white transition-colors"
                   >

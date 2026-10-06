@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Logo({ size = 'default', showLink = true, variant = 'dark' }) {
   const iconSizes = {
@@ -48,7 +48,7 @@ export default function Logo({ size = 'default', showLink = true, variant = 'dar
 
   if (showLink) {
     return (
-      <Link to="/" className="inline-block" aria-label="Televo IPTV - Home">
+      <Link href="/" className="inline-block" aria-label="Televo IPTV - Home">
         {content}
       </Link>
     );
