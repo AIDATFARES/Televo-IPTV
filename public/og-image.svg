@@ -1,84 +1,220 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#061224"/>
-      <stop offset="50%" stop-color="#0B2545"/>
-      <stop offset="100%" stop-color="#081A36"/>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020610"/>
+      <stop offset="45%" stop-color="#061329"/>
+      <stop offset="100%" stop-color="#040D1C"/>
     </linearGradient>
-    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1D7AF2"/>
-      <stop offset="100%" stop-color="#60A5FA"/>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60A5FA"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#93C5FD"/>
     </linearGradient>
-    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#C8102E"/>
-      <stop offset="100%" stop-color="#EF4444"/>
+    <linearGradient id="redPill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DC2626"/>
+      <stop offset="100%" stop-color="#B91C1C"/>
     </linearGradient>
+    <filter id="glowBlue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60" result="blur"/>
+    </filter>
+    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="70" result="blur"/>
+    </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
 
-  <!-- Subtle geometric grid pattern -->
-  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+  <!-- High-Tech Grid Pattern -->
+  <g stroke="#ffffff" stroke-opacity="0.035" stroke-width="1">
     <line x1="100" y1="0" x2="100" y2="630"/>
-    <line x1="300" y1="0" x2="300" y2="630"/>
-    <line x1="500" y1="0" x2="500" y2="630"/>
+    <line x1="250" y1="0" x2="250" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="550" y1="0" x2="550" y2="630"/>
     <line x1="700" y1="0" x2="700" y2="630"/>
-    <line x1="900" y1="0" x2="900" y2="630"/>
-    <line x1="1100" y1="0" x2="1100" y2="630"/>
+    <line x1="850" y1="0" x2="850" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+    <line x1="1150" y1="0" x2="1150" y2="630"/>
     <line x1="0" y1="100" x2="1200" y2="100"/>
-    <line x1="0" y1="250" x2="1200" y2="250"/>
-    <line x1="0" y1="400" x2="1200" y2="400"/>
-    <line x1="0" y1="550" x2="1200" y2="550"/>
+    <line x1="0" y1="220" x2="1200" y2="220"/>
+    <line x1="0" y1="340" x2="1200" y2="340"/>
+    <line x1="0" y1="460" x2="1200" y2="460"/>
+    <line x1="0" y1="580" x2="1200" y2="580"/>
   </g>
 
-  <!-- Glowing background orbs -->
-  <circle cx="1050" cy="180" r="280" fill="#1D7AF2" fill-opacity="0.12" filter="blur(60px)"/>
-  <circle cx="150" cy="500" r="240" fill="#C8102E" fill-opacity="0.08" filter="blur(60px)"/>
+  <!-- Ambient Light Orbs -->
+  <circle cx="1020" cy="180" r="260" fill="#1D7AF2" fill-opacity="0.25" filter="url(#glowBlue)"/>
+  <circle cx="140" cy="520" r="220" fill="#C8102E" fill-opacity="0.18" filter="url(#glowRed)"/>
 
-  <!-- Brand Badge -->
-  <g transform="translate(100, 100)">
-    <rect width="280" height="42" rx="21" fill="#113264" stroke="#1D7AF2" stroke-width="1.5" stroke-opacity="0.6"/>
-    <circle cx="24" cy="21" r="5" fill="#22C55E"/>
-    <text x="38" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#E2E8F0" letter-spacing="0.5">PREMIUM UK STREAMING</text>
+  <!-- LEFT COLUMN -->
+  <!-- Top Trust Pill -->
+  <g transform="translate(56, 44)">
+    <rect width="360" height="34" rx="17" fill="#0D254B" fill-opacity="0.75" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.45"/>
+    <circle cx="20" cy="17" r="4" fill="#10B981"/>
+    <text x="34" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="800" fill="#BAE6FD" letter-spacing="0.8">UNITED KINGDOM'S #1 RATED IPTV SERVICE</text>
   </g>
 
-  <!-- Main Title -->
-  <g transform="translate(100, 230)">
-    <!-- Logo Icon -->
-    <rect width="84" height="60" rx="14" fill="#0E2E5C" stroke="#1D7AF2" stroke-width="2.5"/>
-    <polygon points="34,18 56,30 34,42" fill="#C8102E"/>
-    <circle cx="68" cy="16" r="4" fill="#22C55E"/>
+  <!-- Brand Row (Flag + TELEVO + IPTV) -->
+  <g transform="translate(56, 102)">
+    <!-- Union Jack Flag Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="56" height="38" rx="11" fill="#012169" stroke="#60A5FA" stroke-width="1.5" stroke-opacity="0.6"/>
+      <clipPath id="flagClip">
+        <rect width="56" height="38" rx="11"/>
+      </clipPath>
+      <g clip-path="url(#flagClip)">
+        <path d="M0,0 L56,38 M56,0 L0,38" stroke="#FFFFFF" stroke-width="8"/>
+        <path d="M0,0 L25,17 M31,21 L56,38 M56,0 L31,17 M25,21 L0,38" stroke="#C8102E" stroke-width="2.7"/>
+        <path d="M28,0 V38 M0,19 H56" stroke="#FFFFFF" stroke-width="13"/>
+        <path d="M28,0 V38 M0,19 H56" stroke="#C8102E" stroke-width="7.5"/>
+      </g>
+    </g>
 
-    <!-- Wordmark -->
-    <text x="105" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="62" font-weight="900" fill="#FFFFFF" letter-spacing="-1">TELEVO <tspan fill="url(#brandGrad)">IPTV</tspan></text>
+    <!-- Brand Typography -->
+    <text x="72" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="-1">TELEVO</text>
+    
+    <!-- Red IPTV Badge -->
+    <rect x="254" y="6" width="62" height="30" rx="8" fill="url(#redPill)"/>
+    <text x="264" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="900" fill="#FFFFFF" letter-spacing="1.5">IPTV</text>
+  </g>
+
+  <!-- Main Headline -->
+  <g transform="translate(56, 195)">
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="900" fill="url(#textGrad)" letter-spacing="-0.8">50,000+ 4K Channels</text>
+    <text y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="900" fill="#FFFFFF" letter-spacing="-0.8">&amp; 200,000+ Movies &amp; Series</text>
   </g>
 
   <!-- Subtitle -->
-  <text x="100" y="350" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="600" fill="#CBD5E1">
-    Premium IPTV Subscription &amp; Setup Service in the United Kingdom
-  </text>
-  <text x="100" y="390" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="400" fill="#94A3B8">
-    Smart TV • Amazon Fire Stick • Android TV • Apple TV • iOS • Windows • Mac
+  <text x="56" y="295" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15.5" font-weight="500" fill="#94A3B8">
+    Next-generation UK IPTV streaming with 99.9% anti-freeze stability, instant 5-minute activation, and full 7-day catch-up.
   </text>
 
-  <!-- Features Strip -->
-  <g transform="translate(100, 460)">
-    <!-- Pill 1 -->
-    <rect x="0" y="0" width="220" height="48" rx="12" fill="#132F58" stroke="#1E4785" stroke-width="1"/>
-    <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">⚡ Instant Activation</text>
+  <!-- 2x2 Feature Highlights -->
+  <g transform="translate(56, 335)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="265" height="58" rx="12" fill="#0B1B36" fill-opacity="0.7" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="16" y="36" font-size="20">⚡</text>
+      <text x="46" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="800" fill="#F8FAFC">Instant Setup</text>
+      <text x="46" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#64748B">Active in 5–15 Minutes</text>
+    </g>
 
-    <!-- Pill 2 -->
-    <rect x="240" y="0" width="230" height="48" rx="12" fill="#132F58" stroke="#1E4785" stroke-width="1"/>
-    <text x="264" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">🛡️ 7-Day Guarantee</text>
+    <!-- Card 2 -->
+    <g transform="translate(280, 0)">
+      <rect width="265" height="58" rx="12" fill="#0B1B36" fill-opacity="0.7" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="16" y="36" font-size="20">🛡️</text>
+      <text x="46" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="800" fill="#F8FAFC">7-Day Guarantee</text>
+      <text x="46" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#64748B">100% Risk-Free Refund</text>
+    </g>
 
-    <!-- Pill 3 -->
-    <rect x="490" y="0" width="240" height="48" rx="12" fill="#132F58" stroke="#1E4785" stroke-width="1"/>
-    <text x="514" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">🇬🇧 UK Customer Support</text>
+    <!-- Card 3 -->
+    <g transform="translate(0, 70)">
+      <rect width="265" height="58" rx="12" fill="#0B1B36" fill-opacity="0.7" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="16" y="36" font-size="20">⚽</text>
+      <text x="46" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="800" fill="#F8FAFC">Live 4K Sports</text>
+      <text x="46" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#64748B">Premier League &amp; UCL</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(280, 70)">
+      <rect width="265" height="58" rx="12" fill="#0B1B36" fill-opacity="0.7" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="16" y="36" font-size="20">🚀</text>
+      <text x="46" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="800" fill="#F8FAFC">Anti-Freeze™ CDN</text>
+      <text x="46" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#64748B">Dedicated High-Speed UK</text>
+    </g>
   </g>
 
-  <!-- Domain -->
-  <text x="100" y="565" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#60A5FA" letter-spacing="1">
-    WWW.TELEVOIPTV.CO.UK
+  <!-- Bottom Divider & Strip -->
+  <line x1="56" y1="535" x2="600" y2="535" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="1"/>
+  
+  <text x="56" y="568" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#94A3B8">
+    📺 Fire Stick • Smart TV • Android • Apple TV • iOS • PC
   </text>
+
+  <g transform="translate(420, 548)">
+    <rect width="180" height="32" rx="8" fill="#1D7AF2" fill-opacity="0.15" stroke="#60A5FA" stroke-width="1" stroke-opacity="0.35"/>
+    <text x="14" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#60A5FA" letter-spacing="0.5">🇬🇧 www.televoiptv.co.uk</text>
+  </g>
+
+  <!-- RIGHT COLUMN (TV SCREEN MOCKUP) -->
+  <g transform="translate(680, 85)">
+    <!-- Top Floating Trust Badge -->
+    <g transform="translate(180, -25)">
+      <rect width="240" height="38" rx="12" fill="#0F172A" fill-opacity="0.9" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.45"/>
+      <text x="16" y="24" font-size="15">⭐</text>
+      <text x="38" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#F8FAFC">Rated 4.9/5 by UK Customers</text>
+    </g>
+
+    <!-- TV Frame -->
+    <rect width="468" height="278" rx="18" fill="#091224" stroke="#60A5FA" stroke-width="1.5" stroke-opacity="0.45"/>
+    
+    <!-- Screen Inner -->
+    <g transform="translate(8, 8)">
+      <rect width="452" height="262" rx="12" fill="#0A1832"/>
+      
+      <!-- Ambient Screen Graphic -->
+      <path d="M0,0 H452 V262 H0 Z" fill="#071428"/>
+      
+      <!-- Sports & Player vector silhouette / screen simulation -->
+      <circle cx="360" cy="130" r="70" fill="#1D7AF2" fill-opacity="0.3"/>
+      <rect x="230" y="70" width="180" height="15" rx="4" fill="#38BDF8" fill-opacity="0.2"/>
+      <rect x="230" y="95" width="120" height="10" rx="3" fill="#64748B" fill-opacity="0.4"/>
+      
+      <!-- Channel List Side -->
+      <rect x="10" y="10" width="180" height="242" rx="8" fill="#050B17" fill-opacity="0.8"/>
+      <rect x="20" y="25" width="160" height="24" rx="6" fill="#112952"/>
+      <rect x="20" y="55" width="160" height="24" rx="6" fill="#0C1D3A"/>
+      <rect x="20" y="85" width="160" height="24" rx="6" fill="#0C1D3A"/>
+      <rect x="20" y="115" width="160" height="24" rx="6" fill="#0C1D3A"/>
+      <rect x="20" y="145" width="160" height="24" rx="6" fill="#0C1D3A"/>
+
+      <!-- Live Tags inside TV -->
+      <rect x="14" y="14" width="105" height="24" rx="6" fill="#000000" fill-opacity="0.75" stroke="#EF4444" stroke-width="1" stroke-opacity="0.65"/>
+      <circle cx="26" cy="26" r="3.5" fill="#EF4444"/>
+      <text x="36" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" letter-spacing="0.5">LIVE 4K UHD</text>
+
+      <rect x="365" y="14" width="75" height="22" rx="5" fill="#0EA5E9" fill-opacity="0.85"/>
+      <text x="375" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="900" fill="#FFFFFF">HDR 60FPS</text>
+
+      <!-- Bottom Caption Bar -->
+      <rect x="12" y="200" width="428" height="50" rx="8" fill="#050F24" fill-opacity="0.88" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.38"/>
+      <text x="24" y="222" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="800" fill="#FFFFFF">Premier League &amp; UEFA Replay</text>
+      <text x="24" y="238" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#38BDF8">Ultra-High Bitrate • 0% Buffering</text>
+      
+      <rect x="330" y="213" width="95" height="24" rx="4" fill="#10B981" fill-opacity="0.22" stroke="#10B981" stroke-width="1" stroke-opacity="0.55"/>
+      <text x="342" y="229" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#34D399">Active Stream</text>
+    </g>
+
+    <!-- Mid-Left Floating Badge -->
+    <g transform="translate(-36, 75)">
+      <rect width="180" height="48" rx="12" fill="#0F172A" fill-opacity="0.94" stroke="#10B981" stroke-width="1" stroke-opacity="0.55"/>
+      <text x="14" y="32" font-size="18">⚡</text>
+      <text x="38" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="900" fill="#FFFFFF">99.9% Uptime</text>
+      <text x="38" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#10B981">High-Speed UK Network</text>
+    </g>
+
+    <!-- Bottom Stat Chips Row -->
+    <g transform="translate(0, 310)">
+      <!-- Chip 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="64" rx="11" fill="#0A1934" fill-opacity="0.7" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.2"/>
+        <text x="72" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="900" fill="#60A5FA">50,000+</text>
+        <text x="72" y="48" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">LIVE CHANNELS</text>
+      </g>
+
+      <!-- Chip 2 -->
+      <g transform="translate(161, 0)">
+        <rect width="145" height="64" rx="11" fill="#0A1934" fill-opacity="0.7" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.2"/>
+        <text x="72" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="900" fill="#60A5FA">200K+</text>
+        <text x="72" y="48" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">MOVIES &amp; SERIES</text>
+      </g>
+
+      <!-- Chip 3 -->
+      <g transform="translate(323, 0)">
+        <rect width="145" height="64" rx="11" fill="#0A1934" fill-opacity="0.7" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.2"/>
+        <text x="72" y="30" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="900" fill="#60A5FA">5-15m</text>
+        <text x="72" y="48" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="0.5">FAST SETUP</text>
+      </g>
+    </g>
+  </g>
 </svg>

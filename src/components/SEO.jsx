@@ -6,7 +6,7 @@ export default function SEO({
   description,
   canonicalUrl,
   ogType = 'website',
-  ogImage = `${SITE_CONFIG.domain}/og-image.svg`,
+  ogImage = `${SITE_CONFIG.domain}/og-image.png`,
   schema = null,
 }) {
   const fullTitle = title

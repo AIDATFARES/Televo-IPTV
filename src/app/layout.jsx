@@ -33,10 +33,11 @@ export const metadata = {
       'Discover Televo IPTV in the UK. Explore reliable IPTV subscriptions in GBP, compatible devices, and dedicated UK customer support on WhatsApp.',
     images: [
       {
-        url: `${SITE_CONFIG.domain}/og-image.svg`,
+        url: `${SITE_CONFIG.domain}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: 'Televo IPTV UK Streaming Service',
+        alt: 'Televo IPTV UK | Premium 4K IPTV Subscription & Streaming Service',
+        type: 'image/png',
       },
     ],
   },
@@ -45,7 +46,7 @@ export const metadata = {
     title: 'Televo IPTV UK | Premium IPTV Subscription & Streaming Service',
     description:
       'Discover Televo IPTV in the UK. Explore reliable IPTV subscriptions in GBP, compatible devices, and dedicated UK customer support.',
-    images: [`${SITE_CONFIG.domain}/og-image.svg`],
+    images: [`${SITE_CONFIG.domain}/og-image.png`],
   },
   alternates: {
     canonical: '/',
