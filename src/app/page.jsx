@@ -435,7 +435,7 @@ export default function HomePage() {
               {/* CTA Row (Exact spec: [Get a free trial] [Choose Your IPTV Plan >]) */}
               <div className="aii-cta-row">
                 <a
-                  href="https://wa.me/213552069874?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20request%20a%20free%20trial."
+                  href={`${SITE_CONFIG.whatsappBaseUrl}?text=Hello%20Televo%20IPTV%2C%20I%20would%20like%20to%20request%20a%20free%20trial.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-trial-green"
