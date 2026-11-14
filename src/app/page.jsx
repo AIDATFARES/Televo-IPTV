@@ -631,7 +631,10 @@ export default function HomePage() {
         )}
       </section>
 
-      {/* ─── 3. 3-STEP ORDER PROCESS (.aii-buy) ─── */}
+      {/* ─── 3. COMBINED SUBSCRIPTION PRICING WITH DEVICE COUNTER (#aii-pricing) ─── */}
+      <PricingSection />
+
+      {/* ─── 4. 3-STEP ORDER PROCESS (.aii-buy) ─── */}
       <section className="aii-buy">
         <div className="wrap">
           <h2 className="h2">How to Start Streaming with Televo IPTV in 3 Simple Steps</h2>
@@ -667,9 +670,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ─── 4. COMBINED SUBSCRIPTION PRICING WITH DEVICE COUNTER (#aii-pricing) ─── */}
-      <PricingSection />
 
       {/* ─── 5. CORE ADVANTAGES (.aii-sec3) ─── */}
       <section className="aii-sec3">
