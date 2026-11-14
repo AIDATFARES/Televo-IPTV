@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
           <span className="font-semibold">UK Support Online</span>
           <button
             onClick={() => setDismissed(true)}
-            className="text-slate-400 hover:text-white ml-1 p-0.5"
+            className="text-slate-200 hover:text-white ml-1 p-0.5"
             aria-label="Dismiss message"
           >
             <X className="w-3 h-3" />

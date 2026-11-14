@@ -5,7 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import { SITE_CONFIG } from '../data/config';
 
 export const metadata = {
-  metadataBase: new URL('https://www.televoiptv.co.uk'),
+  metadataBase: new URL(SITE_CONFIG.domain),
   title: {
     default: 'Televo IPTV UK | Premium IPTV Subscription & Streaming Service',
     template: '%s | Televo IPTV UK',

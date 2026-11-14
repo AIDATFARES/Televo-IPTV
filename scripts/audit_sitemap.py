@@ -14,7 +14,7 @@ print('=== TELEVO IPTV SITEMAP AUDIT ===\n')
 for url_elem in root.findall('sm:url', ns):
     total += 1
     loc = url_elem.find('sm:loc', ns).text
-    local_path = loc.replace('https://www.televoiptv.co.uk', 'http://localhost:3000')
+    local_path = loc.replace('https://www.televoiptvs.uk', 'http://localhost:3000')
     if local_path == 'http://localhost:3000':
         local_path = 'http://localhost:3000/'
     req = urllib.request.Request(local_path)
@@ -28,11 +28,11 @@ for url_elem in root.findall('sm:url', ns):
     
     # Check if redirect happened
     final_url = res.geturl()
-    redirected = ('http://localhost:3000' + loc.replace('https://www.televoiptv.co.uk', '') != final_url and final_url != 'http://localhost:3000/')
+    redirected = ('http://localhost:3000' + loc.replace('https://www.televoiptvs.uk', '') != final_url and final_url != 'http://localhost:3000/')
     
     is_direct_200 = (res.status == 200 and not redirected)
-    canonical_clean = canonical.rstrip('/') if len(canonical) > len('https://www.televoiptv.co.uk/') else canonical
-    loc_clean = loc.rstrip('/') if len(loc) > len('https://www.televoiptv.co.uk/') else loc
+    canonical_clean = canonical.rstrip('/') if len(canonical) > len('https://www.televoiptvs.uk/') else canonical
+    loc_clean = loc.rstrip('/') if len(loc) > len('https://www.televoiptvs.uk/') else loc
     canonical_matches = (canonical_clean == loc_clean)
     
     if is_direct_200 and canonical_matches:

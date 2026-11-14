@@ -28,7 +28,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-lg font-bold text-[#0A2E66] mb-2">1. Agreement to Terms</h2>
             <p>
-              By accessing the website <strong>televoiptv.co.uk</strong> or purchasing a digital subscription from <strong>Televo IPTV</strong> on our{' '}
+              By accessing the website <strong>televoiptvs.uk</strong> or purchasing a digital subscription from <strong>Televo IPTV</strong> on our{' '}
               <Link href="/subscription" className="text-[#0854c4] font-semibold underline">
                 subscription plans page
               </Link>

@@ -78,12 +78,12 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <MessageSquare className="w-4 h-4 text-emerald-600 shrink-0 mt-1" />
                 <div>
-                  <span className="text-xs text-slate-500 block">WhatsApp Support:</span>
+                  <span className="text-xs text-slate-700 font-semibold block">WhatsApp Support:</span>
                   <a
                     href={SITE_CONFIG.whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-emerald-700 font-bold hover:underline"
+                    className="text-emerald-700 font-bold underline underline-offset-2 hover:text-emerald-800"
                   >
                     Chat on WhatsApp
                   </a>
@@ -92,8 +92,8 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 text-blue-600 shrink-0 mt-1" />
                 <div>
-                  <span className="text-xs text-slate-500 block">Support Email:</span>
-                  <a href={`mailto:${SITE_CONFIG.supportEmail}`} className="text-blue-700 font-semibold">
+                  <span className="text-xs text-slate-700 font-semibold block">Support Email:</span>
+                  <a href={`mailto:${SITE_CONFIG.supportEmail}`} className="text-blue-700 font-semibold underline underline-offset-2 hover:text-blue-900">
                     {SITE_CONFIG.supportEmail}
                   </a>
                 </div>
@@ -105,7 +105,7 @@ export default function Footer() {
                 <ShieldCheck className="w-4 h-4 text-emerald-600" />
                 <span>Encrypted 256-bit Checkout</span>
               </div>
-              <p className="text-[11px] text-slate-500 m-0 leading-tight">
+              <p className="text-[11px] text-slate-700 m-0 leading-tight">
                 Accepts major UK Debit &amp; Credit Cards, PayPal, and Bank Transfer with instant order verification, covered by our{' '}
                 <Link href="/refund-policy" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">
                   7-day refund guarantee

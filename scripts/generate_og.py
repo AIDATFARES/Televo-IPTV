@@ -608,7 +608,7 @@ html_content = f'''<!DOCTYPE html>
               <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="7.5" />
             </svg>
           </div>
-          <span>www.televoiptv.co.uk</span>
+          <span>www.televoiptvs.uk</span>
         </div>
       </div>
     </div>

@@ -105,7 +105,7 @@ export default function Navbar() {
             <Logo size="small" variant="dark" onClick={closeMobileMenu} />
             <button
               onClick={closeMobileMenu}
-              className="p-2 text-slate-500 hover:text-slate-800 font-black text-xl"
+              className="p-2 text-slate-700 hover:text-slate-900 font-black text-xl"
               aria-label="Close menu"
             >
               ✕
@@ -131,7 +131,7 @@ export default function Navbar() {
                       }`}
                     >
                       <span>{link.name}</span>
-                      <ChevronRight className="w-4 h-4 text-slate-400" />
+                      <ChevronRight className="w-4 h-4 text-slate-600" />
                     </Link>
                   </li>
                 );

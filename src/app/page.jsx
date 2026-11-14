@@ -429,7 +429,7 @@ export default function HomePage() {
 
               {/* Subtitle */}
               <p className="aii-sub">
-                Discover a seamless streaming experience with <Link href="/about" className="font-bold underline decoration-blue-400 hover:text-blue-300">Televo IPTV</Link>. Unlock 50,000+ live television channels, non-stop football and motorsport action, complete 7-day UK EPG schedules, and over <Link href="#vod-rails" className="font-semibold underline decoration-blue-400 hover:text-blue-300">200,000 on-demand titles</Link> in 4K UHD. Enjoy contract-free viewing with our <Link href="/subscription" className="font-semibold underline decoration-blue-400 hover:text-blue-300">UK IPTV plans</Link> tailored for British broadband with zero hardware required.
+                Discover a seamless streaming experience with <Link href="/about" className="font-bold text-sky-300 underline underline-offset-2 hover:text-white">Televo IPTV</Link>. Unlock 50,000+ live television channels, non-stop football and motorsport action, complete 7-day UK EPG schedules, and over <Link href="#vod-rails" className="font-semibold text-sky-300 underline underline-offset-2 hover:text-white">200,000 on-demand titles</Link> in 4K UHD. Enjoy contract-free viewing with our <Link href="/subscription" className="font-semibold text-sky-300 underline underline-offset-2 hover:text-white">UK IPTV plans</Link> tailored for British broadband with zero hardware required.
               </p>
 
               {/* CTA Row (Exact spec: [Get a free trial] [Choose Your IPTV Plan >]) */}
@@ -930,7 +930,7 @@ export default function HomePage() {
                 <MonitorPlay className="w-5 h-5 text-[#0854c4] shrink-0" />
                 <div className="text-left">
                   <div className="text-sm font-black text-[#0A2E66]">{app.name}</div>
-                  <div className="text-[11px] text-slate-500 font-semibold">{app.platform}</div>
+                  <div className="text-[11px] text-slate-700 font-semibold">{app.platform}</div>
                 </div>
               </div>
             ))}
@@ -939,7 +939,7 @@ export default function HomePage() {
           <div className="mt-8 text-center">
             <Link
               href="/guide-installation"
-              className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0A2E66] hover:text-[#0854c4] transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-bold text-[#0A2E66] underline underline-offset-4 hover:text-[#0854c4] transition-colors"
             >
               Need step-by-step guidance for your television? Visit the Televo IPTV Setup Guide →
             </Link>

@@ -257,7 +257,7 @@ export default function PricingSection({ title, subtitle }) {
                 <div className="head">
                   <div className="flex flex-col">
                     <span className="term uppercase tracking-wide">{plan.duration}</span>
-                    <span className="text-xs text-blue-200 font-semibold mt-0.5 opacity-90">
+                    <span className="text-xs text-sky-200 font-semibold mt-0.5">
                       {plan.accessLabel}
                     </span>
                   </div>
@@ -268,7 +268,7 @@ export default function PricingSection({ title, subtitle }) {
                 </div>
 
                 {/* Monthly Equivalent & Device Tag */}
-                <div className="text-xs font-bold text-blue-200/90 py-1 px-2.5 rounded-lg bg-black/20 my-1 flex items-center justify-between">
+                <div className="text-xs font-bold text-sky-200 py-1 px-2.5 rounded-lg bg-black/25 my-1 flex items-center justify-between">
                   <span>{monthlyEqLabel}</span>
                   <span>{deviceCount} {deviceCount === 1 ? 'Device Connection' : 'Devices Connection'}</span>
                 </div>

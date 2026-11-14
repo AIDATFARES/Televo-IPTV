@@ -8,9 +8,9 @@ Production-ready, brand-first IPTV website built from scratch for the United Kin
 - **Primary Market:** United Kingdom (UK)
 - **Currency:** GBP (£)
 - **Primary Language:** English (British English)
-- **Official Domain:** https://www.televoiptv.co.uk/
+- **Official Domain:** https://www.televoiptvs.uk/
 - **WhatsApp Support:** [WhatsApp Live Chat](https://wa.me/447882781998?text=Hello%20Televo%20IPTV%2C%20I%20need%20help)
-- **Support Email:** support@televoiptv.co.uk
+- **Support Email:** support@televoiptvs.uk
 
 ## Technology Stack
 - **Framework:** React 19 (JavaScript / JSX ONLY — Strict 0% TypeScript)

@@ -1017,7 +1017,7 @@ body {
 .device-counter-hint {
   margin-top: 12px;
   font-size: 0.88rem;
-  color: #64748b;
+  color: #334155;
   line-height: 1.45;
 }
 
@@ -1249,9 +1249,9 @@ body {
 .plan-cta-btn.featured-btn {
   position: relative !important;
   overflow: hidden !important;
-  background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%) !important;
+  background: linear-gradient(90deg, #00e5ff 0%, #38bdf8 100%) !important;
   border: none !important;
-  color: #071e3d !important;
+  color: #020e24 !important;
   font-weight: 900 !important;
   box-shadow: 0 6px 22px rgba(0, 210, 255, 0.45) !important;
   animation: featuredBtnPulse 2.4s infinite ease-in-out !important;
@@ -1298,9 +1298,9 @@ body {
   gap: 7px !important;
   width: 100% !important;
   margin: 10px auto 0 !important;
-  color: #93c5fd !important;
+  color: #dbeafe !important;
   font-size: 0.84rem !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-decoration: none !important;
   transition: all 0.22s ease !important;
   opacity: 0.95 !important;
@@ -2076,7 +2076,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #0854c4;
+  color: #0A2E66;
   margin-bottom: 4px;
 }
 
@@ -2496,7 +2496,7 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   font-size: 0.85rem;
-  color: #64748b;
+  color: #334155;
 }
 
 @media(max-width: 900px) {
@@ -2504,7 +2504,7 @@ body {
 }
 
 #aii-footer .aii-legal-inline { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-#aii-footer .aii-legal-inline a { color: #64748b; text-decoration: none; font-weight: 600; }
+#aii-footer .aii-legal-inline a { color: #334155; text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
 #aii-footer .aii-legal-inline a:hover { color: #0A2E66; }
 
 /* Reduced motion */
