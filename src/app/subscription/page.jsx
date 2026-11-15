@@ -48,7 +48,7 @@ export default function SubscriptionPage() {
         </div>
       </div>
 
-      {/* Unified Pricing Section with Device Counter (1, 3, 6, 12 Months) */}
+      {/* Unified Pricing Section with Device Counter (3, 6, 12 Months) */}
       <PricingSection />
 
       {/* Guarantee & Features Bar */}

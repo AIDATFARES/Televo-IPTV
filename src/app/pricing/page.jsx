@@ -11,7 +11,7 @@ import { FAQ_DATA } from '../../data/config';
 export const metadata = {
   title: 'Televo IPTV Pricing & Plans (GBP) | UK 4K IPTV Subscription',
   description:
-    'Transparent UK IPTV subscription pricing in British Pounds (GBP). 1, 3, 6, and 12-month packages with instant digital activation and 7-day money-back guarantee.',
+    'Transparent UK IPTV subscription pricing in British Pounds (GBP). 3, 6, and 12-month packages with instant digital activation and 7-day money-back guarantee.',
   alternates: {
     canonical: '/pricing',
   },
@@ -48,7 +48,7 @@ export default function PricingPage() {
         </div>
       </div>
 
-      {/* Unified Pricing Section with Device Counter (1, 3, 6, 12 Months) */}
+      {/* Unified Pricing Section with Device Counter (3, 6, 12 Months) */}
       <PricingSection />
 
       {/* Guarantee & Features Bar */}

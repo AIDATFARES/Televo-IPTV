@@ -13,28 +13,6 @@ export default function PricingSection({ title, subtitle }) {
   // Multiplied dynamically: 2 devices = x2, 3 devices = x3, 4 devices = x4
   const basePlans = [
     {
-      id: '1m',
-      duration: '1 Month',
-      months: 1,
-      basePrice: 14.99,
-      baseOriginalPrice: 19.99,
-      ctaLabel: 'GET 1 MONTH PLAN',
-      accessLabel: '1 Month Access',
-      badge: 'TRIAL PASS',
-      highlight: 'Flexible Monthly IPTV Pass — No Contract',
-      urgency: '⚡ Active UK Delivery — 5-15 Mins',
-      isPopular: false,
-      features: [
-        'Crystal-Clear 4K UHD & Full HD live streams',
-        'Complete 7-day UK electronic programme guide (EPG)',
-        'Over 200,000 VOD movies & complete box sets',
-        'Compatible with Fire Stick, Smart TVs, Android & iOS',
-        'Anti-Freeze streaming servers with 99.9% uptime',
-        '7-day money-back satisfaction guarantee',
-        'Prompt UK customer assistance via WhatsApp',
-      ],
-    },
-    {
       id: '3m',
       duration: '3 Months',
       months: 3,
@@ -210,7 +188,7 @@ export default function PricingSection({ title, subtitle }) {
           </p>
         </div>
 
-        {/* 4 Duration Cards Grid (1 Month, 3 Months, 6 Months, 12 Months) */}
+        {/* 3 Duration Cards Grid (3 Months, 6 Months, 12 Months) */}
         <div className="grid">
           {basePlans.map((plan) => {
             // Price calculation strictly according to user rules:

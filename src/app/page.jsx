@@ -648,7 +648,7 @@ export default function HomePage() {
               <div className="aii-num">1</div>
               <h3 className="text-lg font-black text-[#0A2E66] mb-2">Select Your IPTV Plan</h3>
               <p>
-                Choose the <Link href="/pricing" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">subscription length and screen package</Link> (1, 3, 6, or 12 months) that matches your household. Order securely in GBP with no recurring direct debits or contract lock-ins.
+                Choose the <Link href="/pricing" className="text-[#0854c4] font-semibold underline underline-offset-2 hover:text-[#0A2E66]">subscription length and screen package</Link> (3, 6, or 12 months) that matches your household. Order securely in GBP with no recurring direct debits or contract lock-ins.
               </p>
             </div>
 

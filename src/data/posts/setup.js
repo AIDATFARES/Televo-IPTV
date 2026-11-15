@@ -15,7 +15,7 @@ export const postSetup = {
     <div class="my-8 p-6 bg-blue-50 border-l-4 border-blue-600 rounded-r-2xl">
       <h3 class="text-lg font-bold text-[#0A2E66] mb-2">Onboarding Quick-Start Roadmap</h3>
       <ul class="space-y-1 text-sm text-slate-700">
-        <li><strong>Phase 1 — Subscription Selection:</strong> Choose between flexible 1, 3, 6, or 12-month contract-free tiers, or multi-screen family passes.</li>
+        <li><strong>Phase 1 — Subscription Selection:</strong> Choose between flexible 3, 6, or 12-month contract-free tiers, or multi-screen family passes.</li>
         <li><strong>Phase 2 — Credential Delivery:</strong> Receive your secure Xtream Codes API parameters and M3U links via WhatsApp and email within 5–15 minutes.</li>
         <li><strong>Phase 3 — Hardware &amp; App Pairing:</strong> Pair your subscription with the optimal player for your display (<a href="/blog/how-to-setup-iptv-on-firestick" class="text-blue-600 underline font-semibold">Fire Stick</a>, <a href="/blog/how-to-setup-iptv-on-samsung-smart-tv" class="text-blue-600 underline font-semibold">Samsung Smart TV</a>, LG webOS, Apple TV, or Android TV).</li>
         <li><strong>Phase 4 — Guide &amp; Feature Calibration:</strong> Synchronize the 7-day Electronic Programme Guide (EPG), adjust BST/GMT time offsets, and activate catch-up TV.</li>
@@ -41,16 +41,10 @@ export const postSetup = {
         </thead>
         <tbody class="divide-y divide-slate-200 bg-slate-50">
           <tr>
-            <td class="p-3 font-bold text-slate-900">1 Month Pass</td>
-            <td class="p-3 text-slate-700 font-semibold">£14.99</td>
-            <td class="p-3 text-slate-700">£14.99 / month</td>
-            <td class="p-3 text-slate-700">Short-term testing, holiday homes, or following a specific sports tournament.</td>
-          </tr>
-          <tr>
             <td class="p-3 font-bold text-slate-900">3 Months Pass</td>
-            <td class="p-3 text-slate-700 font-semibold">£29.99</td>
-            <td class="p-3 text-slate-700">£10.00 / month</td>
-            <td class="p-3 text-slate-700">Quarterly flexibility with a significant saving over the monthly tier.</td>
+            <td class="p-3 text-slate-700 font-semibold">£24.99</td>
+            <td class="p-3 text-slate-700">£8.33 / month</td>
+            <td class="p-3 text-slate-700">Quarterly flexibility with exceptional streaming value.</td>
           </tr>
           <tr>
             <td class="p-3 font-bold text-slate-900">6 Months Pass</td>
@@ -375,7 +369,7 @@ export const postSetup = {
 
       <div class="p-5 bg-slate-50 border border-slate-200 rounded-2xl">
         <h4 class="font-bold text-[#0A2E66] text-base mb-2">Can I test Televo IPTV before committing to an annual plan?</h4>
-        <p class="text-sm text-slate-700">Yes! You can begin with our flexible 1-Month Pass (£14.99). Furthermore, all Televo IPTV subscriptions are protected by our risk-free <a href="/refund-policy" class="text-blue-600 underline font-semibold">7-day money-back guarantee</a>. If our technical team cannot achieve seamless performance on your setup within your first 7 days, you receive a full refund.</p>
+        <p class="text-sm text-slate-700">Yes! You can begin with our popular 3-Month Pass (£24.99). Furthermore, all Televo IPTV subscriptions are protected by our risk-free <a href="/refund-policy" class="text-blue-600 underline font-semibold">7-day money-back guarantee</a>. If our technical team cannot achieve seamless performance on your setup within your first 7 days, you receive a full refund.</p>
       </div>
 
       <div class="p-5 bg-slate-50 border border-slate-200 rounded-2xl">

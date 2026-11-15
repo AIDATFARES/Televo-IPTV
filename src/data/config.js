@@ -36,28 +36,6 @@ export const NAV_LINKS = [
 
 export const PRICING_PLANS = [
   {
-    id: 'plan-1m',
-    name: '1 Month Plan',
-    duration: '1 Month',
-    screens: 1,
-    price: 14.99,
-    originalPrice: 19.99,
-    monthlyEquivalent: '£14.99/mo',
-    badge: 'Trial Choice',
-    isPopular: false,
-    description: 'Perfect for testing our high-definition streaming service on your primary device.',
-    features: [
-      '1 Active connection',
-      'High-Definition & 4K UHD streaming streams',
-      'Electronic Programme Guide (EPG) included',
-      'Extensive Video on Demand (VOD) library',
-      'Compatible with Smart TVs, Fire Stick & mobiles',
-      'M3U playlist & Xtream Codes API credentials',
-      '7-day money-back guarantee',
-      'Fast delivery via WhatsApp & email',
-    ],
-  },
-  {
     id: 'plan-3m',
     name: '3 Months Plan',
     duration: '3 Months',
@@ -696,7 +674,7 @@ export const FAQ_DATA = [
     items: [
       {
         question: 'How do I subscribe to Televo IPTV?',
-        answer: 'Simply choose your preferred subscription tier (1, 3, 6, or 12 months, or a multi-screen family plan) on our Pricing page, and contact our team via WhatsApp or checkout. Your account credentials and setup instructions are delivered directly to your WhatsApp and email typically within 5 to 15 minutes.',
+        answer: 'Simply choose your preferred subscription tier (3, 6, or 12 months, or a multi-screen family plan) on our Pricing page, and contact our team via WhatsApp or checkout. Your account credentials and setup instructions are delivered directly to your WhatsApp and email typically within 5 to 15 minutes.',
       },
       {
         question: 'Are there any long-term contracts or direct debits?',
